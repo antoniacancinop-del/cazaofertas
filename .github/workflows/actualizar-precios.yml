@@ -1,0 +1,54 @@
+name: Actualizar precios
+
+on:
+  schedule:
+    - cron: "17 9 * * *"   # todos los días a las 06:17 de Chile (09:17 UTC)
+  workflow_dispatch:         # permite correrlo a mano desde la pestaña Actions
+    inputs:
+      tiendas:
+        description: "Tiendas a revisar separadas por espacio (vacío = todas)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-precios
+  cancel-in-progress: false
+
+jobs:
+  recolectar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar navegador automático
+        run: |
+          pip install playwright==1.48.0
+          python -m playwright install --with-deps chromium
+
+      - name: Recolectar precios
+        run: python recolector/recolectar.py ${{ github.event.inputs.tiendas }}
+
+      - name: Guardar depuración (si alguna tienda falló)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: depuracion
+          path: depuracion/
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Publicar precios nuevos
+        run: |
+          git config user.name "cazaofertas-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos/
+          git diff --cached --quiet || git commit -m "Precios del $(TZ=America/Santiago date +%Y-%m-%d)"
+          git push
