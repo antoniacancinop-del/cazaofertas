@@ -438,21 +438,21 @@ async def generar_imagen(datos: dict):
     html = f"""<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Figtree:wght@500;600&family=Archivo+Narrow:wght@700&display=swap" rel="stylesheet">
 <style>
-*{{box-sizing:border-box;margin:0}} body{{width:1080px;height:1350px;background:#f3f5f8;color:#14213d;font-family:Figtree,sans-serif;padding:60px 64px;display:flex;flex-direction:column;gap:24px}}
-h1{{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:84px;line-height:1}} h1 span{{background:#ffd60a;padding:0 12px;border-radius:8px}}
-.sub{{font-size:34px;color:#5b6478}} .hero{{background:#ffd60a;border-radius:24px;padding:28px 36px}}
+*{{box-sizing:border-box;margin:0}} body{{width:1080px;height:1350px;background:#f4f4f7;color:#23232b;font-family:Figtree,sans-serif;padding:60px 64px;display:flex;flex-direction:column;gap:24px}}
+h1{{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:84px;line-height:1}} h1 span{{background:#cdb8ff;padding:0 12px;border-radius:8px}}
+.sub{{font-size:34px;color:#63636f}} .hero{{background:#cdb8ff;border-radius:24px;padding:28px 36px}}
 .hero .l{{font-size:26px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.75}}
 .hero .b{{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:72px;line-height:1.1}}
 .hero .b em{{font-style:normal;font-family:'Archivo Narrow',sans-serif}} .hero p{{font-size:32px;margin-top:10px}}
 .filas{{display:flex;flex-direction:column;gap:16px}} .fila{{display:grid;grid-template-columns:260px 1fr 190px;gap:20px;align-items:center;font-size:34px;font-weight:600}}
-.tr{{height:44px;background:#dde2ea;border-radius:10px;overflow:hidden}} .tr span{{display:block;height:100%;background:#9aa8c2;border-radius:10px}}
-.win .tr span{{background:#0f7a4a}} .tt{{text-align:right;font-family:'Archivo Narrow',sans-serif;font-size:42px}}
-.pie{{margin-top:auto;font-size:26px;color:#5b6478;display:flex;flex-direction:column;gap:6px}}
+.tr{{height:44px;background:#e0dfe6;border-radius:10px;overflow:hidden}} .tr span{{display:block;height:100%;background:#c4bcd9;border-radius:10px}}
+.win .tr span{{background:#6a4cd6}} .tt{{text-align:right;font-family:'Archivo Narrow',sans-serif;font-size:42px}}
+.pie{{margin-top:auto;font-size:26px;color:#63636f;display:flex;flex-direction:column;gap:6px}}
 h2{{font-family:'Bricolage Grotesque',sans-serif;font-size:36px}} .its{{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px}}
-.it{{display:grid;grid-template-columns:1fr auto;gap:0 12px;background:#fff;border:2px solid #dde2ea;border-radius:16px;padding:12px 18px;font-size:26px;font-weight:600}}
-.it small{{display:block;font-size:20px;color:#5b6478;font-weight:500}} .it b{{font-family:'Archivo Narrow',sans-serif;font-size:36px;text-align:right}}
-.it em{{grid-column:2;font-style:normal;font-size:21px;color:#0f7a4a;text-align:right}}
-.pie b{{color:#14213d}}
+.it{{display:grid;grid-template-columns:1fr auto;gap:0 12px;background:#fff;border:2px solid #e0dfe6;border-radius:16px;padding:12px 18px;font-size:26px;font-weight:600}}
+.it small{{display:block;font-size:20px;color:#63636f;font-weight:500}} .it b{{font-family:'Archivo Narrow',sans-serif;font-size:36px;text-align:right}}
+.it em{{grid-column:2;font-style:normal;font-size:21px;color:#6a4cd6;text-align:right}}
+.pie b{{color:#23232b}}
 </style></head><body>
 <h1>Caza<span>ofertas</span></h1>
 <div class="sub">Canasta básica de {n_items} productos · {fecha.day} de {meses[fecha.month - 1]}</div>

@@ -10,32 +10,32 @@
 <style>
 /* Layout: barra de filtros fija arriba; abajo, tres vistas: Mi canasta (ranking por supermercado), Comparar (tabla) y Ofertas (flejes) */
 :root {
-  --bg: #f3f5f8;
+  --bg: #f4f4f7;
   --surface: #ffffff;
-  --ink: #14213d;
-  --muted: #5b6478;
-  --line: #dde2ea;
-  --tag: #ffd60a;        /* amarillo de fleje de oferta */
-  --tag-ink: #14213d;
-  --accent: #1d4ed8;
+  --ink: #23232b;
+  --muted: #63636f;
+  --line: #e0dfe6;
+  --tag: #cdb8ff;        /* lila de etiqueta de precio */
+  --tag-ink: #23232b;
+  --accent: #6a4cd6;
   --good: #0f7a4a;
   --good-bg: #e3f4ec;
   --danger: #c2261f;
-  --bar: #c9d3e3;
+  --bar: #d3cfe0;
   --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
   --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
   --font-price: "Archivo Narrow", "Arial Narrow", "Roboto Condensed", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0e1422; --surface: #172033; --ink: #e8ecf4; --muted: #9aa5bb; --line: #2a3550;
-    --tag: #f5c800; --tag-ink: #14213d; --accent: #7aa2ff; --good: #5ad19a; --good-bg: #133528; --danger: #ff7b72; --bar: #33415f;
+    --bg: #141418; --surface: #1e1e25; --ink: #ececf1; --muted: #a3a3b0; --line: #33333d;
+    --tag: #b9a0ff; --tag-ink: #1b1b22; --accent: #a993ff; --good: #5ad19a; --good-bg: #133528; --danger: #ff7b72; --bar: #3a3647;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0e1422; --surface: #172033; --ink: #e8ecf4; --muted: #9aa5bb; --line: #2a3550;
-  --tag: #f5c800; --tag-ink: #14213d; --accent: #7aa2ff; --good: #5ad19a; --good-bg: #133528; --danger: #ff7b72; --bar: #33415f;
+  --bg: #141418; --surface: #1e1e25; --ink: #ececf1; --muted: #a3a3b0; --line: #33333d;
+  --tag: #b9a0ff; --tag-ink: #1b1b22; --accent: #a993ff; --good: #5ad19a; --good-bg: #133528; --danger: #ff7b72; --bar: #3a3647;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -44,9 +44,9 @@ body { background: var(--bg); color: var(--ink); font-family: var(--font-body); 
 button { font: inherit; color: inherit; }
 a { color: var(--accent); }
 
-.proto { background: var(--ink); color: var(--bg); font-size: 13px; }
+.proto { background: #23232b; color: #ececf1; font-size: 13px; }  /* misma franja grafito en ambos temas */
 .proto .wrap { padding-block: 8px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: space-between; }
-.proto b { color: var(--tag); font-weight: 600; }
+.proto b { color: #cdb8ff; font-weight: 600; }
 
 header .wrap { padding-block: 28px 18px; display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px; }
 h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 5vw, 44px); line-height: 1; margin: 0; letter-spacing: -0.02em; }
@@ -115,7 +115,7 @@ main .wrap { padding-block: 20px 60px; }
 .rank-row .nm span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .track { height: 22px; background: var(--bg); border-radius: 5px; overflow: hidden; position: relative; }
 .fill { height: 100%; background: var(--bar); border-radius: 5px; }
-.rank-row.first .fill { background: var(--good); }
+.rank-row.first .fill { background: var(--accent); }
 .rank-row .tot { text-align: right; font-family: var(--font-price); font-size: 16px; font-variant-numeric: tabular-nums; }
 .rank-row .miss { grid-column: 2 / -1; font-size: 12px; color: var(--muted); margin-top: -4px; }
 .rank-row.incomplete .tot { color: var(--muted); }
@@ -131,7 +131,7 @@ main .wrap { padding-block: 20px 60px; }
 .pname { font-weight: 600; line-height: 1.25; }
 .pmeta { font-size: 13px; color: var(--muted); }
 .card-actions { display: flex; gap: 6px; margin-top: 6px; }
-.fleje { background: var(--tag); color: var(--tag-ink); padding: 10px 14px 12px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2px 8px; border-top: 2px dashed rgba(20,33,61,.25); }
+.fleje { background: var(--tag); color: var(--tag-ink); padding: 10px 14px 12px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2px 8px; border-top: 2px dashed rgba(35,35,43,.25); }
 .fleje .now { font-family: var(--font-price); font-weight: 700; font-size: 32px; line-height: 1; font-variant-numeric: tabular-nums; }
 .fleje .was { font-size: 13px; text-decoration: line-through; opacity: .75; font-variant-numeric: tabular-nums; }
 .fleje .pct { font-family: var(--font-price); font-weight: 700; font-size: 18px; background: var(--tag-ink); color: var(--tag); padding: 2px 7px; border-radius: 5px; grid-row: 1 / span 2; grid-column: 2; align-self: center; }
@@ -429,7 +429,7 @@ function renderBasket() {
   $("mix").innerHTML = `Si compras cada producto donde está más barato: <b>${fmt(mix)}</b>, repartido en ${used.size} supermercado${used.size === 1 ? "" : "s"}${first ? ` (${fmt(Math.max(0, first.total - mix))} menos que todo en ${esc(first.s.nombre)})` : ""}.`;
   $("card-note").textContent = state.card ? "Incluye precios que exigen la tarjeta o el club de cada tienda." : "No incluye precios que exigen tarjeta o club de la tienda.";
   $("st-min").textContent = first ? fmt(first.total) : "—";
-  $("st-save").textContent = first && last ? fmt(last.total - first.total) : "—";
+  $("st-save").textContent = first && last && last !== first ? fmt(last.total - first.total) : "—";
 }
 
 function renderCompare() {
