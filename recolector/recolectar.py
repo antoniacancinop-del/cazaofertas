@@ -379,7 +379,8 @@ async def principal():
     fecha = ahora.strftime("%Y-%m-%d")
     for tid, nombre in nombres.items():
         r = resultados.get(tid)
-        previo = {pid: pr["precios"][tid] for pid, pr in ((anterior or {}).get("productos") or {}).items() if tid in pr.get("precios", {})}
+        previo = {pr["id"]: pr["precios"][tid] for pr in ((anterior or {}).get("productos") or [])
+                  if tid in pr.get("precios", {}) and pr["id"] in productos}
         if r and r["productos"]:
             for pid, dato in r["productos"].items():
                 productos[pid]["precios"][tid] = dato | {"fecha": fecha}
