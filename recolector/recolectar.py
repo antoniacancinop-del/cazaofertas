@@ -26,7 +26,7 @@ RAIZ = Path(__file__).resolve().parent.parent
 CANASTA = json.loads((RAIZ / "recolector" / "canasta.json").read_text(encoding="utf-8"))
 SALIDA = RAIZ / "datos" / "precios.json"
 HISTORIAL = RAIZ / "datos" / "historial"
-DEPURACION = RAIZ / "depuracion"
+DEPURACION = RAIZ / "datos" / "depuracion"  # se publica para poder revisar bloqueos
 CHILE = timezone(timedelta(hours=-3))
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 
@@ -80,7 +80,7 @@ def tamano(nombre: str, tipo: str) -> float | None:
         if t == tipo:
             candidatos.append(valor * f)
     if candidatos:
-        return candidatos[-1]
+        return max(candidatos)  # p. ej. "104 g drenado, 160 g neto" → 160 g
     if tipo == "cant":
         m = re.search(r"(?:pack|bandeja|caja)\s*(?:de\s*)?(\d+)", n)
         if m:
@@ -306,7 +306,7 @@ async def recolectar_tienda(navegador, tienda: dict, log: list) -> dict:
             if vacios == 3 and not resultado["productos"]:
                 DEPURACION.mkdir(exist_ok=True)
                 try:
-                    (DEPURACION / f"{tienda['id']}.html").write_text(await pagina.content(), encoding="utf-8")
+                    (DEPURACION / f"{tienda['id']}.txt").write_text(pagina.url + "\n\n" + (await pagina.inner_text("body"))[:5000], encoding="utf-8")
                     await pagina.screenshot(path=str(DEPURACION / f"{tienda['id']}.png"))
                 except Exception:
                     pass
@@ -342,9 +342,9 @@ async def recolectar_super10(navegador, log: list) -> dict:
             if m and i > 0:
                 antes = re.match(r"^Antes:\s*\$\s?([\d.]+)", lineas[i + 1]) if i + 1 < len(lineas) else None
                 nombre = lineas[i - 1]
-                if (m.group(2) or "").lower() == "kg" and not re.search(r"\bkg\b", nombre, re.I):
-                    nombre += " 1 kg"
-                ofertas.append({"nombre": nombre, "precio": a_entero(m.group(1)), "normal": a_entero(antes.group(1)) if antes else None, "url": SUPER10["url"]})
+                por_kg = (m.group(2) or "").lower() == "kg"
+                ofertas.append({"nombre": nombre, "precio": a_entero(m.group(1)), "normal": a_entero(antes.group(1)) if antes else None,
+                                "url": SUPER10["url"], "tamano": 1.0 if por_kg else None})
         log.append(f"Super10: {len(ofertas)} ofertas leídas")
         for prod in CANASTA["productos"]:
             e = elegir(prod, ofertas)
@@ -361,6 +361,9 @@ async def principal():
     ahora = datetime.now(CHILE)
     anterior = json.loads(SALIDA.read_text(encoding="utf-8")) if SALIDA.exists() else None
     log: list[str] = []
+    if DEPURACION.exists():  # se borra la depuración del día anterior
+        for f in DEPURACION.iterdir():
+            f.unlink()
     solo = set(sys.argv[1:])  # opcional: recolectar solo algunas tiendas
     async with async_playwright() as p:
         navegador = await p.chromium.launch(args=["--disable-blink-features=AutomationControlled"])
