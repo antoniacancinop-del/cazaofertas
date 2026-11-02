@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cazaofertas Chile</title>
+<meta name="description" content="Compara cada día dónde sale más barata la canasta básica en los supermercados de Chile: proteínas, despensa y limpieza.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=Archivo+Narrow:wght@600;700&display=swap">
+<style>
+/* Layout: barra de filtros fija arriba; abajo, tres vistas: Mi canasta (ranking por supermercado), Comparar (tabla) y Ofertas (flejes) */
+:root {
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --ink: #14213d;
+  --muted: #5b6478;
+  --line: #dde2ea;
+  --tag: #ffd60a;        /* amarillo de fleje de oferta */
+  --tag-ink: #14213d;
+  --accent: #1d4ed8;
+  --good: #0f7a4a;
+  --good-bg: #e3f4ec;
+  --danger: #c2261f;
+  --bar: #c9d3e3;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+  --font-price: "Archivo Narrow", "Arial Narrow", "Roboto Condensed", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1422; --surface: #172033; --ink: #e8ecf4; --muted: #9aa5bb; --line: #2a3550;
+    --tag: #f5c800; --tag-ink: #14213d; --accent: #7aa2ff; --good: #5ad19a; --good-bg: #133528; --danger: #ff7b72; --bar: #33415f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1422; --surface: #172033; --ink: #e8ecf4; --muted: #9aa5bb; --line: #2a3550;
+  --tag: #f5c800; --tag-ink: #14213d; --accent: #7aa2ff; --good: #5ad19a; --good-bg: #133528; --danger: #ff7b72; --bar: #33415f;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.45; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+button { font: inherit; color: inherit; }
+a { color: var(--accent); }
+
+.proto { background: var(--ink); color: var(--bg); font-size: 13px; }
+.proto .wrap { padding-block: 8px; display: flex; gap: 8px; flex-wrap: wrap; justify-content: space-between; }
+.proto b { color: var(--tag); font-weight: 600; }
+
+header .wrap { padding-block: 28px 18px; display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px; }
+h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(30px, 5vw, 44px); line-height: 1; margin: 0; letter-spacing: -0.02em; }
+h1 span { background: var(--tag); color: var(--tag-ink); padding: 0 .18em; border-radius: 4px; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 20px; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 8px 0 0; max-width: 62ch; }
+.stats { display: flex; gap: 22px; color: var(--muted); font-size: 13px; }
+.stats strong { display: block; font-family: var(--font-price); font-size: 24px; color: var(--ink); font-variant-numeric: tabular-nums; }
+.stats .g strong { color: var(--good); }
+
+.controls { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.controls .wrap { padding-block: 12px; display: grid; gap: 10px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.search { flex: 1 1 260px; min-width: 0; position: relative; }
+.search input { width: 100%; font: inherit; padding: 11px 14px 11px 38px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); }
+.search svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
+select, .toggle { font: inherit; font-size: 14px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); }
+.toggle { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.range { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); }
+.range output { font-family: var(--font-price); font-size: 16px; color: var(--ink); min-width: 3ch; }
+
+.chips { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; scrollbar-width: thin; }
+.chip { flex: none; font-size: 13px; font-weight: 500; padding: 6px 11px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.chip i, .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c); display: inline-block; flex: none; }
+.chip[aria-pressed="true"] { color: var(--ink); border-color: var(--ink); }
+.chip[aria-pressed="false"] i { opacity: .35; }
+
+.tabs { display: inline-flex; flex-wrap: wrap; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 3px; }
+.tabs button { font-weight: 600; font-size: 14px; border: 0; background: none; color: var(--muted); padding: 7px 14px; border-radius: 7px; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--ink); color: var(--bg); }
+.tabs .n { font-family: var(--font-price); background: var(--tag); color: var(--tag-ink); border-radius: 999px; padding: 0 6px; margin-left: 4px; font-size: 13px; }
+
+main .wrap { padding-block: 20px 60px; }
+.count { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 6px 10px; cursor: pointer; font-size: 13px; font-weight: 600; }
+.btn:hover { border-color: var(--muted); }
+.btn.add[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+/* Canasta */
+.basket { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 18px; align-items: start; }
+@media (max-width: 820px) { .basket { grid-template-columns: 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; display: grid; gap: 12px; min-width: 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.items { display: grid; gap: 0; }
+.item { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; padding: 8px 0; border-top: 1px solid var(--line); }
+.item:first-child { border-top: 0; }
+.item .pname { font-weight: 600; font-size: 14px; line-height: 1.25; }
+.item .pmeta { font-size: 12px; color: var(--muted); }
+.step { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.step button { border: 0; background: none; width: 28px; height: 28px; cursor: pointer; font-size: 16px; color: var(--muted); }
+.step button:hover { background: var(--bg); color: var(--ink); }
+.step span { min-width: 2ch; text-align: center; font-family: var(--font-price); font-size: 15px; font-variant-numeric: tabular-nums; }
+.item .best { font-size: 12px; color: var(--good); text-align: right; font-variant-numeric: tabular-nums; min-width: 92px; }
+.item .best b { display: block; font-family: var(--font-price); font-size: 15px; }
+
+.winner { background: var(--tag); color: var(--tag-ink); border-radius: 10px; padding: 14px 16px; display: grid; gap: 2px; }
+.winner .lbl { font-size: 12px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; opacity: .8; }
+.winner .big { font-family: var(--font-display); font-weight: 800; font-size: 26px; line-height: 1.1; }
+.winner .big .price { font-family: var(--font-price); font-weight: 700; }
+.winner p { margin: 4px 0 0; font-size: 14px; }
+.rank { display: grid; gap: 8px; }
+.rank-row { display: grid; grid-template-columns: 110px 1fr 86px; gap: 10px; align-items: center; font-size: 14px; }
+.rank-row .nm { display: flex; align-items: center; gap: 6px; font-weight: 600; min-width: 0; }
+.rank-row .nm span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.track { height: 22px; background: var(--bg); border-radius: 5px; overflow: hidden; position: relative; }
+.fill { height: 100%; background: var(--bar); border-radius: 5px; }
+.rank-row.first .fill { background: var(--good); }
+.rank-row .tot { text-align: right; font-family: var(--font-price); font-size: 16px; font-variant-numeric: tabular-nums; }
+.rank-row .miss { grid-column: 2 / -1; font-size: 12px; color: var(--muted); margin-top: -4px; }
+.rank-row.incomplete .tot { color: var(--muted); }
+.mix { border-top: 1px dashed var(--line); padding-top: 12px; font-size: 14px; color: var(--muted); }
+.mix b { color: var(--ink); font-family: var(--font-price); font-size: 17px; }
+.note { font-size: 12px; color: var(--muted); margin: 0; }
+
+/* Ofertas */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; display: flex; flex-direction: column; overflow: hidden; }
+.card-top { padding: 12px 14px 10px; display: grid; gap: 4px; flex: 1; }
+.store { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+.pname { font-weight: 600; line-height: 1.25; }
+.pmeta { font-size: 13px; color: var(--muted); }
+.card-actions { display: flex; gap: 6px; margin-top: 6px; }
+.fleje { background: var(--tag); color: var(--tag-ink); padding: 10px 14px 12px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 2px 8px; border-top: 2px dashed rgba(20,33,61,.25); }
+.fleje .now { font-family: var(--font-price); font-weight: 700; font-size: 32px; line-height: 1; font-variant-numeric: tabular-nums; }
+.fleje .was { font-size: 13px; text-decoration: line-through; opacity: .75; font-variant-numeric: tabular-nums; }
+.fleje .pct { font-family: var(--font-price); font-weight: 700; font-size: 18px; background: var(--tag-ink); color: var(--tag); padding: 2px 7px; border-radius: 5px; grid-row: 1 / span 2; grid-column: 2; align-self: center; }
+.fleje .unit { grid-column: 1 / -1; font-size: 12px; opacity: .85; font-variant-numeric: tabular-nums; display: flex; justify-content: space-between; gap: 8px; }
+.badge-card { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; border: 1px solid var(--accent); color: var(--accent); border-radius: 4px; padding: 1px 5px; width: fit-content; }
+
+/* Comparar */
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+table { border-collapse: collapse; width: 100%; min-width: 1000px; font-variant-numeric: tabular-nums; }
+th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); text-align: right; font-size: 14px; white-space: nowrap; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); font-weight: 600; background: var(--surface); }
+th:first-child, td:first-child { text-align: left; position: sticky; left: 0; background: var(--surface); white-space: normal; min-width: 220px; z-index: 1; }
+td:first-child .cell-p { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+td:first-child .pmeta { font-size: 12px; }
+tr.cat td { background: var(--bg); font-family: var(--font-display); font-weight: 600; font-size: 14px; text-align: left; color: var(--ink); }
+tr.hl td { background: color-mix(in srgb, var(--tag) 18%, var(--surface)); }
+td.best { color: var(--good); font-weight: 700; background: var(--good-bg); }
+td .o { display: block; font-size: 11px; color: var(--danger); font-weight: 600; }
+td .na { color: var(--muted); opacity: .5; }
+td.where { text-align: left; font-weight: 600; color: var(--good); }
+td.save { font-family: var(--font-price); font-size: 16px; color: var(--good); }
+
+.empty { text-align: center; color: var(--muted); padding: 50px 10px; }
+footer .wrap { padding-block: 0 40px; color: var(--muted); font-size: 13px; }
+</style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} [hidden]{display:none!important} img{max-width:100%}</style>
+</head>
+<body>
+<style>
+.status { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--muted); }
+.status span { display: inline-flex; align-items: center; gap: 6px; }
+.status .bad { color: var(--danger); }
+td a.pp { color: inherit; text-decoration: none; }
+td a.pp:hover { text-decoration: underline; }
+td .pn { display: block; font-size: 11px; color: var(--muted); font-weight: 400; max-width: 150px; white-space: normal; line-height: 1.2; margin-top: 2px; }
+.item .best .pn { display: block; color: var(--muted); font-size: 11px; max-width: 160px; white-space: normal; }
+.loading { padding: 60px 10px; text-align: center; color: var(--muted); }
+</style>
+
+<div class="proto"><div class="wrap"><span id="upd"><b>Cargando precios…</b></span><span>Precios de referencia de cada sitio web; en tu local pueden variar.</span></div></div>
+
+<header><div class="wrap">
+  <div>
+    <h1>Caza<span>ofertas</span></h1>
+    <p class="sub">Encuentra dónde comprar más barato lo básico del hogar: pollo, carne, pescado, despensa y productos de limpieza. Arma tu canasta y mira en qué supermercado te sale más económica.</p>
+  </div>
+  <div class="stats">
+    <div><strong id="st-min">—</strong>tu canasta, desde</div>
+    <div class="g"><strong id="st-save">—</strong>ahorras vs. el más caro</div>
+  </div>
+</div></header>
+
+<section class="controls" aria-label="Filtros"><div class="wrap">
+  <div class="row">
+    <div class="tabs" role="tablist">
+      <button id="tab-canasta" role="tab" aria-selected="true">Mi canasta<span class="n" id="n-basket">0</span></button>
+      <button id="tab-comparar" role="tab" aria-selected="false">Comparar precios</button>
+      <button id="tab-ofertas" role="tab" aria-selected="false">Ofertas</button>
+    </div>
+    <label class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="Busca: pollo, arroz, detergente, jurel…" aria-label="Buscar producto">
+    </label>
+  </div>
+  <div class="chips" id="chips" aria-label="Supermercados"></div>
+  <div class="row">
+    <select id="cat" aria-label="Categoría"><option value="">Todas las categorías</option></select>
+    <select id="sort" aria-label="Ordenar">
+      <option value="unit">Menor precio</option>
+      <option value="pct">Mayor descuento / diferencia</option>
+      <option value="name">Nombre A–Z</option>
+    </select>
+    <label class="toggle"><input id="card" type="checkbox"> Contar precios que exigen tarjeta o club</label>
+  </div>
+</div></section>
+
+<main><div class="wrap">
+  <p class="count" id="count"></p>
+  <div id="loading" class="loading">Cargando los precios de hoy…</div>
+
+  <div id="view-canasta" class="basket" hidden>
+    <section class="panel" aria-labelledby="h-items">
+      <div class="panel-head">
+        <h2 id="h-items">Tu canasta</h2>
+        <div class="row">
+          <button class="btn" id="preset">Cargar canasta básica</button>
+          <button class="btn" id="clear">Vaciar</button>
+        </div>
+      </div>
+      <div class="items" id="items"></div>
+      <p class="note">Agrega o quita productos desde <a href="#" id="go-compare">Comparar precios</a> con el botón “+ Canasta”.</p>
+    </section>
+    <section class="panel" aria-labelledby="h-rank">
+      <div id="winner"></div>
+      <h2 id="h-rank">Total por supermercado</h2>
+      <div class="rank" id="rank"></div>
+      <div class="mix" id="mix"></div>
+      <p class="note" id="card-note"></p>
+    </section>
+  </div>
+
+  <div id="view-comparar" hidden>
+    <div class="table-wrap"><table id="tbl"></table></div>
+  </div>
+
+  <div id="view-ofertas" class="grid" hidden></div>
+  <div id="empty" class="empty" hidden></div>
+</div></main>
+
+<footer><div class="wrap">
+  <div class="status" id="status"></div>
+  <p>Cazaofertas revisa cada mañana los sitios web de los supermercados y elige, en cada uno, el producto más barato que cumple la descripción (por ejemplo, cualquier marca de arroz grado 2 de 1 kg). Los precios se ajustan al mismo formato para comparar de forma justa. Revisa siempre el precio final en el supermercado.</p>
+</div></footer>
+
+<script>
+const COLORES = { lider: "#2f6fdd", acuenta: "#e07b00", jumbo: "#2e9e4f", santaisabel: "#d6336c", tottus: "#7cb518", unimarc: "#c92a2a", alvi: "#1c7c9c", super10: "#8a5cd1" };
+const CATS = ["Proteínas", "Despensa", "Limpieza y aseo", "Lácteos", "Frutas y verduras", "Panadería"];
+const UNIT = { kg: "kg", g: "g", l: "L", ml: "ml", un: "un", rollos: "rollos" };
+const fmt = v => "$" + Math.round(v).toLocaleString("es-CL");
+const $ = id => document.getElementById(id);
+const norm = t => (t || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const esc = s => String(s || "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+let STORES = [], PRODUCTS = [], PRESET = {};
+const state = { q: "", cat: "", sort: "unit", card: false, stores: null, view: "canasta", focus: null, basket: null };
+const save = () => { try { localStorage.setItem("cz-real", JSON.stringify({ stores: [...state.stores], card: state.card, basket: state.basket })); } catch (e) {} };
+
+const ref = p => `${String(p.cantidad).replace(".", ",")} ${UNIT[p.unidad] || p.unidad}`;
+const priceOf = x => (state.card && x.precio_tarjeta) ? x.precio_tarjeta : x.precio;
+const cell = (p, s) => p.precios[s.id];
+const activeStores = () => STORES.filter(s => state.stores.has(s.id));
+const inBasket = id => (state.basket[id] || 0) > 0;
+function bestFor(p) {
+  let best = null, bs = null;
+  activeStores().forEach(s => { const x = cell(p, s); if (x && (!best || priceOf(x) < priceOf(best))) { best = x; bs = s; } });
+  return best ? { x: best, s: bs } : null;
+}
+function toggleBasket(id) { if (inBasket(id)) delete state.basket[id]; else state.basket[id] = 1; save(); render(); }
+
+async function iniciar() {
+  let datos;
+  try { datos = await (await fetch("datos/precios.json", { cache: "no-cache" })).json(); }
+  catch (e) { $("loading").textContent = "No pudimos cargar los precios. Intenta recargar la página en unos minutos."; return; }
+  STORES = datos.tiendas.filter(t => t.productos > 0).map(t => ({ ...t, c: COLORES[t.id] || "#888" }));
+  PRODUCTS = datos.productos;
+  PRESET = datos.canasta_basica || {};
+  const d = new Date(datos.actualizado);
+  $("upd").innerHTML = `<b>Precios actualizados</b> el ${d.toLocaleDateString("es-CL", { weekday: "long", day: "numeric", month: "long" })} a las ${d.toLocaleTimeString("es-CL", { hour: "2-digit", minute: "2-digit" })}`;
+  $("status").innerHTML = datos.tiendas.map(t => `<span class="${t.estado === "ok" ? "" : "bad"}"><i class="dot" style="--c:${COLORES[t.id] || "#888"}"></i>${esc(t.nombre)}: ${t.estado === "ok" ? `${t.productos} productos${t.solo_ofertas ? " (solo ofertas)" : ""}` : t.estado === "desactualizada" ? `precios del ${t.fecha}` : "sin datos por ahora"}</span>`).join("");
+
+  state.stores = new Set(STORES.map(s => s.id));
+  state.basket = { ...PRESET };
+  try {
+    const s = JSON.parse(localStorage.getItem("cz-real") || "null");
+    if (s) {
+      if (Array.isArray(s.stores)) { const ok = s.stores.filter(id => STORES.some(t => t.id === id)); if (ok.length) state.stores = new Set(ok); }
+      if (typeof s.card === "boolean") state.card = s.card;
+      if (s.basket && typeof s.basket === "object") state.basket = Object.fromEntries(Object.entries(s.basket).filter(([k]) => PRODUCTS.some(p => p.id === k)));
+    }
+  } catch (e) {}
+
+  CATS.forEach(c => $("cat").insertAdjacentHTML("beforeend", `<option>${c}</option>`));
+  $("chips").innerHTML = STORES.map(s => `<button class="chip" data-s="${s.id}" style="--c:${s.c}" aria-pressed="true"><i></i>${esc(s.nombre)}</button>`).join("");
+  $("card").checked = state.card;
+  $("loading").hidden = true;
+  render();
+}
+
+$("chips").addEventListener("click", e => {
+  const b = e.target.closest(".chip"); if (!b) return;
+  const id = b.dataset.s;
+  state.stores.has(id) ? state.stores.delete(id) : state.stores.add(id);
+  if (!state.stores.size) state.stores.add(id);
+  save(); render();
+});
+$("q").addEventListener("input", e => { state.q = e.target.value; state.focus = null; if (state.view === "canasta") state.view = "comparar"; render(); });
+$("cat").addEventListener("change", e => { state.cat = e.target.value; render(); });
+$("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+$("card").addEventListener("change", e => { state.card = e.target.checked; save(); render(); });
+const setView = v => { state.view = v; state.focus = null; render(); };
+$("tab-canasta").onclick = () => setView("canasta");
+$("tab-comparar").onclick = () => setView("comparar");
+$("tab-ofertas").onclick = () => setView("ofertas");
+$("go-compare").onclick = e => { e.preventDefault(); setView("comparar"); };
+$("preset").onclick = () => { state.basket = { ...PRESET }; save(); render(); };
+$("clear").onclick = () => { state.basket = {}; save(); render(); };
+document.addEventListener("click", e => {
+  const a = e.target.closest("[data-add]"); if (a) { toggleBasket(a.dataset.add); return; }
+  const c = e.target.closest("[data-cmp]"); if (c) { state.focus = c.dataset.cmp; state.view = "comparar"; render(); window.scrollTo({ top: 0, behavior: "smooth" }); return; }
+  const st = e.target.closest("[data-step]");
+  if (st) { const id = st.dataset.id, d = +st.dataset.step; const n = (state.basket[id] || 0) + d; if (n <= 0) delete state.basket[id]; else state.basket[id] = Math.min(n, 99); save(); render(); }
+});
+
+function matchProduct(p) {
+  if (state.cat && p.categoria !== state.cat) return false;
+  if (state.q && !norm(p.nombre + " " + p.categoria + " " + Object.values(p.precios).map(x => x.nombre_producto).join(" ")).includes(norm(state.q))) return false;
+  return true;
+}
+
+function renderBasket() {
+  const ids = Object.keys(state.basket).filter(inBasket).filter(id => PRODUCTS.some(p => p.id === id));
+  const P = id => PRODUCTS.find(p => p.id === id);
+  // Las tiendas que solo publican ofertas no tienen el catálogo completo: se muestran aparte.
+  const full = activeStores().filter(s => !s.solo_ofertas);
+  const stores = full.map(s => {
+    let total = 0; const missing = [];
+    ids.forEach(id => { const x = cell(P(id), s); if (x) total += priceOf(x) * state.basket[id]; else missing.push(P(id).nombre); });
+    return { s, total, missing };
+  }).sort((a, b) => a.missing.length - b.missing.length || a.total - b.total);
+  const complete = stores.filter(x => !x.missing.length);
+  let mix = 0; const used = new Set();
+  ids.forEach(id => { const b = bestFor(P(id)); if (b) { mix += priceOf(b.x) * state.basket[id]; used.add(b.s.nombre); } });
+
+  $("count").textContent = "Precio que paga cualquier persona" + (state.card ? ", incluyendo los que exigen tarjeta o club de la tienda." : ", sin tarjetas ni clubes.") + " Cada producto se compara en el mismo formato.";
+  $("items").innerHTML = ids.length ? CATS.flatMap(cat => ids.filter(id => P(id).categoria === cat).map(id => {
+    const p = P(id), b = bestFor(p);
+    return `<div class="item">
+      <div><div class="pname">${esc(p.nombre)}</div><div class="pmeta">${ref(p)}</div></div>
+      <div class="step" aria-label="Cantidad de ${esc(p.nombre)}"><button data-step="-1" data-id="${id}" aria-label="Quitar uno">−</button><span>${state.basket[id]}</span><button data-step="1" data-id="${id}" aria-label="Agregar uno">+</button></div>
+      <div class="best">${b ? `<b>${fmt(priceOf(b.x))}</b>en ${esc(b.s.nombre)}<span class="pn">${esc(b.x.nombre_producto)}</span>` : "Sin precio hoy"}</div>
+    </div>`;
+  })).join("") : `<p class="note">Tu canasta está vacía. Carga la canasta básica o agrega productos desde Comparar precios.</p>`;
+
+  if (!ids.length || !stores.length) { $("winner").innerHTML = ""; $("rank").innerHTML = ""; $("mix").innerHTML = ""; $("card-note").textContent = ""; $("st-min").textContent = "—"; $("st-save").textContent = "—"; return; }
+  const max = Math.max(...stores.map(x => x.total), 1);
+  const first = complete[0] || null, last = complete[complete.length - 1];
+  const bestIncomplete = !first ? stores[0] : null;
+  $("winner").innerHTML = first ? `<div class="winner">
+      <span class="lbl">Más barato para tu canasta</span>
+      <span class="big">${esc(first.s.nombre)} · <span class="price">${fmt(first.total)}</span></span>
+      <p>${complete.length > 1 ? `Ahorras <b>${fmt(last.total - first.total)}</b> frente a ${esc(last.s.nombre)}, el más caro con todos tus productos.` : "Es el único supermercado seleccionado que tiene todos tus productos."}</p>
+    </div>` : `<div class="winner"><span class="lbl">Ningún supermercado tiene todo hoy</span><p>El que tiene más productos es ${esc(bestIncomplete.s.nombre)}. Abajo ves qué le falta a cada uno.</p></div>`;
+  $("rank").innerHTML = stores.map(x => `<div class="rank-row ${x === first ? "first" : ""} ${x.missing.length ? "incomplete" : ""}">
+      <span class="nm"><i class="dot" style="--c:${x.s.c}"></i><span>${esc(x.s.nombre)}</span></span>
+      <span class="track"><span class="fill" style="width:${(x.total / max * 100).toFixed(1)}%;display:block"></span></span>
+      <span class="tot">${fmt(x.total)}</span>
+      ${x.missing.length ? `<span class="miss">No encontramos: ${esc(x.missing.join(", "))}</span>` : ""}
+    </div>`).join("");
+  $("mix").innerHTML = `Si compras cada producto donde está más barato: <b>${fmt(mix)}</b>, repartido en ${used.size} supermercado${used.size === 1 ? "" : "s"}${first ? ` (${fmt(Math.max(0, first.total - mix))} menos que todo en ${esc(first.s.nombre)})` : ""}.`;
+  $("card-note").textContent = state.card ? "Incluye precios que exigen la tarjeta o el club de cada tienda." : "No incluye precios que exigen tarjeta o club de la tienda.";
+  $("st-min").textContent = first ? fmt(first.total) : "—";
+  $("st-save").textContent = first && last ? fmt(last.total - first.total) : "—";
+}
+
+function renderCompare() {
+  const stores = activeStores();
+  let prods = PRODUCTS.filter(matchProduct);
+  if (state.focus) prods = PRODUCTS.filter(p => p.id === state.focus);
+  const rows = prods.map(p => {
+    const cells = stores.map(s => cell(p, s));
+    const vals = cells.filter(Boolean).map(priceOf);
+    const min = Math.min(...vals);
+    const wi = cells.findIndex(x => x && priceOf(x) === min);
+    return { p, cells, min, max: Math.max(...vals), n: vals.length, where: wi >= 0 ? stores[wi] : null };
+  }).filter(r => r.n);
+  $("count").innerHTML = state.focus
+    ? `Comparando un producto · <a href="#" id="clear-focus">ver todos los productos</a>`
+    : `${rows.length} productos · precio llevado al formato indicado · en verde, dónde está más barato hoy · toca un precio para ver el producto en el sitio del supermercado`;
+  const sorter = state.sort === "name" ? (a, b) => a.p.nombre.localeCompare(b.p.nombre, "es")
+    : state.sort === "pct" ? (a, b) => (b.max - b.min) / b.max - (a.max - a.min) / a.max
+    : (a, b) => a.min - b.min;
+  const cols = stores.length + 3;
+  $("tbl").innerHTML = `<thead><tr><th>Producto</th>${stores.map(s => `<th>${esc(s.nombre)}</th>`).join("")}<th style="text-align:left">Más barato en</th><th>Diferencia</th></tr></thead><tbody>` +
+    CATS.map(cat => {
+      const rs = rows.filter(r => r.p.categoria === cat).sort(sorter);
+      if (!rs.length) return "";
+      return `<tr class="cat"><td colspan="${cols}">${cat}</td></tr>` + rs.map(r => `<tr${state.focus === r.p.id ? ' class="hl"' : ""}>
+        <td><div class="cell-p"><div><div>${esc(r.p.nombre)}</div><div class="pmeta">por ${ref(r.p)}</div></div>
+          <button class="btn add" data-add="${r.p.id}" aria-pressed="${inBasket(r.p.id)}">${inBasket(r.p.id) ? "✓ En canasta" : "+ Canasta"}</button></div></td>` +
+        r.cells.map(x => {
+          if (!x) return `<td><span class="na">—</span></td>`;
+          const v = priceOf(x), off = x.normal_envase && x.normal_envase > x.precio_envase;
+          const tag = v !== x.precio ? `<span class="o">con tarjeta</span>` : off ? `<span class="o">-${Math.round((1 - x.precio_envase / x.normal_envase) * 100)}%</span>` : "";
+          const inner = `${fmt(v)}${tag}<span class="pn">${esc(x.nombre_producto)}</span>`;
+          return `<td class="${v === r.min && r.n > 1 ? "best" : ""}">${x.url ? `<a class="pp" href="${esc(x.url)}" target="_blank" rel="noopener">${inner}</a>` : inner}</td>`;
+        }).join("") +
+        `<td class="where">${r.where ? esc(r.where.nombre) : ""}</td><td class="save">${r.n > 1 ? fmt(r.max - r.min) : "—"}</td></tr>`).join("");
+    }).join("") + "</tbody>";
+  const cf = $("clear-focus"); if (cf) cf.onclick = e => { e.preventDefault(); state.focus = null; render(); };
+  return rows.length;
+}
+
+function renderOffers() {
+  const list = [];
+  PRODUCTS.filter(matchProduct).forEach(p => activeStores().forEach(s => {
+    const x = cell(p, s); if (!x) return;
+    if (x.normal_envase && x.normal_envase > x.precio_envase) list.push({ p, s, x, pct: Math.round((1 - x.precio_envase / x.normal_envase) * 100), now: x.precio_envase, was: x.normal_envase, tarj: false });
+    else if (state.card && x.precio_tarjeta) list.push({ p, s, x, pct: Math.round((1 - x.precio_tarjeta / x.precio) * 100), now: Math.round(x.precio_tarjeta / x.precio * x.precio_envase), was: x.precio_envase, tarj: true });
+  }));
+  list.sort(state.sort === "name" ? (a, b) => a.p.nombre.localeCompare(b.p.nombre, "es") : state.sort === "pct" ? (a, b) => b.pct - a.pct : (a, b) => CATS.indexOf(a.p.categoria) - CATS.indexOf(b.p.categoria) || priceOf(a.x) - priceOf(b.x));
+  $("count").textContent = `${list.length} productos de la canasta con descuento hoy`;
+  $("view-ofertas").innerHTML = list.map(o => `
+    <article class="card">
+      <div class="card-top">
+        <span class="store"><i class="dot" style="--c:${o.s.c}"></i>${esc(o.s.nombre)}</span>
+        <span class="pname">${esc(o.x.nombre_producto)}</span>
+        <span class="pmeta">${esc(o.p.nombre)}</span>
+        ${o.tarj ? `<span class="badge-card">Solo con tarjeta o club</span>` : ""}
+        <div class="card-actions">
+          <button class="btn add" data-add="${o.p.id}" aria-pressed="${inBasket(o.p.id)}">${inBasket(o.p.id) ? "✓ En canasta" : "+ Canasta"}</button>
+          <button class="btn" data-cmp="${o.p.id}">Comparar</button>
+          ${o.x.url ? `<a class="btn" href="${esc(o.x.url)}" target="_blank" rel="noopener">Ver</a>` : ""}
+        </div>
+      </div>
+      <div class="fleje">
+        <span class="was">Normal ${fmt(o.was)}</span>
+        <span class="now">${fmt(o.now)}</span>
+        <span class="pct">-${o.pct}%</span>
+        <span class="unit"><span>${fmt(priceOf(o.x))} por ${ref(o.p)}</span></span>
+      </div>
+    </article>`).join("");
+  return list.length;
+}
+
+function render() {
+  document.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", state.stores.has(b.dataset.s)));
+  ["canasta", "comparar", "ofertas"].forEach(v => { $("tab-" + v).setAttribute("aria-selected", state.view === v); $("view-" + v).hidden = state.view !== v; });
+  $("n-basket").textContent = Object.keys(state.basket).filter(inBasket).length;
+  $("cat").hidden = $("sort").hidden = state.view === "canasta";
+  renderBasket();
+  const n = state.view === "canasta" ? 1 : state.view === "ofertas" ? renderOffers() : renderCompare();
+  $("empty").hidden = n > 0;
+  if (!n) {
+    $("view-" + state.view).hidden = true;
+    $("empty").textContent = state.view === "ofertas" ? "Hoy no hay descuentos en los productos que buscas." : "No encontramos productos con esa búsqueda.";
+  }
+}
+iniciar();
+</script>
+</body>
+</html>
