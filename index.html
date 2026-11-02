@@ -169,6 +169,32 @@ td a.pp:hover { text-decoration: underline; }
 td .pn { display: block; font-size: 11px; color: var(--muted); font-weight: 400; max-width: 150px; white-space: normal; line-height: 1.2; margin-top: 2px; }
 .item .best .pn { display: block; color: var(--muted); font-size: 11px; max-width: 160px; white-space: normal; }
 .loading { padding: 60px 10px; text-align: center; color: var(--muted); }
+.trend { display: inline-block; font-size: 11px; font-weight: 700; margin-left: 4px; font-family: var(--font-body); }
+.trend.down { color: var(--good); } .trend.up { color: var(--danger); }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+a.btn { text-decoration: none; display: inline-flex; align-items: center; }
+#lista { margin-top: 18px; }
+.modes { display: inline-flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.modes button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.grupo { border-top: 1px solid var(--line); padding-top: 12px; display: grid; gap: 6px; }
+.grupo:first-child { border-top: 0; padding-top: 0; }
+.grupo h3 { margin: 0; font-family: var(--font-display); font-size: 17px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.grupo h3 .sub-t { font-family: var(--font-price); font-size: 18px; }
+.li { display: grid; grid-template-columns: auto 1fr auto; gap: 10px; align-items: start; font-size: 14px; }
+.li input { width: 18px; height: 18px; margin-top: 2px; }
+.li .pn { display: block; font-size: 12px; color: var(--muted); }
+.li.done .what { text-decoration: line-through; color: var(--muted); }
+.li .amt { font-variant-numeric: tabular-nums; font-weight: 600; }
+.lista-total { display: flex; justify-content: space-between; font-weight: 600; border-top: 2px solid var(--ink); padding-top: 10px; font-size: 16px; }
+.lista-total b { font-family: var(--font-price); font-size: 22px; }
+.bajas { display: grid; gap: 10px; margin-bottom: 22px; }
+.bajas h2 { font-size: 18px; }
+.baja-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.baja { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: grid; gap: 2px; font-size: 14px; }
+.baja b { font-family: var(--font-price); font-size: 20px; }
+.baja .was { color: var(--muted); text-decoration: line-through; font-size: 12px; }
+.warn { font-size: 11px; color: var(--danger); font-weight: 600; grid-column: 1 / -1; }
+.share { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--muted); }
 </style>
 
 <div class="proto"><div class="wrap"><span id="upd"><b>Cargando precios…</b></span><span>Precios de referencia de cada sitio web; en tu local pueden variar.</span></div></div>
@@ -223,6 +249,7 @@ td .pn { display: block; font-size: 11px; color: var(--muted); font-weight: 400;
       </div>
       <div class="items" id="items"></div>
       <p class="note">Agrega o quita productos desde <a href="#" id="go-compare">Comparar precios</a> con el botón “+ Canasta”.</p>
+      <div class="row"><button class="btn primary" id="open-lista">Armar lista para ir a comprar</button></div>
     </section>
     <section class="panel" aria-labelledby="h-rank">
       <div id="winner"></div>
@@ -230,13 +257,32 @@ td .pn { display: block; font-size: 11px; color: var(--muted); font-weight: 400;
       <div class="rank" id="rank"></div>
       <div class="mix" id="mix"></div>
       <p class="note" id="card-note"></p>
+      <div class="share">Comparte la canasta de hoy: <a class="btn" href="datos/canasta-hoy.png" target="_blank" rel="noopener">Ver imagen</a> <a class="btn" id="wa-site" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
     </section>
   </div>
+
+  <section id="lista" class="panel" hidden aria-labelledby="h-lista">
+    <div class="panel-head">
+      <h2 id="h-lista">Tu lista de compras</h2>
+      <div class="modes" role="group" aria-label="Cómo comprar">
+        <button class="btn" id="mode-mix" aria-pressed="true">Lo más barato (varios supermercados)</button>
+        <select id="mode-one" aria-label="Todo en un supermercado"><option value="">Todo en un supermercado…</option></select>
+      </div>
+    </div>
+    <div id="lista-body" class="items" style="gap:14px"></div>
+    <div class="row">
+      <button class="btn primary" id="copy-lista">Copiar lista</button>
+      <a class="btn" id="wa-lista" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+      <span class="note" id="copy-msg" role="status"></span>
+    </div>
+    <p class="note">Marca cada producto a medida que lo echas al carro. La lista indica cuántos envases llevar para completar la cantidad; el total puede diferir un poco del de la canasta por el tamaño de los envases.</p>
+  </section>
 
   <div id="view-comparar" hidden>
     <div class="table-wrap"><table id="tbl"></table></div>
   </div>
 
+  <section id="bajas" class="bajas" hidden aria-labelledby="h-bajas"></section>
   <div id="view-ofertas" class="grid" hidden></div>
   <div id="empty" class="empty" hidden></div>
 </div></main>
@@ -270,6 +316,16 @@ function bestFor(p) {
   return best ? { x: best, s: bs } : null;
 }
 function toggleBasket(id) { if (inBasket(id)) delete state.basket[id]; else state.basket[id] = 1; save(); render(); }
+// Variación frente a hace una semana (se muestra desde un 3%)
+function trend(x) {
+  if (!x || !x.antes || !x.antes.precio || state.card && x.precio_tarjeta) return "";
+  const d = (x.precio - x.antes.precio) / x.antes.precio;
+  if (Math.abs(d) < 0.03) return "";
+  const pct = Math.round(Math.abs(d) * 100);
+  return `<span class="trend ${d < 0 ? "down" : "up"}" title="Hace una semana: ${fmt(x.antes.precio)}">${d < 0 ? "▼" : "▲"} ${pct}%</span>`;
+}
+const lista = { open: false, mode: "mix", done: new Set() };
+const BASE = { kg: 1, g: 0.001, l: 1, ml: 0.001, un: 1, rollos: 1 };
 
 async function iniciar() {
   let datos;
@@ -351,7 +407,7 @@ function renderBasket() {
     return `<div class="item">
       <div><div class="pname">${esc(p.nombre)}</div><div class="pmeta">${ref(p)}</div></div>
       <div class="step" aria-label="Cantidad de ${esc(p.nombre)}"><button data-step="-1" data-id="${id}" aria-label="Quitar uno">−</button><span>${state.basket[id]}</span><button data-step="1" data-id="${id}" aria-label="Agregar uno">+</button></div>
-      <div class="best">${b ? `<b>${fmt(priceOf(b.x))}</b>en ${esc(b.s.nombre)}<span class="pn">${esc(b.x.nombre_producto)}</span>` : "Sin precio hoy"}</div>
+      <div class="best">${b ? `<b>${fmt(priceOf(b.x))}${trend(b.x)}</b>en ${esc(b.s.nombre)}<span class="pn">${esc(b.x.nombre_producto)}</span>` : "Sin precio hoy"}</div>
     </div>`;
   })).join("") : `<p class="note">Tu canasta está vacía. Carga la canasta básica o agrega productos desde Comparar precios.</p>`;
 
@@ -405,7 +461,7 @@ function renderCompare() {
           if (!x) return `<td><span class="na">—</span></td>`;
           const v = priceOf(x), off = x.normal_envase && x.normal_envase > x.precio_envase;
           const tag = v !== x.precio ? `<span class="o">con tarjeta</span>` : off ? `<span class="o">-${Math.round((1 - x.precio_envase / x.normal_envase) * 100)}%</span>` : "";
-          const inner = `${fmt(v)}${tag}<span class="pn">${esc(x.nombre_producto)}</span>`;
+          const inner = `${fmt(v)}${trend(x)}${tag}<span class="pn">${esc(x.nombre_producto)}</span>`;
           return `<td class="${v === r.min && r.n > 1 ? "best" : ""}">${x.url ? `<a class="pp" href="${esc(x.url)}" target="_blank" rel="noopener">${inner}</a>` : inner}</td>`;
         }).join("") +
         `<td class="where">${r.where ? esc(r.where.nombre) : ""}</td><td class="save">${r.n > 1 ? fmt(r.max - r.min) : "—"}</td></tr>`).join("");
@@ -423,6 +479,19 @@ function renderOffers() {
   }));
   list.sort(state.sort === "name" ? (a, b) => a.p.nombre.localeCompare(b.p.nombre, "es") : state.sort === "pct" ? (a, b) => b.pct - a.pct : (a, b) => CATS.indexOf(a.p.categoria) - CATS.indexOf(b.p.categoria) || priceOf(a.x) - priceOf(b.x));
   $("count").textContent = `${list.length} productos de la canasta con descuento hoy`;
+  // Precios que bajaron frente a hace una semana (en el supermercado más barato de cada producto)
+  const bajas = [];
+  PRODUCTS.filter(matchProduct).forEach(p => activeStores().forEach(s => {
+    const x = cell(p, s);
+    if (x && x.antes && x.antes.precio && x.precio <= x.antes.precio * 0.95) bajas.push({ p, s, x, d: 1 - x.precio / x.antes.precio });
+  }));
+  bajas.sort((a, b) => b.d - a.d);
+  $("bajas").hidden = !bajas.length;
+  $("bajas").innerHTML = bajas.length ? `<h2 id="h-bajas">Bajaron frente a la semana pasada</h2><div class="baja-row">` + bajas.slice(0, 12).map(o => `
+    <div class="baja"><span class="store"><i class="dot" style="--c:${o.s.c}"></i>${esc(o.s.nombre)}</span>
+      <span>${esc(o.p.nombre)} <span class="pmeta">· por ${ref(o.p)}</span></span>
+      <span><b>${fmt(o.x.precio)}</b> <span class="trend down">▼ ${Math.round(o.d * 100)}%</span> <span class="was">${fmt(o.x.antes.precio)}</span></span>
+    </div>`).join("") + `</div><h2>Ofertas de hoy</h2>` : "";
   $("view-ofertas").innerHTML = list.map(o => `
     <article class="card">
       <div class="card-top">
@@ -442,16 +511,85 @@ function renderOffers() {
         <span class="pct">-${o.pct}%</span>
         <span class="unit"><span>${fmt(priceOf(o.x))} por ${ref(o.p)}</span></span>
       </div>
+      ${o.x.min_30d && o.x.min_30d.precio < priceOf(o.x) * 0.97 ? `<div class="card-top"><span class="warn">Ojo: en los últimos 30 días estuvo a ${fmt(o.x.min_30d.precio)} por ${ref(o.p)}, más barato que esta oferta.</span></div>` : ""}
     </article>`).join("");
-  return list.length;
+  return list.length + bajas.length;
 }
+
+// ---------- Lista para ir a comprar
+function armarLista() {
+  const ids = Object.keys(state.basket).filter(inBasket).filter(id => PRODUCTS.some(p => p.id === id));
+  const grupos = new Map(); const sinPrecio = [];
+  ids.forEach(id => {
+    const p = PRODUCTS.find(q => q.id === id); let x = null, s = null;
+    if (lista.mode === "mix") { const b = bestFor(p); if (b) { x = b.x; s = b.s; } }
+    else { s = STORES.find(t => t.id === lista.mode); x = s ? cell(p, s) : null; }
+    if (!x) { sinPrecio.push(p); return; }
+    if (!grupos.has(s.id)) grupos.set(s.id, { s, items: [] });
+    // cuántos envases reales hay que llevar para completar la cantidad pedida
+    const base = p.cantidad * (BASE[p.unidad] || 1) * state.basket[id];
+    const granel = /granel/i.test(x.nombre_producto) && p.unidad === "kg";
+    const envases = x.tamano && x.precio_envase && !granel ? Math.max(1, Math.round(base / x.tamano)) : null;
+    const total = envases ? envases * x.precio_envase : priceOf(x) * state.basket[id];
+    const como = granel ? `${String(base).replace(".", ",")} kg de` : envases ? `${envases} ×` : `${state.basket[id]} ×`;
+    grupos.get(s.id).items.push({ p, x, n: state.basket[id], total, como });
+  });
+  const gs = [...grupos.values()].map(g => ({ ...g, total: g.items.reduce((a, i) => a + i.total, 0) })).sort((a, b) => b.total - a.total);
+  return { gs, sinPrecio, total: gs.reduce((a, g) => a + g.total, 0) };
+}
+function textoLista() {
+  const L = armarLista();
+  let t = "🛒 Mi lista de Cazaofertas\n";
+  L.gs.forEach(g => {
+    t += `\n*${g.s.nombre}* (${fmt(g.total)})\n`;
+    g.items.forEach(i => { t += `- ${i.p.nombre}: ${i.como} ${i.x.nombre_producto} = ${fmt(i.total)}\n`; });
+  });
+  if (L.sinPrecio.length) t += `\nSin precio hoy: ${L.sinPrecio.map(p => p.nombre).join(", ")}\n`;
+  t += `\nTotal estimado: ${fmt(L.total)}\nPrecios web de hoy; en tu local pueden variar.\n${location.origin + location.pathname}`;
+  return t;
+}
+function renderLista() {
+  $("lista").hidden = !lista.open || state.view !== "canasta";
+  if ($("lista").hidden) return;
+  const sel = $("mode-one");
+  if (sel.options.length === 1) STORES.filter(s => !s.solo_ofertas).forEach(s => sel.insertAdjacentHTML("beforeend", `<option value="${s.id}">Todo en ${esc(s.nombre)}</option>`));
+  sel.value = lista.mode === "mix" ? "" : lista.mode;
+  $("mode-mix").setAttribute("aria-pressed", lista.mode === "mix");
+  const L = armarLista();
+  $("lista-body").innerHTML = L.gs.map(g => `<div class="grupo">
+      <h3><span><i class="dot" style="--c:${g.s.c}"></i> ${esc(g.s.nombre)}</span><span class="sub-t">${fmt(g.total)}</span></h3>
+      ${g.items.map(i => { const k = g.s.id + "|" + i.p.id; return `<label class="li ${lista.done.has(k) ? "done" : ""}">
+        <input type="checkbox" data-done="${k}" ${lista.done.has(k) ? "checked" : ""}>
+        <span class="what">${esc(i.p.nombre)} <span class="pmeta">(${i.n} × ${ref(i.p)})</span><span class="pn">Lleva ${esc(i.como)} ${esc(i.x.nombre_producto)}</span></span>
+        <span class="amt">${fmt(i.total)}</span></label>`; }).join("")}
+    </div>`).join("") +
+    (L.sinPrecio.length ? `<p class="note">Sin precio hoy en ${lista.mode === "mix" ? "los supermercados elegidos" : "ese supermercado"}: ${esc(L.sinPrecio.map(p => p.nombre).join(", "))}.</p>` : "") +
+    `<div class="lista-total"><span>Total estimado${L.gs.length > 1 ? ` en ${L.gs.length} supermercados` : ""}</span><b>${fmt(L.total)}</b></div>`;
+  $("wa-lista").href = "https://wa.me/?text=" + encodeURIComponent(textoLista());
+}
+$("open-lista").onclick = () => { lista.open = true; render(); $("lista").scrollIntoView({ behavior: "smooth", block: "start" }); };
+$("mode-mix").onclick = () => { lista.mode = "mix"; renderLista(); };
+$("mode-one").onchange = e => { lista.mode = e.target.value || "mix"; renderLista(); };
+$("lista-body").addEventListener("change", e => {
+  const k = e.target.dataset.done; if (!k) return;
+  e.target.checked ? lista.done.add(k) : lista.done.delete(k);
+  e.target.closest(".li").classList.toggle("done", e.target.checked);
+});
+$("copy-lista").onclick = async () => {
+  const t = textoLista();
+  try { await navigator.clipboard.writeText(t); $("copy-msg").textContent = "Lista copiada. Pégala donde quieras."; }
+  catch (e) { $("copy-msg").textContent = "Tu navegador no permitió copiar. Usa el botón de WhatsApp."; }
+};
 
 function render() {
   document.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", state.stores.has(b.dataset.s)));
   ["canasta", "comparar", "ofertas"].forEach(v => { $("tab-" + v).setAttribute("aria-selected", state.view === v); $("view-" + v).hidden = state.view !== v; });
+  $("bajas").hidden = true;
   $("n-basket").textContent = Object.keys(state.basket).filter(inBasket).length;
   $("cat").hidden = $("sort").hidden = state.view === "canasta";
   renderBasket();
+  renderLista();
+  $("wa-site").href = "https://wa.me/?text=" + encodeURIComponent(`Mira dónde sale más barata la canasta básica hoy: ${location.origin + location.pathname}`);
   const n = state.view === "canasta" ? 1 : state.view === "ofertas" ? renderOffers() : renderCompare();
   $("empty").hidden = n > 0;
   if (!n) {
