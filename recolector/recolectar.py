@@ -346,6 +346,8 @@ async def recolectar_super10(navegador, log: list) -> dict:
                 ofertas.append({"nombre": nombre, "precio": a_entero(m.group(1)), "normal": a_entero(antes.group(1)) if antes else None,
                                 "url": SUPER10["url"], "tamano": 1.0 if por_kg else None})
         log.append(f"Super10: {len(ofertas)} ofertas leídas")
+        for o in ofertas:
+            log.append(f"Super10 · oferta: {o['nombre']} ${o['precio']}")
         for prod in CANASTA["productos"]:
             e = elegir(prod, ofertas)
             if e:
@@ -355,6 +357,117 @@ async def recolectar_super10(navegador, log: list) -> dict:
         log.append(f"Super10: error {e}")
     await contexto.close()
     return resultado
+
+
+def agregar_historial(productos: dict, hoy) -> int:
+    """Agrega a cada precio cómo estaba hace 7 días y el mínimo de los últimos 30 días."""
+    archivos = {}
+    for f in sorted(HISTORIAL.glob("*.json")) if HISTORIAL.exists() else []:
+        try:
+            d = datetime.strptime(f.stem, "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if 0 < (hoy - d).days <= 30:
+            archivos[d] = f
+    if not archivos:
+        return 1
+    # referencia "hace una semana": el último día con datos que tenga 7 días o más; si aún no hay, el más antiguo
+    antiguos = [d for d in archivos if (hoy - d).days >= 7]
+    ref = max(antiguos) if antiguos else min(archivos)
+    historia: dict[tuple, list] = {}
+    for d, f in archivos.items():
+        try:
+            datos = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for p in datos.get("productos", []):
+            for tid, x in p.get("precios", {}).items():
+                if x.get("fecha") == d.isoformat():  # solo precios realmente leídos ese día
+                    historia.setdefault((p["id"], tid), []).append((d, x["precio"]))
+    for pid, p in productos.items():
+        for tid, x in p["precios"].items():
+            h = historia.get((pid, tid), [])
+            en_ref = [pr for d, pr in h if d == ref]
+            if en_ref:
+                x["antes"] = {"precio": en_ref[0], "fecha": ref.isoformat()}
+            if h:
+                d_min, pr_min = min(h + [(hoy, x["precio"])], key=lambda t: t[1])
+                x["min_30d"] = {"precio": pr_min, "fecha": d_min.isoformat()}
+    return len(archivos) + 1
+
+
+def totales_canasta(datos: dict) -> tuple[list[dict], list[str]]:
+    """Totales comparables: solo se suman los productos que tienen todas las tiendas comparadas."""
+    canasta = datos["canasta_basica"]
+    prods = {p["id"]: p for p in datos["productos"]}
+    tiendas = [t for t in datos["tiendas"] if t["productos"] and not t.get("solo_ofertas")]
+    # se dejan fuera las tiendas a las que les falta más del 20% de la canasta
+    tiendas = [t for t in tiendas if sum(1 for pid in canasta if t["id"] in prods.get(pid, {}).get("precios", {})) >= 0.8 * len(canasta)]
+    comunes = [pid for pid in canasta if pid in prods and all(t["id"] in prods[pid]["precios"] for t in tiendas)]
+    filas = [{"nombre": t["nombre"], "id": t["id"], "total": sum(prods[pid]["precios"][t["id"]]["precio"] * canasta[pid] for pid in comunes)} for t in tiendas]
+    filas.sort(key=lambda f: f["total"])
+    return filas, comunes
+
+
+async def generar_imagen(datos: dict):
+    """Crea datos/canasta-hoy.png: una imagen lista para compartir en redes o WhatsApp."""
+    filas, comunes = totales_canasta(datos)
+    if len(filas) < 2:
+        return
+    ganador, mas_caro = filas[0], filas[-1]
+    maximo = max(f["total"] for f in filas)
+    fmt = lambda v: "$" + f"{round(v):,}".replace(",", ".")
+    fecha = datetime.fromisoformat(datos["actualizado"])
+    meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+    n_items = sum(datos["canasta_basica"][pid] for pid in comunes)
+    barras = "".join(
+        f'<div class="fila{" win" if f is ganador else ""}"><span class="nm">{f["nombre"]}</span>'
+        f'<span class="tr"><span style="width:{f["total"] / maximo * 100:.1f}%"></span></span>'
+        f'<span class="tt">{fmt(f["total"])}</span></div>' for f in filas)
+    # dónde conviene cada proteína y básico clave hoy
+    prods = {p["id"]: p for p in datos["productos"]}
+    claves = ["trutro-pollo", "pechuga-pollo", "carne-molida", "jurel", "huevos", "arroz", "aceite", "detergente"]
+    nombres_t = {t["id"]: t["nombre"] for t in datos["tiendas"]}
+    items = []
+    for pid in claves:
+        pr = prods.get(pid, {}).get("precios", {})
+        if pr:
+            tid, x = min(pr.items(), key=lambda kv: kv[1]["precio"])
+            items.append(f'<div class="it"><span>{prods[pid]["nombre"]}<small>por {str(prods[pid]["cantidad"]).replace(".", ",")} {prods[pid]["unidad"]}</small></span><b>{fmt(x["precio"])}</b><em>{nombres_t.get(tid, tid)}</em></div>')
+    items = "".join(items[:6])
+    html = f"""<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Figtree:wght@500;600&family=Archivo+Narrow:wght@700&display=swap" rel="stylesheet">
+<style>
+*{{box-sizing:border-box;margin:0}} body{{width:1080px;height:1350px;background:#f3f5f8;color:#14213d;font-family:Figtree,sans-serif;padding:60px 64px;display:flex;flex-direction:column;gap:24px}}
+h1{{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:84px;line-height:1}} h1 span{{background:#ffd60a;padding:0 12px;border-radius:8px}}
+.sub{{font-size:34px;color:#5b6478}} .hero{{background:#ffd60a;border-radius:24px;padding:28px 36px}}
+.hero .l{{font-size:26px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.75}}
+.hero .b{{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:72px;line-height:1.1}}
+.hero .b em{{font-style:normal;font-family:'Archivo Narrow',sans-serif}} .hero p{{font-size:32px;margin-top:10px}}
+.filas{{display:flex;flex-direction:column;gap:16px}} .fila{{display:grid;grid-template-columns:260px 1fr 190px;gap:20px;align-items:center;font-size:34px;font-weight:600}}
+.tr{{height:44px;background:#dde2ea;border-radius:10px;overflow:hidden}} .tr span{{display:block;height:100%;background:#9aa8c2;border-radius:10px}}
+.win .tr span{{background:#0f7a4a}} .tt{{text-align:right;font-family:'Archivo Narrow',sans-serif;font-size:42px}}
+.pie{{margin-top:auto;font-size:26px;color:#5b6478;display:flex;flex-direction:column;gap:6px}}
+h2{{font-family:'Bricolage Grotesque',sans-serif;font-size:36px}} .its{{display:grid;grid-template-columns:1fr 1fr;gap:14px 30px}}
+.it{{display:grid;grid-template-columns:1fr auto;gap:0 12px;background:#fff;border:2px solid #dde2ea;border-radius:16px;padding:12px 18px;font-size:26px;font-weight:600}}
+.it small{{display:block;font-size:20px;color:#5b6478;font-weight:500}} .it b{{font-family:'Archivo Narrow',sans-serif;font-size:36px;text-align:right}}
+.it em{{grid-column:2;font-style:normal;font-size:21px;color:#0f7a4a;text-align:right}}
+.pie b{{color:#14213d}}
+</style></head><body>
+<h1>Caza<span>ofertas</span></h1>
+<div class="sub">Canasta básica de {n_items} productos · {fecha.day} de {meses[fecha.month - 1]}</div>
+<div class="hero"><div class="l">Más barata hoy</div><div class="b">{ganador["nombre"]} · <em>{fmt(ganador["total"])}</em></div>
+{f'<p>Ahorras <b>{fmt(mas_caro["total"] - ganador["total"])}</b> frente a {mas_caro["nombre"]}</p>' if mas_caro else ''}</div>
+<div class="filas">{barras}</div>
+<h2>Dónde conviene hoy</h2><div class="its">{items}</div>
+<div class="pie"><span>Precios publicados en el sitio web de cada supermercado; en tu local pueden variar.</span><b>antoniacancinop-del.github.io/cazaofertas</b></div>
+</body></html>"""
+    async with async_playwright() as p:
+        nav = await p.chromium.launch()
+        pagina = await nav.new_page(viewport={"width": 1080, "height": 1350})
+        await pagina.set_content(html, wait_until="networkidle")
+        await pagina.screenshot(path=str(RAIZ / "datos" / "canasta-hoy.png"))
+        await nav.close()
 
 
 async def principal():
@@ -393,8 +506,10 @@ async def principal():
         else:
             tiendas.append({"id": tid, "nombre": nombre, "estado": (r or {}).get("estado", "no revisada"), "fecha": None, "productos": 0})
 
+    dias_historial = agregar_historial(productos, ahora.date())
     datos = {
         "actualizado": ahora.isoformat(timespec="minutes"),
+        "dias_historial": dias_historial,
         "tiendas": tiendas,
         "productos": list(productos.values()),
         "canasta_basica": CANASTA["canasta_basica"],
@@ -404,6 +519,10 @@ async def principal():
     HISTORIAL.mkdir(parents=True, exist_ok=True)
     (HISTORIAL / f"{fecha}.json").write_text(json.dumps(datos, ensure_ascii=False), encoding="utf-8")
     (RAIZ / "datos" / "registro.txt").write_text("\n".join(log), encoding="utf-8")
+    try:
+        await generar_imagen(datos)
+    except Exception as e:  # la imagen es un extra: si falla, los precios igual se publican
+        print(f"No se pudo generar la imagen: {e}")
     print("\n".join(log))
     print("\nResumen:")
     for t in tiendas:
