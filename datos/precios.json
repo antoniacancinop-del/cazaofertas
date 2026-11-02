@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-02T15:18-03:00",
+ "actualizado": "2026-11-02T19:24-03:00",
  "tiendas": [
   {
    "id": "jumbo",
    "nombre": "Jumbo",
    "estado": "ok",
    "fecha": "2026-11-02",
-   "productos": 32,
+   "productos": 33,
    "solo_ofertas": false
   },
   {
@@ -14,7 +14,7 @@
    "nombre": "Santa Isabel",
    "estado": "ok",
    "fecha": "2026-11-02",
-   "productos": 29,
+   "productos": 30,
    "solo_ofertas": false
   },
   {
@@ -36,7 +36,7 @@
    "nombre": "Unimarc",
    "estado": "ok",
    "fecha": "2026-11-02",
-   "productos": 32,
+   "productos": 34,
    "solo_ofertas": false
   },
   {
@@ -44,7 +44,7 @@
    "nombre": "Alvi",
    "estado": "ok",
    "fecha": "2026-11-02",
-   "productos": 25,
+   "productos": 26,
    "solo_ofertas": false
   },
   {
@@ -196,9 +196,9 @@
      "url": "https://www.alvi.cl/product/carne-molida-vacuno-250gr-2",
      "formato": "250 g",
      "tamano": 0.25,
-     "precio_envase": 1350,
+     "precio_envase": 1420,
      "normal_envase": null,
-     "precio": 5400,
+     "precio": 5680,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
@@ -296,13 +296,13 @@
      "fecha": "2026-11-02"
     },
     "santaisabel": {
-     "nombre_producto": "Varitas de Merluza 400 g",
-     "url": "https://www.santaisabel.cl/varitas-de-merluza-400-g-2017478/p",
+     "nombre_producto": "Merluza Tempura Romana 500 g",
+     "url": "https://www.santaisabel.cl/merluza-tempura-a-la-romana-500-g-cuisine-and-co-1785324/p",
      "formato": null,
-     "tamano": 0.4,
-     "precio_envase": 2960,
-     "normal_envase": 3700,
-     "precio": 7400,
+     "tamano": 0.5,
+     "precio_envase": 3990,
+     "normal_envase": 4790,
+     "precio": 7980,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     },
@@ -336,7 +336,30 @@
    "categoria": "Proteínas",
    "cantidad": 425,
    "unidad": "g",
-   "precios": {}
+   "precios": {
+    "unimarc": {
+     "nombre_producto": "Jurel San José al natural lata 425 g neto - 300 g drenado",
+     "url": "https://www.unimarc.cl/product/jurel-san-jose-al-natural-425-g",
+     "formato": "300 g",
+     "tamano": 0.425,
+     "precio_envase": 2890,
+     "normal_envase": null,
+     "precio": 2890,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    },
+    "alvi": {
+     "nombre_producto": "Jurel San José al natural lata 425 g neto - 300 g drenado",
+     "url": "https://www.alvi.cl/product/jurel-al-natural-lata",
+     "formato": "300 g",
+     "tamano": 0.425,
+     "precio_envase": 2780,
+     "normal_envase": null,
+     "precio": 2780,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    }
+   }
   },
   {
    "id": "atun",
@@ -368,13 +391,24 @@
      "fecha": "2026-11-02"
     },
     "unimarc": {
-     "nombre_producto": "Atún lomito Robinson Crusoe en agua 3 un de 56 g  neto - 168 g drenado",
-     "url": "https://www.unimarc.cl/product/atun-lomito-al-agua-r-crousoe-240-gr",
-     "formato": "168 g",
-     "tamano": 0.168,
-     "precio_envase": 3790,
+     "nombre_producto": "Atún lomitos en agua merkat 140 G  neto - 100 g drenado",
+     "url": "https://www.unimarc.cl/product/atun-lomitos-en-agua-merkat-140-gr",
+     "formato": "100 g",
+     "tamano": 0.14,
+     "precio_envase": 950,
      "normal_envase": null,
-     "precio": 3610,
+     "precio": 1086,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    },
+    "alvi": {
+     "nombre_producto": "Atún lomito en agua contenido neto 140G Contenido drenado 100G",
+     "url": "https://www.alvi.cl/product/atun-lomitos-en-agua-merkat-140-gr",
+     "formato": "100 g",
+     "tamano": 0.14,
+     "precio_envase": 890,
+     "normal_envase": null,
+     "precio": 1017,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
@@ -425,9 +459,9 @@
      "url": "https://www.alvi.cl/product/huevo-primera-color-la-herradura-30-un",
      "formato": "30 un",
      "tamano": 30.0,
-     "precio_envase": 8690,
+     "precio_envase": 9090,
      "normal_envase": null,
-     "precio": 8690,
+     "precio": 9090,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
@@ -446,7 +480,7 @@
      "formato": null,
      "tamano": 1.0,
      "precio_envase": 990,
-     "normal_envase": 6450,
+     "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
@@ -722,7 +756,7 @@
      "formato": null,
      "tamano": 1.0,
      "precio_envase": 2690,
-     "normal_envase": 3650,
+     "normal_envase": 4490,
      "precio": 2690,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
@@ -971,35 +1005,46 @@
    "unidad": "un",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Té Ahmad English Breakfast 100 Bolsitas",
-     "url": "https://www.jumbo.cl/te-ahmad-english-2062763/p",
+     "nombre_producto": "Té Club Premium Sobre Envoltura 100 un.",
+     "url": "https://www.jumbo.cl/te-club-ceylan-premium-100bls-2017464/p",
      "formato": null,
      "tamano": 100.0,
-     "precio_envase": 7992,
-     "normal_envase": 9990,
-     "precio": 7992,
+     "precio_envase": 3190,
+     "normal_envase": 4610,
+     "precio": 3190,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     },
     "santaisabel": {
-     "nombre_producto": "Té Ceylon Twinings Comienzo Brillante 80 Bolsitas",
-     "url": "https://www.santaisabel.cl/te-ceylon-80bol-2092282/p",
+     "nombre_producto": "Té Negro Emblem Tea Ceylon Blend Original 100 un.",
+     "url": "https://www.santaisabel.cl/te-negro-emblem-tea-ceylon-blend-original-100-un-267658/p",
      "formato": null,
-     "tamano": 80.0,
-     "precio_envase": 8990,
-     "normal_envase": null,
-     "precio": 11238,
+     "tamano": 100.0,
+     "precio_envase": 1990,
+     "normal_envase": 2970,
+     "precio": 1990,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     },
     "unimarc": {
-     "nombre_producto": "Té Mildred ceylán 100 bolsitas",
-     "url": "https://www.unimarc.cl/product/te-miildred-ceylan-100-bolsitas",
+     "nombre_producto": "Té Impra pure ceylán 100 un",
+     "url": "https://www.unimarc.cl/product/te-pure-ceylan-enveloped-impra-100-un",
      "formato": null,
      "tamano": 100.0,
-     "precio_envase": 2690,
-     "normal_envase": 3590,
-     "precio": 2690,
+     "precio_envase": 2000,
+     "normal_envase": 2490,
+     "precio": 2000,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    },
+    "alvi": {
+     "nombre_producto": "Te pure ceylan enveloped 100 Un",
+     "url": "https://www.alvi.cl/product/te-pure-ceylan-enveloped-impra-100-un",
+     "formato": "100 un",
+     "tamano": 100.0,
+     "precio_envase": 2620,
+     "normal_envase": null,
+     "precio": 2620,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
@@ -1064,7 +1109,52 @@
    "categoria": "Limpieza y aseo",
    "cantidad": 750,
    "unidad": "ml",
-   "precios": {}
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Lavaloza Virginia Citrus Doypack 1200 ml",
+     "url": "https://www.jumbo.cl/lavalozas-virginia-2086173/p",
+     "formato": null,
+     "tamano": 1.2,
+     "precio_envase": 1990,
+     "normal_envase": null,
+     "precio": 1244,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    },
+    "santaisabel": {
+     "nombre_producto": "Lavaloza Virginia Citrus Botella Recarga 1.5 L",
+     "url": "https://www.santaisabel.cl/lavalozas-virgina-citrus-150-ml-1798196/p",
+     "formato": null,
+     "tamano": 1.5,
+     "precio_envase": 2190,
+     "normal_envase": 4070,
+     "precio": 1095,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    },
+    "unimarc": {
+     "nombre_producto": "Lavaloza limón Citrus doypack Virginia 1.2lt",
+     "url": "https://www.unimarc.cl/product/lavaloza-limon-citrus-dp-virginia-1-2-lt",
+     "formato": null,
+     "tamano": 1.2,
+     "precio_envase": 1990,
+     "normal_envase": null,
+     "precio": 1244,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    },
+    "alvi": {
+     "nombre_producto": "Lavalozas Fuzol limón doypack 700 ml",
+     "url": "https://www.alvi.cl/product/lavaloza-conc-limon-dp-fuzol-700-ml",
+     "formato": "700 ml",
+     "tamano": 0.7,
+     "precio_envase": 1140,
+     "normal_envase": null,
+     "precio": 1221,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    }
+   }
   },
   {
    "id": "cloro",
@@ -1074,13 +1164,13 @@
    "unidad": "l",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Cloro Limpieza Mascotas Clorox 1900 ml",
-     "url": "https://www.jumbo.cl/cloro-limpieza-2067520/p",
+     "nombre_producto": "Cloro Adclean Destructor de Hongos, Virus y Bacterias No Tóxico 1 L",
+     "url": "https://www.jumbo.cl/cloro-destructor-no-toxico-adclean-1lt-2049465/p",
      "formato": null,
-     "tamano": 1.9,
-     "precio_envase": 2990,
+     "tamano": 1.0,
+     "precio_envase": 1790,
      "normal_envase": null,
-     "precio": 3147,
+     "precio": 3580,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     },
@@ -1092,17 +1182,6 @@
      "precio_envase": 2000,
      "normal_envase": 2190,
      "precio": 2000,
-     "precio_tarjeta": null,
-     "fecha": "2026-11-02"
-    },
-    "alvi": {
-     "nombre_producto": "Cloro limpiador Clorox 5 en 1 mascotas 1.9 L",
-     "url": "https://www.alvi.cl/product/cloro-limp-5en1-mascotas-clorox-1-9-lt",
-     "formato": null,
-     "tamano": 1.9,
-     "precio_envase": 2690,
-     "normal_envase": null,
-     "precio": 2832,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
@@ -1145,6 +1224,17 @@
      "precio_envase": 3550,
      "normal_envase": null,
      "precio": 3550,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-02"
+    },
+    "alvi": {
+     "nombre_producto": "Limpiapisos higienizante bergamota Excell 900ml",
+     "url": "https://www.alvi.cl/product/limpiapisos-hig-excell-900-ml-bergamota",
+     "formato": "900 ml",
+     "tamano": 0.9,
+     "precio_envase": 990,
+     "normal_envase": null,
+     "precio": 990,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
@@ -1191,13 +1281,13 @@
      "fecha": "2026-11-02"
     },
     "alvi": {
-     "nombre_producto": "Papel higiénico Confort doble hoja 40 un de 22 m",
-     "url": "https://www.alvi.cl/product/papel-hig-dh-confort-22mtx40",
+     "nombre_producto": "Papel higiénico doble hoja 4 un 23 mt",
+     "url": "https://www.alvi.cl/product/ph-doble-hoja-noble-23mx4-mt",
      "formato": null,
-     "tamano": 40.0,
-     "precio_envase": 13720,
+     "tamano": 4.0,
+     "precio_envase": 1560,
      "normal_envase": null,
-     "precio": 4116,
+     "precio": 4680,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
@@ -1317,13 +1407,13 @@
    "unidad": "g",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Sucedáneo de Mantequilla Orasi Buttery Light 250 g",
-     "url": "https://www.jumbo.cl/sucedaneo-mantequilla-orasi-light-250gr-2049074/p",
+     "nombre_producto": "Mantequilla Soprole con Sal 250 g",
+     "url": "https://www.jumbo.cl/mantequilla-con-sal-soprole-250-g/p",
      "formato": null,
      "tamano": 0.25,
-     "precio_envase": 1800,
-     "normal_envase": 3250,
-     "precio": 1800,
+     "precio_envase": 2790,
+     "normal_envase": 3140,
+     "precio": 2790,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     },
@@ -1443,17 +1533,6 @@
      "precio": 1990,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
-    },
-    "alvi": {
-     "nombre_producto": "Cebolla cubo congelada Minuto Verde food service 1 Kg",
-     "url": "https://www.alvi.cl/product/cebolla-cubo-congelada-minuto-verde-food-service-1-kg",
-     "formato": "1 Kg",
-     "tamano": 1.0,
-     "precio_envase": 3480,
-     "normal_envase": null,
-     "precio": 3480,
-     "precio_tarjeta": null,
-     "fecha": "2026-11-02"
     }
    }
   },
@@ -1483,17 +1562,6 @@
      "precio_envase": 995,
      "normal_envase": null,
      "precio": 1990,
-     "precio_tarjeta": null,
-     "fecha": "2026-11-02"
-    },
-    "alvi": {
-     "nombre_producto": "Triple concentrado de tomate",
-     "url": "https://www.alvi.cl/product/triple-concent-de-tomate-pomarola-1-kg",
-     "formato": "1 Kg",
-     "tamano": 1.0,
-     "precio_envase": 3480,
-     "normal_envase": null,
-     "precio": 3480,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
@@ -1536,17 +1604,6 @@
      "precio_envase": 745,
      "normal_envase": null,
      "precio": 1490,
-     "precio_tarjeta": null,
-     "fecha": "2026-11-02"
-    },
-    "alvi": {
-     "nombre_producto": "Tigretón plátano chocolate",
-     "url": "https://www.alvi.cl/product/tigreton-platano-chocolate",
-     "formato": "528 g",
-     "tamano": 0.528,
-     "precio_envase": 5390,
-     "normal_envase": null,
-     "precio": 10208,
      "precio_tarjeta": null,
      "fecha": "2026-11-02"
     }
