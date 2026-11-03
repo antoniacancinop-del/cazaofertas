@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cazaofertas Chile</title>
+<title>Cazaprecios</title>
 <meta name="description" content="Compara cada día dónde sale más barata la canasta básica en los supermercados de Chile: proteínas, despensa y limpieza.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=Archivo+Narrow:wght@600;700&display=swap">
@@ -201,7 +201,7 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
 
 <header><div class="wrap">
   <div>
-    <h1>Caza<span>ofertas</span></h1>
+    <h1>Caza<span>precios</span></h1>
     <p class="sub">Encuentra dónde comprar más barato lo básico del hogar: pollo, carne, pescado, despensa y productos de limpieza. Arma tu canasta y mira en qué supermercado te sale más económica.</p>
   </div>
   <div class="stats">
@@ -257,7 +257,7 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
       <div class="rank" id="rank"></div>
       <div class="mix" id="mix"></div>
       <p class="note" id="card-note"></p>
-      <div class="share">Comparte la canasta de hoy: <a class="btn" href="datos/canasta-hoy.png" target="_blank" rel="noopener">Ver imagen</a> <a class="btn" id="wa-site" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
+      <div class="share">Comparte la canasta de hoy: <a class="btn" id="img-hoy" href="datos/canasta-hoy.png" target="_blank" rel="noopener" hidden>Ver imagen</a> <a class="btn" id="wa-site" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
     </section>
   </div>
 
@@ -289,7 +289,7 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
 
 <footer><div class="wrap">
   <div class="status" id="status"></div>
-  <p>Cazaofertas revisa cada mañana los sitios web de los supermercados y elige, en cada uno, el producto más barato que cumple la descripción (por ejemplo, cualquier marca de arroz grado 2 de 1 kg). Los precios se ajustan al mismo formato para comparar de forma justa. Revisa siempre el precio final en el supermercado.</p>
+  <p>Cazaprecios revisa cada mañana los sitios web de los supermercados y elige, en cada uno, el producto más barato que cumple la descripción (por ejemplo, cualquier marca de arroz grado 2 de 1 kg). Los precios se ajustan al mismo formato para comparar de forma justa. Revisa siempre el precio final en el supermercado.</p>
 </div></footer>
 
 <script>
@@ -354,6 +354,8 @@ async function iniciar() {
   $("card").checked = state.card;
   $("loading").hidden = true;
   render();
+  // el botón de la imagen aparece solo cuando la imagen ya existe
+  fetch("datos/canasta-hoy.png", { method: "HEAD", cache: "no-cache" }).then(r => { $("img-hoy").hidden = !r.ok; }).catch(() => {});
 }
 
 $("chips").addEventListener("click", e => {
@@ -539,7 +541,7 @@ function armarLista() {
 }
 function textoLista() {
   const L = armarLista();
-  let t = "🛒 Mi lista de Cazaofertas\n";
+  let t = "🛒 Mi lista de Cazaprecios\n";
   L.gs.forEach(g => {
     t += `\n*${g.s.nombre}* (${fmt(g.total)})\n`;
     g.items.forEach(i => { t += `- ${i.p.nombre}: ${i.como} ${i.x.nombre_producto} = ${fmt(i.total)}\n`; });

@@ -1,6 +1,6 @@
-# Cazaofertas Chile
+# Cazaprecios
 
-Sitio gratuito que compara cada día dónde sale más barata la canasta básica en los supermercados de Chile, con prioridad en proteínas (pollo, carne, pescado, huevos), alimentos no perecibles y productos de limpieza.
+Sitio gratuito (cazaprecios.cl) que compara cada día dónde sale más barata la canasta básica en los supermercados de Chile, con prioridad en proteínas (pollo, carne, pescado, huevos), alimentos no perecibles y productos de limpieza.
 
 ## Cómo funciona
 

@@ -1,5 +1,5 @@
 """
-Recolector de precios de Cazaofertas.
+Recolector de precios de Cazaprecios.
 
 Abre las páginas públicas de búsqueda de cada supermercado con un navegador
 automático (como lo haría una persona), lee los precios de los productos de la
@@ -454,13 +454,13 @@ h2{{font-family:'Bricolage Grotesque',sans-serif;font-size:36px}} .its{{display:
 .it em{{grid-column:2;font-style:normal;font-size:21px;color:#6a4cd6;text-align:right}}
 .pie b{{color:#23232b}}
 </style></head><body>
-<h1>Caza<span>ofertas</span></h1>
+<h1>Caza<span>precios</span></h1>
 <div class="sub">Canasta básica de {n_items} productos · {fecha.day} de {meses[fecha.month - 1]}</div>
 <div class="hero"><div class="l">Más barata hoy</div><div class="b">{ganador["nombre"]} · <em>{fmt(ganador["total"])}</em></div>
 {f'<p>Ahorras <b>{fmt(mas_caro["total"] - ganador["total"])}</b> frente a {mas_caro["nombre"]}</p>' if mas_caro else ''}</div>
 <div class="filas">{barras}</div>
 <h2>Dónde conviene hoy</h2><div class="its">{items}</div>
-<div class="pie"><span>Precios publicados en el sitio web de cada supermercado; en tu local pueden variar.</span><b>antoniacancinop-del.github.io/cazaofertas</b></div>
+<div class="pie"><span>Precios publicados en el sitio web de cada supermercado; en tu local pueden variar.</span><b>cazaprecios.cl</b></div>
 </body></html>"""
     async with async_playwright() as p:
         nav = await p.chromium.launch()
