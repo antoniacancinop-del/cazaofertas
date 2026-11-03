@@ -194,10 +194,16 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
 .baja b { font-family: var(--font-price); font-size: 20px; }
 .baja .was { color: var(--muted); text-decoration: line-through; font-size: 12px; }
 .warn { font-size: 11px; color: var(--danger); font-weight: 600; grid-column: 1 / -1; }
+.como { scroll-margin-top: 240px; display: grid; gap: 10px; padding-block: 8px 24px; border-top: 1px solid var(--line); margin-top: 8px; max-width: 72ch; }
+.como h2 { font-size: 18px; margin-top: 16px; }
+.como dl { margin: 0; display: grid; gap: 4px; }
+.como dt { font-weight: 600; color: var(--ink); margin-top: 8px; }
+.como dd { margin: 0; line-height: 1.5; }
+.proto-link { color: #cdb8ff; }
 .share { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--muted); }
 </style>
 
-<div class="proto"><div class="wrap"><span id="upd"><b>Cargando precios…</b></span><span>Precios de referencia de cada sitio web; en tu local pueden variar.</span></div></div>
+<div class="proto"><div class="wrap"><span id="upd"><b>Cargando precios…</b></span><span>Precios de la <b>tienda online</b> de cada supermercado; en el local pueden ser distintos. <a href="#como" class="proto-link">¿De dónde salen?</a></span></div></div>
 
 <header><div class="wrap">
   <div>
@@ -288,8 +294,20 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
 </div></main>
 
 <footer><div class="wrap">
+  <section id="como" class="como" aria-labelledby="h-como">
+    <h2 id="h-como">¿De dónde salen estos precios?</h2>
+    <dl>
+      <dt>Son precios de las tiendas online</dt>
+      <dd>Cada mañana Cazaprecios revisa los precios que cada supermercado publica en su sitio web de compras (jumbo.cl, santaisabel.cl, unimarc.cl y alvi.cl), sin elegir una comuna ni un local en particular. Son los precios a los que podrías comprar por internet ese día.</dd>
+      <dt>En el local pueden ser distintos</dt>
+      <dd>Los supermercados no siempre tienen el mismo precio en su web y en sus locales, y entre un local y otro también puede cambiar. Algunas ofertas son solo online y otras solo en sala. Por eso, úsalo como guía de <b>qué supermercado suele convenir más</b> y revisa el precio en góndola antes de pagar.</dd>
+      <dt>Cómo se comparan</dt>
+      <dd>En cada supermercado se elige el producto más barato que cumple la descripción, de cualquier marca (por ejemplo, arroz grado 2 de 1 kg), y su precio se lleva al mismo formato para comparar de forma justa. Las frutas, verduras, carnes y el pan a granel se cobran según el peso real.</dd>
+      <dt>Qué no se cuenta</dt>
+      <dd>Los precios que exigen tarjeta, club o membresía de la tienda no se suman, salvo que actives esa opción. Tampoco las promociones por cantidad, como "2 × $3.000", ni los costos de despacho si compras online.</dd>
+    </dl>
+  </section>
   <div class="status" id="status"></div>
-  <p>Cazaprecios revisa cada mañana los sitios web de los supermercados y elige, en cada uno, el producto más barato que cumple la descripción (por ejemplo, cualquier marca de arroz grado 2 de 1 kg). Los precios se ajustan al mismo formato para comparar de forma justa. Revisa siempre el precio final en el supermercado.</p>
 </div></footer>
 
 <script>
@@ -403,7 +421,7 @@ function renderBasket() {
   let mix = 0; const used = new Set();
   ids.forEach(id => { const b = bestFor(P(id)); if (b) { mix += priceOf(b.x) * state.basket[id]; used.add(b.s.nombre); } });
 
-  $("count").textContent = "Precio que paga cualquier persona" + (state.card ? ", incluyendo los que exigen tarjeta o club de la tienda." : ", sin tarjetas ni clubes.") + " Cada producto se compara en el mismo formato.";
+  $("count").textContent = "Precio de la tienda online que paga cualquier persona" + (state.card ? ", incluyendo los que exigen tarjeta o club de la tienda." : ", sin tarjetas ni clubes.") + " Cada producto se compara en el mismo formato.";
   $("items").innerHTML = ids.length ? CATS.flatMap(cat => ids.filter(id => P(id).categoria === cat).map(id => {
     const p = P(id), b = bestFor(p);
     return `<div class="item">
@@ -547,7 +565,7 @@ function textoLista() {
     g.items.forEach(i => { t += `- ${i.p.nombre}: ${i.como} ${i.x.nombre_producto} = ${fmt(i.total)}\n`; });
   });
   if (L.sinPrecio.length) t += `\nSin precio hoy: ${L.sinPrecio.map(p => p.nombre).join(", ")}\n`;
-  t += `\nTotal estimado: ${fmt(L.total)}\nPrecios web de hoy; en tu local pueden variar.\n${location.origin + location.pathname}`;
+  t += `\nTotal estimado: ${fmt(L.total)}\nPrecios de las tiendas online de hoy; en el local pueden ser distintos.\n${location.origin + location.pathname}`;
   return t;
 }
 function renderLista() {

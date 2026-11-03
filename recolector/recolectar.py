@@ -467,7 +467,7 @@ h2{{font-family:'Bricolage Grotesque',sans-serif;font-size:36px}} .its{{display:
 {f'<p>Ahorras <b>{fmt(mas_caro["total"] - ganador["total"])}</b> frente a {mas_caro["nombre"]}</p>' if mas_caro else ''}</div>
 <div class="filas">{barras}</div>
 <h2>Dónde conviene hoy</h2><div class="its">{items}</div>
-<div class="pie"><span>Precios publicados en el sitio web de cada supermercado; en tu local pueden variar.</span><b>cazaprecios.cl</b></div>
+<div class="pie"><span>Precios de las tiendas online de cada supermercado; en el local pueden ser distintos.</span><b>cazaprecios.cl</b></div>
 </body></html>"""
     async with async_playwright() as p:
         nav = await p.chromium.launch()
