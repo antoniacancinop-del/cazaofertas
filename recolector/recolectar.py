@@ -340,8 +340,15 @@ async def recolectar_super10(navegador, log: list) -> dict:
         for i, l in enumerate(lineas):
             m = re.match(r"^\$\s?([\d.]+)\s*(kg|c/u|un)?$", l, re.I)
             if m and i > 0:
-                antes = re.match(r"^Antes:\s*\$\s?([\d.]+)", lineas[i + 1]) if i + 1 < len(lineas) else None
-                nombre = lineas[i - 1]
+                # el texto "Antes $X" puede venir antes o después del precio, según el diseño de la página
+                antes, nombre = None, lineas[i - 1]
+                if re.match(r"^Antes", nombre, re.I):
+                    antes = re.match(r"^Antes:?\s*\$\s?([\d.]+)", nombre)
+                    nombre = lineas[i - 2] if i > 1 else ""
+                elif i + 1 < len(lineas):
+                    antes = re.match(r"^Antes:?\s*\$\s?([\d.]+)", lineas[i + 1])
+                if not nombre or nombre.startswith("$") or re.match(r"^Antes", nombre, re.I):
+                    continue
                 por_kg = (m.group(2) or "").lower() == "kg"
                 ofertas.append({"nombre": nombre, "precio": a_entero(m.group(1)), "normal": a_entero(antes.group(1)) if antes else None,
                                 "url": SUPER10["url"], "tamano": 1.0 if por_kg else None})
