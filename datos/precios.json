@@ -1,20 +1,21 @@
 {
- "actualizado": "2026-11-02T19:24-03:00",
+ "actualizado": "2026-11-03T07:06-03:00",
+ "dias_historial": 2,
  "tiendas": [
   {
    "id": "jumbo",
    "nombre": "Jumbo",
    "estado": "ok",
-   "fecha": "2026-11-02",
-   "productos": 33,
+   "fecha": "2026-11-03",
+   "productos": 52,
    "solo_ofertas": false
   },
   {
    "id": "santaisabel",
    "nombre": "Santa Isabel",
    "estado": "ok",
-   "fecha": "2026-11-02",
-   "productos": 30,
+   "fecha": "2026-11-03",
+   "productos": 49,
    "solo_ofertas": false
   },
   {
@@ -35,16 +36,16 @@
    "id": "unimarc",
    "nombre": "Unimarc",
    "estado": "ok",
-   "fecha": "2026-11-02",
-   "productos": 34,
+   "fecha": "2026-11-03",
+   "productos": 53,
    "solo_ofertas": false
   },
   {
    "id": "alvi",
    "nombre": "Alvi",
    "estado": "ok",
-   "fecha": "2026-11-02",
-   "productos": 26,
+   "fecha": "2026-11-03",
+   "productos": 39,
    "solo_ofertas": false
   },
   {
@@ -72,7 +73,15 @@
      "normal_envase": null,
      "precio": 6990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 6990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 6990,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Pechuga de Pollo Deshuesada 750 g",
@@ -83,7 +92,15 @@
      "normal_envase": null,
      "precio": 7587,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 7587,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 7587,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pechuga de pollo deshuesada Ariztía bandeja 850 g",
@@ -94,7 +111,15 @@
      "normal_envase": 7690,
      "precio": 6929,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 6929,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 6929,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Bistec de pechuga de pollo deshuesada Super Pollo 530 gr",
@@ -105,7 +130,15 @@
      "normal_envase": null,
      "precio": 7453,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 7453,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 7453,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -125,7 +158,15 @@
      "normal_envase": null,
      "precio": 3195,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 3195,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 3195,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Trutro Largo con Piel Super Pollo 800 g",
@@ -136,18 +177,34 @@
      "normal_envase": null,
      "precio": 5238,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 5238,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 5238,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
-     "nombre_producto": "Trutro entero de pollo Super Pollo granel 800 g",
-     "url": "https://www.unimarc.cl/product/trutro-entero-super-pollo-granel-1-a-2-kg",
-     "formato": "800 g",
-     "tamano": 0.8,
-     "precio_envase": 2312,
-     "normal_envase": 3192,
-     "precio": 2890,
+     "nombre_producto": "Trutro entero de pollo Super Pollo al vacío 1 Kg",
+     "url": "https://www.unimarc.cl/product/trutro-vacio-super-pollo-kg",
+     "formato": "1 kg",
+     "tamano": 1.0,
+     "precio_envase": 3790,
+     "normal_envase": null,
+     "precio": 3790,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2890,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2890,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -167,7 +224,15 @@
      "normal_envase": null,
      "precio": 11180,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 11180,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 11180,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Carne Molida Vacuno 10% Grasa 250 gr",
@@ -178,7 +243,15 @@
      "normal_envase": null,
      "precio": 12360,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 12360,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 12360,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Carne molida vacuno Fundo Sur 250 gr",
@@ -189,7 +262,15 @@
      "normal_envase": null,
      "precio": 6760,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 6760,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 6760,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Carne molida vacuno 250Gr",
@@ -200,7 +281,15 @@
      "normal_envase": null,
      "precio": 5680,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 5680,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 5680,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -220,7 +309,15 @@
      "normal_envase": null,
      "precio": 13390,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 13390,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 13390,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Posta Negra al Vacío 1.6 kg aprox.",
@@ -231,7 +328,15 @@
      "normal_envase": null,
      "precio": 12390,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 12390,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 12390,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Posta negra vacuno Argentina al vacío 2.5 Kg",
@@ -242,7 +347,15 @@
      "normal_envase": null,
      "precio": 15590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 15590,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 15590,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -259,21 +372,37 @@
      "formato": null,
      "tamano": 0.55,
      "precio_envase": 4290,
-     "normal_envase": 5190,
+     "normal_envase": 8990,
      "precio": 7800,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 7800,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 7800,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
-     "nombre_producto": "Chuleta vetada Super Cerdo porcionado al vacío 1.4 Kg",
-     "url": "https://www.unimarc.cl/product/chuleta-vetada-porcionada-kg",
+     "nombre_producto": "Chuleta centro de cerdo Super Cerdo granel 1.4 Kg",
+     "url": "https://www.unimarc.cl/product/chuleta-cent-porc-super-cerdo-kg",
      "formato": "1.4 kg",
      "tamano": 1.4,
-     "precio_envase": 6986,
-     "normal_envase": 8386,
-     "precio": 4990,
+     "precio_envase": 8246,
+     "normal_envase": null,
+     "precio": 5890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 4990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 4990,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -293,18 +422,34 @@
      "normal_envase": null,
      "precio": 7980,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 7980,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 7980,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
-     "nombre_producto": "Merluza Tempura Romana 500 g",
-     "url": "https://www.santaisabel.cl/merluza-tempura-a-la-romana-500-g-cuisine-and-co-1785324/p",
+     "nombre_producto": "Merluza Filete Congelado 500 g",
+     "url": "https://www.santaisabel.cl/merluza-filete-sin-piel-500g-cuisine-and-co-1964040/p",
      "formato": null,
      "tamano": 0.5,
-     "precio_envase": 3990,
-     "normal_envase": 4790,
-     "precio": 7980,
+     "precio_envase": 4890,
+     "normal_envase": null,
+     "precio": 9780,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 7980,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 7980,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Filete merluza con piel azul profundo 500g",
@@ -315,7 +460,15 @@
      "normal_envase": null,
      "precio": 10580,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 10580,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 10580,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Filete de merluza con piel congelado",
@@ -326,7 +479,15 @@
      "normal_envase": null,
      "precio": 8920,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 8920,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 8920,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -346,7 +507,15 @@
      "normal_envase": null,
      "precio": 2890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2890,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2890,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Jurel San José al natural lata 425 g neto - 300 g drenado",
@@ -357,7 +526,15 @@
      "normal_envase": null,
      "precio": 2780,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2780,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2780,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -377,7 +554,15 @@
      "normal_envase": 1510,
      "precio": 1290,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1290,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1290,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Atún Lomitos en Agua 91 g drenado, 140 g neto",
@@ -388,7 +573,15 @@
      "normal_envase": 1373,
      "precio": 1429,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1429,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1429,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Atún lomitos en agua merkat 140 G  neto - 100 g drenado",
@@ -399,7 +592,15 @@
      "normal_envase": null,
      "precio": 1086,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1086,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1086,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Atún lomito en agua contenido neto 140G Contenido drenado 100G",
@@ -410,7 +611,15 @@
      "normal_envase": null,
      "precio": 1017,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1017,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1017,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -422,15 +631,23 @@
    "unidad": "un",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Huevos Cintazul Grandes Blancos 12 un.",
-     "url": "https://www.jumbo.cl/huevos-grandes-blancos-cintazul-bandeja-12-unid/p",
+     "nombre_producto": "Huevos Cintazul Grandes Color 12 un.",
+     "url": "https://www.jumbo.cl/huevos-grandes-color-cintazul-bandeja-12-unid/p",
      "formato": null,
      "tamano": 12.0,
      "precio_envase": 3390,
-     "normal_envase": 3950,
+     "normal_envase": 4170,
      "precio": 8475,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 8475,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 8475,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Huevos Yemita Blancos Grandes 12 un.",
@@ -441,29 +658,53 @@
      "normal_envase": 4010,
      "precio": 7500,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 7500,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 7500,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
-     "nombre_producto": "Huevos blanco grande Cintazul 30 un",
-     "url": "https://www.unimarc.cl/product/huevos-cintazul-blanco-grande-bandeja-30-u",
+     "nombre_producto": "Huevos Fundo Río Alegre mediano blanco 30 un",
+     "url": "https://www.unimarc.cl/product/huevo-mediano-blanco-f-rio-alegr-sm-30un",
      "formato": null,
      "tamano": 30.0,
-     "precio_envase": 7315,
-     "normal_envase": 10450,
-     "precio": 7315,
+     "precio_envase": 7850,
+     "normal_envase": null,
+     "precio": 7850,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 7315,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 7315,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
-     "nombre_producto": "Huevo primera color",
-     "url": "https://www.alvi.cl/product/huevo-primera-color-la-herradura-30-un",
+     "nombre_producto": "Huevos Fundo Rio Alegre grande color 30 un",
+     "url": "https://www.alvi.cl/product/huevo-grande-color-f-rio-alegre-es-30-un-2",
      "formato": "30 un",
      "tamano": 30.0,
-     "precio_envase": 9090,
+     "precio_envase": 8990,
      "normal_envase": null,
-     "precio": 9090,
+     "precio": 8990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 9090,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 8990,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -483,18 +724,34 @@
      "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
-     "nombre_producto": "Arroz Grado 2 Máxima Grano Largo Angosto 1 kg",
-     "url": "https://www.santaisabel.cl/arroz-grado-2-maxima-1-kg-grano-largo-angosto-1223046/p",
+     "nombre_producto": "Arroz Grado 2 Cuisine & Co Largo y Delgado 1 kg",
+     "url": "https://www.santaisabel.cl/arroz-largo-fino-1-kg-cuisine-and-co-1845787/p",
      "formato": null,
      "tamano": 1.0,
-     "precio_envase": 950,
-     "normal_envase": null,
-     "precio": 950,
+     "precio_envase": 990,
+     "normal_envase": 1350,
+     "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 950,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 950,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Arroz Merkat largo delgado grado 2 1 Kg",
@@ -505,7 +762,15 @@
      "normal_envase": null,
      "precio": 890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 890,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 890,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Arroz Merkat largo delgado grado 2 1 Kg",
@@ -516,7 +781,15 @@
      "normal_envase": null,
      "precio": 890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 890,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 890,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -536,7 +809,15 @@
      "normal_envase": null,
      "precio": 450,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 450,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 450,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Spaghetti N° 5 Máxima 400 g",
@@ -547,7 +828,15 @@
      "normal_envase": null,
      "precio": 430,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 430,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 430,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pasta spaghetti N°5 Merkat 400 g",
@@ -558,7 +847,15 @@
      "normal_envase": null,
      "precio": 520,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 520,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 520,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Pasta spaghetti N°5 Merkat 400 g",
@@ -569,7 +866,15 @@
      "normal_envase": null,
      "precio": 560,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 560,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 560,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -589,7 +894,15 @@
      "normal_envase": 2450,
      "precio": 2211,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2211,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2211,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Aceite de Maravilla Coliseo 900 cc",
@@ -600,7 +913,15 @@
      "normal_envase": null,
      "precio": 2656,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2656,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2656,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Aceite Nuestra Cocina 100% maravilla 900 ml",
@@ -611,7 +932,15 @@
      "normal_envase": 2290,
      "precio": 2222,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2222,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2222,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Aceite Nuestra Cocina 100% maravilla 900 ml",
@@ -622,7 +951,15 @@
      "normal_envase": null,
      "precio": 2456,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2456,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2456,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -642,7 +979,15 @@
      "normal_envase": 1890,
      "precio": 1190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1190,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1190,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Azúcar Cuisine & Co Blanca Granulada 1 kg",
@@ -653,7 +998,15 @@
      "normal_envase": 1150,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1000,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1000,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Azúcar granulada Merkat 1 Kg",
@@ -664,7 +1017,15 @@
      "normal_envase": null,
      "precio": 910,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 910,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 910,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Azúcar granulada",
@@ -675,7 +1036,15 @@
      "normal_envase": null,
      "precio": 910,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 910,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 910,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -695,7 +1064,15 @@
      "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Harina Cuisine & Co Sin Polvos de Hornear 1 kg",
@@ -706,7 +1083,15 @@
      "normal_envase": 1370,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1000,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1000,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Harina Merkat sin polvos 1 Kg",
@@ -717,7 +1102,15 @@
      "normal_envase": null,
      "precio": 870,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 870,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 870,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Harina Merkat sin polvos 1 Kg",
@@ -728,7 +1121,15 @@
      "normal_envase": null,
      "precio": 820,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 820,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 820,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -748,7 +1149,15 @@
      "normal_envase": null,
      "precio": 2490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2490,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2490,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Lentejas 6 mm Cuisine & Co 1 kg",
@@ -756,10 +1165,18 @@
      "formato": null,
      "tamano": 1.0,
      "precio_envase": 2690,
-     "normal_envase": 4490,
+     "normal_envase": 3650,
      "precio": 2690,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2690,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2690,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Lentejas 6mm Los Granos 1kg",
@@ -770,7 +1187,15 @@
      "normal_envase": 2590,
      "precio": 2300,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2300,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2300,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Lentejas 5mm Bonanza 1 Kg",
@@ -781,7 +1206,15 @@
      "normal_envase": null,
      "precio": 2990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2990,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -801,7 +1234,15 @@
      "normal_envase": 2720,
      "precio": 2176,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2176,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2176,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Porotos Negros Cuisine & Co 1 kg",
@@ -812,7 +1253,15 @@
      "normal_envase": 2610,
      "precio": 2200,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2200,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2200,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Porotos negro Los Granos 1kg",
@@ -823,7 +1272,15 @@
      "normal_envase": null,
      "precio": 2290,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2290,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2290,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Porotos negros",
@@ -834,7 +1291,15 @@
      "normal_envase": null,
      "precio": 2590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2590,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2590,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -854,7 +1319,15 @@
      "normal_envase": 2490,
      "precio": 2843,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2843,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2843,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Avena Vivo Instantánea Bolsa 500 g",
@@ -865,7 +1338,15 @@
      "normal_envase": null,
      "precio": 1980,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1980,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1980,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Avena Instantánea Oso 500 g",
@@ -876,7 +1357,15 @@
      "normal_envase": 1150,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2000,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2000,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Avena instantánea",
@@ -887,7 +1376,15 @@
      "normal_envase": null,
      "precio": 2929,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2929,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2929,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -907,7 +1404,15 @@
      "normal_envase": 1060,
      "precio": 690,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 690,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 690,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Salsa de Tomate Coliseo Italiana 200 g",
@@ -918,7 +1423,15 @@
      "normal_envase": null,
      "precio": 370,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 370,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 370,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Salsa de tomate Merkat italiana 200 g",
@@ -929,7 +1442,15 @@
      "normal_envase": null,
      "precio": 380,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 380,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 380,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Salsa de tomate San Remo italiana sachet 200 g",
@@ -940,7 +1461,15 @@
      "normal_envase": null,
      "precio": 380,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 380,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 380,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -960,7 +1489,15 @@
      "normal_envase": null,
      "precio": 490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 490,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 490,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Sal Fina Cuisine & Co 1 kg",
@@ -971,7 +1508,15 @@
      "normal_envase": null,
      "precio": 480,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 480,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 480,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Sal fina Nuestra Cocina bolsa 1 Kg",
@@ -982,7 +1527,15 @@
      "normal_envase": 510,
      "precio": 470,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 470,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 470,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Sal fina Lobos yodada bolsa 1 Kg",
@@ -993,7 +1546,15 @@
      "normal_envase": null,
      "precio": 540,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 540,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 540,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1013,7 +1574,15 @@
      "normal_envase": 4610,
      "precio": 3190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 3190,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 3190,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Té Negro Emblem Tea Ceylon Blend Original 100 un.",
@@ -1024,7 +1593,15 @@
      "normal_envase": 2970,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1990,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Té Impra pure ceylán 100 un",
@@ -1035,7 +1612,15 @@
      "normal_envase": 2490,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2000,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2000,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Te pure ceylan enveloped 100 Un",
@@ -1046,7 +1631,15 @@
      "normal_envase": null,
      "precio": 2620,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2620,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2620,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1066,7 +1659,15 @@
      "normal_envase": 12790,
      "precio": 9900,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 9900,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 9900,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Detergente Líquido Máxima 5 L",
@@ -1077,7 +1678,15 @@
      "normal_envase": null,
      "precio": 2712,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2712,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2712,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Detergente líquido Merkat matic floral 5 L",
@@ -1088,7 +1697,15 @@
      "normal_envase": null,
      "precio": 2214,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2214,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2214,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Detergente líquido Tatii bidón 5 L",
@@ -1099,7 +1716,15 @@
      "normal_envase": null,
      "precio": 2304,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2304,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2304,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1119,7 +1744,15 @@
      "normal_envase": null,
      "precio": 1244,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1244,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1244,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Lavaloza Virginia Citrus Botella Recarga 1.5 L",
@@ -1130,7 +1763,15 @@
      "normal_envase": 4070,
      "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1095,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1095,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Lavaloza limón Citrus doypack Virginia 1.2lt",
@@ -1141,7 +1782,15 @@
      "normal_envase": null,
      "precio": 1244,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1244,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1244,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Lavalozas Fuzol limón doypack 700 ml",
@@ -1152,7 +1801,15 @@
      "normal_envase": null,
      "precio": 1221,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1221,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1221,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1172,7 +1829,15 @@
      "normal_envase": null,
      "precio": 3580,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 3580,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 3580,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Cloro Clorinda tradicional 2 L",
@@ -1183,7 +1848,15 @@
      "normal_envase": 2190,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2000,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2000,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1203,7 +1876,15 @@
      "normal_envase": null,
      "precio": 1625,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1625,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1625,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Limpiador de Pisos Poett Alegra Tu Dia 1.8 L",
@@ -1214,7 +1895,15 @@
      "normal_envase": 3050,
      "precio": 1195,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1195,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1195,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Limpiapisos Excell piso porcelanato lavanda manzanilla 900 ml",
@@ -1225,7 +1914,15 @@
      "normal_envase": null,
      "precio": 3550,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 3550,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 3550,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Limpiapisos higienizante bergamota Excell 900ml",
@@ -1236,7 +1933,15 @@
      "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1256,7 +1961,15 @@
      "normal_envase": null,
      "precio": 2992,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2992,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2992,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Papel Higiénico Noble Doble Hoja 23 m 4 un.",
@@ -1267,7 +1980,15 @@
      "normal_envase": 1960,
      "precio": 2970,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2970,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2970,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Papel higiénico Nubelin doble hoja 40 un de 22 m",
@@ -1278,7 +1999,15 @@
      "normal_envase": 12590,
      "precio": 2997,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2997,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2997,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Papel higiénico doble hoja 4 un 23 mt",
@@ -1289,7 +2018,15 @@
      "normal_envase": null,
      "precio": 4680,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 4680,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 4680,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1309,7 +2046,15 @@
      "normal_envase": null,
      "precio": 1880,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1880,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1880,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Jabón Barra Ucare Rosa 90 g 3 un.",
@@ -1320,7 +2065,15 @@
      "normal_envase": null,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1000,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1000,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pack Jabón en barra Giselle toilette 3 un 90 g",
@@ -1331,7 +2084,15 @@
      "normal_envase": null,
      "precio": 2150,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2150,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2150,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Jabón barra oliva y aloe 85Gr",
@@ -1342,7 +2103,15 @@
      "normal_envase": null,
      "precio": 1890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1890,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1890,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1362,7 +2131,15 @@
      "normal_envase": 1200,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1000,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1000,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Leche Cuisine & Co Entera 1 L",
@@ -1373,18 +2150,34 @@
      "normal_envase": 1190,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
-     "nombre_producto": "Leche entera natural Colun sin tapa 1 L",
-     "url": "https://www.unimarc.cl/product/leche-entera-natural-colun-sin-tapa-1-l-2",
+     "nombre_producto": "Leche entera Fundo Río Alegre 1 L",
+     "url": "https://www.unimarc.cl/product/leche-entera-fundo-rio-alegre-1lt",
      "formato": null,
      "tamano": 1.0,
-     "precio_envase": 990,
-     "normal_envase": 1350,
-     "precio": 990,
+     "precio_envase": 1000,
+     "normal_envase": 1190,
+     "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 990,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Leche Soprole entera natural 1 L",
@@ -1395,7 +2188,15 @@
      "normal_envase": null,
      "precio": 1190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1190,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1190,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1415,7 +2216,15 @@
      "normal_envase": 3140,
      "precio": 2790,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2790,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2790,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Mantequilla con Sal Máxima 200 g",
@@ -1426,7 +2235,15 @@
      "normal_envase": null,
      "precio": 2488,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2488,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2488,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Mantequilla Surlat con sal 200 g",
@@ -1437,7 +2254,15 @@
      "normal_envase": 2790,
      "precio": 2500,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2500,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2500,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Mantequilla Soprole con sal 250 gr",
@@ -1448,7 +2273,15 @@
      "normal_envase": null,
      "precio": 2620,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2620,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2620,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1464,22 +2297,38 @@
      "url": "https://www.jumbo.cl/papas-jumbo-1-kg-6-unidad-aprox-granel/p",
      "formato": null,
      "tamano": 1.0,
-     "precio_envase": 1095,
+     "precio_envase": 1125,
      "normal_envase": null,
-     "precio": 1095,
+     "precio": 1125,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1095,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1095,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Papa Granel",
      "url": "https://www.santaisabel.cl/papas-jumbo-1-kg-6-unidad-aprox-granel/p",
      "formato": null,
      "tamano": 1.0,
-     "precio_envase": 1045,
+     "precio_envase": 1095,
      "normal_envase": null,
-     "precio": 1045,
+     "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1045,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1045,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Papas granel 500 g",
@@ -1490,7 +2339,15 @@
      "normal_envase": null,
      "precio": 2150,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2150,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2150,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1506,22 +2363,38 @@
      "url": "https://www.jumbo.cl/cebolla-granel/p",
      "formato": null,
      "tamano": 1.0,
-     "precio_envase": 975,
+     "precio_envase": 995,
      "normal_envase": null,
-     "precio": 975,
+     "precio": 995,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 975,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 975,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Cebolla Granel (1 a 2 un. Aprox)",
      "url": "https://www.santaisabel.cl/cebolla-granel/p",
      "formato": null,
      "tamano": 1.0,
-     "precio_envase": 945,
+     "precio_envase": 975,
      "normal_envase": null,
-     "precio": 945,
+     "precio": 975,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 945,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 945,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Cebolla malla 3 un aprox",
@@ -1532,7 +2405,15 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1990,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1552,7 +2433,15 @@
      "normal_envase": null,
      "precio": 1045,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1045,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1045,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Tomate larga vida granel 500 g",
@@ -1563,7 +2452,15 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1990,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1583,7 +2480,15 @@
      "normal_envase": null,
      "precio": 725,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 725,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 725,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Plátano Extra Granel (1 a 2 un. Aprox)",
@@ -1594,7 +2499,15 @@
      "normal_envase": null,
      "precio": 745,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 745,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 745,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Plátano granel 500 g",
@@ -1605,7 +2518,15 @@
      "normal_envase": null,
      "precio": 1490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1490,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1490,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1625,7 +2546,15 @@
      "normal_envase": null,
      "precio": 1045,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1045,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1045,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Pan Marraqueta Granel",
@@ -1636,7 +2565,15 @@
      "normal_envase": null,
      "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1095,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1095,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pan marraqueta Prosepan granel 500 g",
@@ -1647,7 +2584,15 @@
      "normal_envase": null,
      "precio": 2190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2190,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2190,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Pan marraqueta granel Amada Masa 500 g",
@@ -1658,7 +2603,15 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1990,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1990,
+      "fecha": "2026-11-02"
+     }
     }
    }
   },
@@ -1678,7 +2631,15 @@
      "normal_envase": 2290,
      "precio": 2025,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2025,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2025,
+      "fecha": "2026-11-02"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Pan Molde Pierre Blanco XL 700 g",
@@ -1689,7 +2650,15 @@
      "normal_envase": 2250,
      "precio": 1918,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 1918,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 1918,
+      "fecha": "2026-11-02"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pan de molde Pierre blanco XL 700 g",
@@ -1700,7 +2669,15 @@
      "normal_envase": 2290,
      "precio": 2143,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2143,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2143,
+      "fecha": "2026-11-02"
+     }
     },
     "alvi": {
      "nombre_producto": "Pan molde sandwich blanco",
@@ -1711,7 +2688,965 @@
      "normal_envase": null,
      "precio": 2241,
      "precio_tarjeta": null,
-     "fecha": "2026-11-02"
+     "fecha": "2026-11-03",
+     "antes": {
+      "precio": 2241,
+      "fecha": "2026-11-02"
+     },
+     "min_30d": {
+      "precio": 2241,
+      "fecha": "2026-11-02"
+     }
+    }
+   }
+  },
+  {
+   "id": "pollo-entero",
+   "nombre": "Pollo entero",
+   "categoria": "Proteínas",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "unimarc": {
+     "nombre_producto": "Pollo entero Super Pollo con menudencias 2.2 Kg",
+     "url": "https://www.unimarc.cl/product/pollo-entero-super-pollo-con-menudencias-3-kg",
+     "formato": "2.2 kg",
+     "tamano": 2.2,
+     "precio_envase": 7678,
+     "normal_envase": 9130,
+     "precio": 3490,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "pierna-pollo",
+   "nombre": "Pierna o tuto de pollo",
+   "categoria": "Proteínas",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Trutro Corto Pollo 700 g",
+     "url": "https://www.jumbo.cl/trutro-corto-pollo-700-g/p",
+     "formato": null,
+     "tamano": 0.7,
+     "precio_envase": 4790,
+     "normal_envase": null,
+     "precio": 6843,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Tuto Corto Super Pollo 800 g Aprox",
+     "url": "https://www.santaisabel.cl/trutro-corto-super-pollo-1-kg-aprox-260395-kg/p",
+     "formato": null,
+     "tamano": 0.8,
+     "precio_envase": 3488,
+     "normal_envase": null,
+     "precio": 4360,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "tapapecho",
+   "nombre": "Tapapecho o asiento (cazuela)",
+   "categoria": "Proteínas",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Tapapecho al Vacío 1.2 kg aprox.",
+     "url": "https://www.jumbo.cl/tapapecho-cat-v/p",
+     "formato": null,
+     "tamano": 1.2,
+     "precio_envase": 11028,
+     "normal_envase": null,
+     "precio": 9190,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Tapapecho al Vacío 1.5 kg aprox.",
+     "url": "https://www.santaisabel.cl/tapapecho-cat-v-15/p",
+     "formato": null,
+     "tamano": 1.5,
+     "precio_envase": 14985,
+     "normal_envase": null,
+     "precio": 9990,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Tapapecho vacuno al vacío 2.2 Kg",
+     "url": "https://www.unimarc.cl/product/tapapecho-vacuno-porc-kg",
+     "formato": "2.2 kg",
+     "tamano": 2.2,
+     "precio_envase": 24618,
+     "normal_envase": null,
+     "precio": 11190,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "pulpa-cerdo",
+   "nombre": "Pulpa de cerdo",
+   "categoria": "Proteínas",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Pulpa de Cerdo Sin Hueso Don Cerdo Granel kg",
+     "url": "https://www.jumbo.cl/pulpa-s-hueso-don-cerdo-kg/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 5990,
+     "normal_envase": null,
+     "precio": 5990,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Pulpa de Cerdo Sin Hueso Granel kg",
+     "url": "https://www.santaisabel.cl/pulpa-de-cerdo-super-kg/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 5990,
+     "normal_envase": null,
+     "precio": 5990,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Pulpa pierna Super Cerdo sin hueso 1 Kg",
+     "url": "https://www.unimarc.cl/product/pulpa-pierna-sin-hueso-super-cerdo-kg",
+     "formato": "1 kg",
+     "tamano": 1.0,
+     "precio_envase": 5990,
+     "normal_envase": null,
+     "precio": 5990,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Pulpa pierna Super Cerdo chilena 450 g",
+     "url": "https://www.alvi.cl/product/pulpa-pierna-chilena-super-cerdo-450-gr-2",
+     "formato": "450 g",
+     "tamano": 0.45,
+     "precio_envase": 4480,
+     "normal_envase": null,
+     "precio": 9956,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "vienesas",
+   "nombre": "Vienesas",
+   "categoria": "Proteínas",
+   "cantidad": 20,
+   "unidad": "un",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Vienesas La Preferida Sin Piel 380 g 7 un.",
+     "url": "https://www.jumbo.cl/vienesas-la-preferida-sin-piel-380-g/p",
+     "formato": null,
+     "tamano": 7.0,
+     "precio_envase": 2990,
+     "normal_envase": 4250,
+     "precio": 8543,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Vienesas La Preferida Sin Piel 380 g 7 un.",
+     "url": "https://www.santaisabel.cl/vienesas-la-preferida-sin-piel-380-g/p",
+     "formato": null,
+     "tamano": 7.0,
+     "precio_envase": 4250,
+     "normal_envase": null,
+     "precio": 12143,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Vienesas sureña La Preferida 10 un 500 g",
+     "url": "https://www.unimarc.cl/product/vienesas-surena-la-preferida-500-g",
+     "formato": "500 g",
+     "tamano": 10.0,
+     "precio_envase": 4650,
+     "normal_envase": null,
+     "precio": 9300,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Vienesa La Española 20 un 900 g",
+     "url": "https://www.alvi.cl/product/vienesa-la-espanola-20-un-900-g",
+     "formato": "900 g",
+     "tamano": 20.0,
+     "precio_envase": 3600,
+     "normal_envase": null,
+     "precio": 3600,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "sardinas",
+   "nombre": "Sardinas en conserva",
+   "categoria": "Proteínas",
+   "cantidad": 125,
+   "unidad": "g",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Sardinas en Aceite 90 g drenado",
+     "url": "https://www.jumbo.cl/sardinas-robinson-crusoe-lata-90-g-drenado-125-g-neto-en-aceite/p",
+     "formato": null,
+     "tamano": 0.09,
+     "precio_envase": 1990,
+     "normal_envase": 2211,
+     "precio": 2764,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Sardinas en Aceite 90 g drenado",
+     "url": "https://www.santaisabel.cl/sardinas-san-jose-lata-90-g-drenado-125-g-neto-en-aceite/p",
+     "formato": null,
+     "tamano": 0.09,
+     "precio_envase": 1450,
+     "normal_envase": 1611,
+     "precio": 2014,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Sardina en aceite Deyco lata 125 g neto - 75 g drenado",
+     "url": "https://www.unimarc.cl/product/sardina-en-aceite-deyco-125gr",
+     "formato": "75 g",
+     "tamano": 0.125,
+     "precio_envase": 1350,
+     "normal_envase": null,
+     "precio": 1350,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "garbanzos",
+   "nombre": "Garbanzos",
+   "categoria": "Despensa",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Garbanzos Pelados 1 kg",
+     "url": "https://www.jumbo.cl/garbanzos-pelados-1-kg-cuisine-and-co-1840322/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 2990,
+     "normal_envase": 3850,
+     "precio": 2990,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Garbanzos Pelados 1 kg",
+     "url": "https://www.santaisabel.cl/garbanzos-pelados-1-kg-cuisine-and-co-1840322/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 2890,
+     "normal_envase": 3710,
+     "precio": 2890,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Garbanzos Merkat sin piel 1 Kg",
+     "url": "https://www.unimarc.cl/product/garbanzos-merkat-sin-piel-1-kg",
+     "formato": "1 Kg",
+     "tamano": 1.0,
+     "precio_envase": 2490,
+     "normal_envase": null,
+     "precio": 2490,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Garbanzos Nuestra Cocina sin piel bolsa 1 Kg",
+     "url": "https://www.alvi.cl/product/garbanzos-sin-piel-bolsa",
+     "formato": "1 Kg",
+     "tamano": 1.0,
+     "precio_envase": 2930,
+     "normal_envase": null,
+     "precio": 2930,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "tallarines",
+   "nombre": "Tallarines",
+   "categoria": "Despensa",
+   "cantidad": 400,
+   "unidad": "g",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Tallarín N°77 Máxima 400 g",
+     "url": "https://www.jumbo.cl/tallarin-n-77-maxima-400-g-1757441/p",
+     "formato": null,
+     "tamano": 0.4,
+     "precio_envase": 450,
+     "normal_envase": null,
+     "precio": 450,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Tallarín N°77 Lucchetti 400 g",
+     "url": "https://www.santaisabel.cl/tallarines-n-77-lucchetti-bolsa-400-g/p",
+     "formato": null,
+     "tamano": 0.4,
+     "precio_envase": 990,
+     "normal_envase": 1480,
+     "precio": 990,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Pasta Tallarines 77 Nuestra Cocina 400 g",
+     "url": "https://www.unimarc.cl/product/pasta-nuestra-cocina-400-tallarines-77",
+     "formato": "400 g",
+     "tamano": 0.4,
+     "precio_envase": 810,
+     "normal_envase": null,
+     "precio": 810,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Pasta tallarines N°77 Merkat 400 g",
+     "url": "https://www.alvi.cl/product/pasta-tallarines-n-77-merkat-400-g",
+     "formato": "400 g",
+     "tamano": 0.4,
+     "precio_envase": 560,
+     "normal_envase": null,
+     "precio": 560,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "leche-polvo",
+   "nombre": "Leche en polvo entera",
+   "categoria": "Lácteos",
+   "cantidad": 800,
+   "unidad": "g",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Leche en Polvo Loncoleche Entera Instantánea 760 g",
+     "url": "https://www.jumbo.cl/leche-en-polvo-entera-instantanea-760-gr-2049607/p",
+     "formato": null,
+     "tamano": 0.76,
+     "precio_envase": 5990,
+     "normal_envase": 6890,
+     "precio": 6305,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Leche en Polvo Calo Entera 850 g",
+     "url": "https://www.santaisabel.cl/leche-entera-calo-en-polvo-bolsa-900-g-2/p",
+     "formato": null,
+     "tamano": 0.85,
+     "precio_envase": 7450,
+     "normal_envase": null,
+     "precio": 7012,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Leche en polvo Soprole entera instantánea 800 g",
+     "url": "https://www.unimarc.cl/product/leche-entera-en-polvo-inst-soprole-800gr",
+     "formato": "800 g",
+     "tamano": 0.8,
+     "precio_envase": 6170,
+     "normal_envase": 6990,
+     "precio": 6170,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Leche en polvo entera instantánea",
+     "url": "https://www.alvi.cl/product/leche-entera-pvo-instant-soprole-400-gr",
+     "formato": "400 g",
+     "tamano": 0.4,
+     "precio_envase": 2990,
+     "normal_envase": null,
+     "precio": 5980,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "cafe",
+   "nombre": "Café instantáneo",
+   "categoria": "Despensa",
+   "cantidad": 170,
+   "unidad": "g",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Café Instantáneo Nescafé Doble Choca Moka Mixes 184 g (8 un. x 23g)",
+     "url": "https://www.jumbo.cl/cafe-choca-mocha-nescafe-23-g-cu-caja-8-sobres-mixes/p",
+     "formato": null,
+     "tamano": 0.184,
+     "precio_envase": 4390,
+     "normal_envase": null,
+     "precio": 4056,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Café Instantáneo Nescafé Doble Choca Moka Mixes 184 g (8 un. x 23g)",
+     "url": "https://www.santaisabel.cl/cafe-choca-mocha-nescafe-23-g-cu-caja-8-sobres-mixes/p",
+     "formato": null,
+     "tamano": 0.184,
+     "precio_envase": 4250,
+     "normal_envase": 6790,
+     "precio": 3927,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Café instantáneo Monterrey clásico lata 170 g",
+     "url": "https://www.unimarc.cl/product/cafe-monterrey-clasico-lata-170-g",
+     "formato": "170 g",
+     "tamano": 0.17,
+     "precio_envase": 4150,
+     "normal_envase": 5490,
+     "precio": 4150,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Café instantáneo Monterrey clásico lata 170 g",
+     "url": "https://www.alvi.cl/product/cafe-instantaneo-monterrey-clasico-lata-170-g",
+     "formato": "170 g",
+     "tamano": 0.17,
+     "precio_envase": 5950,
+     "normal_envase": null,
+     "precio": 5950,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "choclo",
+   "nombre": "Choclo en conserva",
+   "categoria": "Despensa",
+   "cantidad": 300,
+   "unidad": "g",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Choclo Dulce Cuisine & Co 150 g drenado, 241 G neto",
+     "url": "https://www.jumbo.cl/choclo-dulce-cuisine-and-co-185-g-140-g-1898267/p",
+     "formato": null,
+     "tamano": 0.241,
+     "precio_envase": 920,
+     "normal_envase": 1440,
+     "precio": 1145,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Choclo Dulce Cuisine & Co 150 g drenado, 241 G neto",
+     "url": "https://www.santaisabel.cl/choclo-dulce-cuisine-and-co-185-g-140-g-1898267/p",
+     "formato": null,
+     "tamano": 0.241,
+     "precio_envase": 870,
+     "normal_envase": null,
+     "precio": 1083,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Choclos Wasil tetra 340 g neto - 190 g drenado",
+     "url": "https://www.unimarc.cl/product/choclo-tetra-wasil-340gr",
+     "formato": "190 g",
+     "tamano": 0.34,
+     "precio_envase": 1650,
+     "normal_envase": null,
+     "precio": 1456,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Choclo en conserva",
+     "url": "https://www.alvi.cl/product/choclo-en-conserva-nuestra-cocina-425-gr",
+     "formato": "250 g",
+     "tamano": 0.25,
+     "precio_envase": 1450,
+     "normal_envase": null,
+     "precio": 1740,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "detergente-polvo",
+   "nombre": "Detergente en polvo",
+   "categoria": "Limpieza y aseo",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Detergente en Polvo Máxima 3 kg",
+     "url": "https://www.jumbo.cl/detergente-maxima-en-polvo-3-kg/p",
+     "formato": null,
+     "tamano": 3.0,
+     "precio_envase": 4550,
+     "normal_envase": null,
+     "precio": 1517,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Detergente en Polvo Máxima 3 kg",
+     "url": "https://www.santaisabel.cl/detergente-en-polvo-3-kg/p",
+     "formato": null,
+     "tamano": 3.0,
+     "precio_envase": 4210,
+     "normal_envase": null,
+     "precio": 1403,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Detergente en polvo Merkat matic floral 2.7 Kg",
+     "url": "https://www.unimarc.cl/product/det-polvo-matic-floral-merkat-2-7-kg",
+     "formato": "2.7 Kg",
+     "tamano": 2.7,
+     "precio_envase": 3790,
+     "normal_envase": null,
+     "precio": 1404,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Detergente en polvo Igenix bolsa 500 gr",
+     "url": "https://www.alvi.cl/product/detergente-en-polvo-ropa-igenix-500-gr",
+     "formato": "500 g",
+     "tamano": 0.5,
+     "precio_envase": 1130,
+     "normal_envase": null,
+     "precio": 2260,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "toalla-papel",
+   "nombre": "Toalla de papel",
+   "categoria": "Limpieza y aseo",
+   "cantidad": 2,
+   "unidad": "rollos",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Toalla de Papel Máxima Doble Hoja 10 m 2 un.",
+     "url": "https://www.jumbo.cl/toalla-max-3x10-2067051/p",
+     "formato": null,
+     "tamano": 2.0,
+     "precio_envase": 1090,
+     "normal_envase": null,
+     "precio": 1090,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Toalla de Papel Abolengo Doble Hoja 10 m 3 un.",
+     "url": "https://www.santaisabel.cl/toalla-de-papel-abolengo-3-unid-10-mt-c-u/p",
+     "formato": null,
+     "tamano": 3.0,
+     "precio_envase": 990,
+     "normal_envase": 1560,
+     "precio": 660,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Toalla de papel Nubelín doble hoja 3 un de 12 m",
+     "url": "https://www.unimarc.cl/product/toalla-papel-doble-hoja-nubelin-3x12mt",
+     "formato": null,
+     "tamano": 3.0,
+     "precio_envase": 1490,
+     "normal_envase": 2150,
+     "precio": 993,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Toalla de papel ultra doble hoja 2 un de 14 m",
+     "url": "https://www.alvi.cl/product/toalla-papel-ultra-dh-nova-14mtx2",
+     "formato": null,
+     "tamano": 2.0,
+     "precio_envase": 1800,
+     "normal_envase": null,
+     "precio": 1800,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "bolsas-basura",
+   "nombre": "Bolsas de basura",
+   "categoria": "Limpieza y aseo",
+   "cantidad": 10,
+   "unidad": "un",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Bolsa de Basura Virutex Blanca con Asas 100% Reciclada 50 x 65 cm 10 un.",
+     "url": "https://www.jumbo.cl/bolsa-blanca-2038119/p",
+     "formato": null,
+     "tamano": 10.0,
+     "precio_envase": 490,
+     "normal_envase": 590,
+     "precio": 490,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Bolsa de Basura con Asas Virutex 50 x 65 cm 10 un.",
+     "url": "https://www.santaisabel.cl/bolsa-basura-con-asas-50x65-10un-virutex-2002754/p",
+     "formato": null,
+     "tamano": 10.0,
+     "precio_envase": 400,
+     "normal_envase": 520,
+     "precio": 400,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Bolsa de basura Smart Clean con asas 50 x 65 cm 10 un",
+     "url": "https://www.unimarc.cl/product/bolsa-basura-c-a-50x65-smart-clean-10-un",
+     "formato": null,
+     "tamano": 10.0,
+     "precio_envase": 470,
+     "normal_envase": null,
+     "precio": 470,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Bolsa de basura 50 cm x 70 cm rollo",
+     "url": "https://www.alvi.cl/product/bolsa-de-basura-50-cm-x-70-cm-rollo",
+     "formato": "10 un",
+     "tamano": 10.0,
+     "precio_envase": 620,
+     "normal_envase": null,
+     "precio": 620,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "pasta-dental",
+   "nombre": "Pasta dental",
+   "categoria": "Limpieza y aseo",
+   "cantidad": 90,
+   "unidad": "g",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Pasta Dental Colgate Triple Acción Extra Blancura 120 g",
+     "url": "https://www.jumbo.cl/crema-dental-colga-2078387/p",
+     "formato": null,
+     "tamano": 0.12,
+     "precio_envase": 1000,
+     "normal_envase": null,
+     "precio": 750,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Pasta Dental Pepsodent Xtra Whitening 130 g",
+     "url": "https://www.santaisabel.cl/pasta-de-dientes-pepsodent-130-g-xtra-whiteni/p",
+     "formato": null,
+     "tamano": 0.13,
+     "precio_envase": 990,
+     "normal_envase": 1560,
+     "precio": 685,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Pasta dental Aquafresh intense white 2 u de 96 g",
+     "url": "https://www.unimarc.cl/product/pasta-dent-intens-white-aquafresh-2x96gr",
+     "formato": "192 g",
+     "tamano": 0.192,
+     "precio_envase": 2000,
+     "normal_envase": 2590,
+     "precio": 937,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Pasta dental white & shine",
+     "url": "https://www.alvi.cl/product/pasta-dental-white-shine-aquafres-96-75g",
+     "formato": "97 g",
+     "tamano": 0.097,
+     "precio_envase": 1040,
+     "normal_envase": null,
+     "precio": 965,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "toallas-higienicas",
+   "nombre": "Toallas higiénicas",
+   "categoria": "Limpieza y aseo",
+   "cantidad": 16,
+   "unidad": "un",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Toallas Higiénicas Nosotras Normal Suave 10 un.",
+     "url": "https://www.jumbo.cl/toallas-femeninas-nosotras-normal-con-alas-suave-10-unid/p",
+     "formato": null,
+     "tamano": 10.0,
+     "precio_envase": 990,
+     "normal_envase": 1200,
+     "precio": 1584,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Toallas Higiénicas Family Care Normal Suave 10 un.",
+     "url": "https://www.santaisabel.cl/toalla-higieni-nor-2041295/p",
+     "formato": null,
+     "tamano": 10.0,
+     "precio_envase": 704,
+     "normal_envase": 880,
+     "precio": 1126,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Toalla higiénica Ladysoft ultradelgada suave con alas 16 un",
+     "url": "https://www.unimarc.cl/product/toalla-diur-u-fina-suave-ladysoft-16-un",
+     "formato": null,
+     "tamano": 16.0,
+     "precio_envase": 2000,
+     "normal_envase": 3450,
+     "precio": 2000,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Toalla higiénica normal con alas tela suave",
+     "url": "https://www.alvi.cl/product/toalla-higienica-normal-con-alas-tela-suave",
+     "formato": "8 un",
+     "tamano": 8.0,
+     "precio_envase": 820,
+     "normal_envase": null,
+     "precio": 1640,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "panales",
+   "nombre": "Pañales talla G",
+   "categoria": "Limpieza y aseo",
+   "cantidad": 40,
+   "unidad": "un",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Pañales Zeukid Premium Talla G 94 un.",
+     "url": "https://www.jumbo.cl/panal-premium-g-94-un-zeukid-1932471/p",
+     "formato": null,
+     "tamano": 94.0,
+     "precio_envase": 15192,
+     "normal_envase": 18990,
+     "precio": 6465,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Pañales Zeukid Premium Talla G 94 un.",
+     "url": "https://www.santaisabel.cl/panales-zeukid-premium-talla-g-94-un-1932471/p",
+     "formato": null,
+     "tamano": 94.0,
+     "precio_envase": 12990,
+     "normal_envase": 18790,
+     "precio": 5528,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Pañal Kids for Kids ultra soft talla G 38 un",
+     "url": "https://www.unimarc.cl/product/panal-ultra-soft-g-kids-for-kids-38-un",
+     "formato": null,
+     "tamano": 38.0,
+     "precio_envase": 6990,
+     "normal_envase": 8550,
+     "precio": 7358,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "alvi": {
+     "nombre_producto": "Pañal Kids for Kids ultra soft talla G 92 un",
+     "url": "https://www.alvi.cl/product/panal-ultra-soft-g-kids-for-kids-92-un-2",
+     "formato": "92 un",
+     "tamano": 92.0,
+     "precio_envase": 15950,
+     "normal_envase": null,
+     "precio": 6935,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "zanahoria",
+   "nombre": "Zanahoria",
+   "categoria": "Frutas y verduras",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Zanahoria Granel (3 a 4 un. Aprox)",
+     "url": "https://www.jumbo.cl/zanahoria-jumbo-granel/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 625,
+     "normal_envase": 5890,
+     "precio": 625,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Zanahoria Bolsa 1 kg",
+     "url": "https://www.santaisabel.cl/zanahoria-1-kg/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 1450,
+     "normal_envase": null,
+     "precio": 1450,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Zanahoria bolsa 1 Kg",
+     "url": "https://www.unimarc.cl/product/zanahoria-bolsa-1-kg-2",
+     "formato": "1 Kg",
+     "tamano": 1.0,
+     "precio_envase": 1590,
+     "normal_envase": null,
+     "precio": 1590,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "manzana",
+   "nombre": "Manzana",
+   "categoria": "Frutas y verduras",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Manzana Sugarbee Granel",
+     "url": "https://www.jumbo.cl/manzana-sugar-bee-kg-1863058-kg/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 1156,
+     "normal_envase": null,
+     "precio": 1156,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Manzana Fuji Granel",
+     "url": "https://www.santaisabel.cl/manzana-fuji-jumbo-granel/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 1145,
+     "normal_envase": null,
+     "precio": 1145,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Manzana verde granel 500 g",
+     "url": "https://www.unimarc.cl/product/manzana-verde-kg",
+     "formato": "500 g",
+     "tamano": 0.5,
+     "precio_envase": 1295,
+     "normal_envase": null,
+     "precio": 2590,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    }
+   }
+  },
+  {
+   "id": "limon",
+   "nombre": "Limón",
+   "categoria": "Frutas y verduras",
+   "cantidad": 1,
+   "unidad": "kg",
+   "precios": {
+    "jumbo": {
+     "nombre_producto": "Limón Granel (1 a 2 un. Aprox)",
+     "url": "https://www.jumbo.cl/limon-jumbo-granel/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 1025,
+     "normal_envase": null,
+     "precio": 1025,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "santaisabel": {
+     "nombre_producto": "Limón Granel (1 a 2 un. Aprox)",
+     "url": "https://www.santaisabel.cl/limon-granel/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 995,
+     "normal_envase": null,
+     "precio": 995,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
+    },
+    "unimarc": {
+     "nombre_producto": "Limón granel 500 g",
+     "url": "https://www.unimarc.cl/product/limon-granel-1-kg",
+     "formato": "500 g",
+     "tamano": 0.5,
+     "precio_envase": 995,
+     "normal_envase": null,
+     "precio": 1990,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-03"
     }
    }
   }
