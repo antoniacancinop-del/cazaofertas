@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-03T07:06-03:00",
- "dias_historial": 2,
+ "actualizado": "2026-11-04T07:19-03:00",
+ "dias_historial": 3,
  "tiendas": [
   {
    "id": "jumbo",
    "nombre": "Jumbo",
    "estado": "ok",
-   "fecha": "2026-11-03",
+   "fecha": "2026-11-04",
    "productos": 52,
    "solo_ofertas": false
   },
@@ -14,8 +14,8 @@
    "id": "santaisabel",
    "nombre": "Santa Isabel",
    "estado": "ok",
-   "fecha": "2026-11-03",
-   "productos": 49,
+   "fecha": "2026-11-04",
+   "productos": 50,
    "solo_ofertas": false
   },
   {
@@ -36,7 +36,7 @@
    "id": "unimarc",
    "nombre": "Unimarc",
    "estado": "ok",
-   "fecha": "2026-11-03",
+   "fecha": "2026-11-04",
    "productos": 53,
    "solo_ofertas": false
   },
@@ -44,7 +44,7 @@
    "id": "alvi",
    "nombre": "Alvi",
    "estado": "ok",
-   "fecha": "2026-11-03",
+   "fecha": "2026-11-04",
    "productos": 39,
    "solo_ofertas": false
   },
@@ -73,7 +73,7 @@
      "normal_envase": null,
      "precio": 6990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 6990,
       "fecha": "2026-11-02"
@@ -92,7 +92,7 @@
      "normal_envase": null,
      "precio": 7587,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 7587,
       "fecha": "2026-11-02"
@@ -111,7 +111,7 @@
      "normal_envase": 7690,
      "precio": 6929,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 6929,
       "fecha": "2026-11-02"
@@ -130,7 +130,7 @@
      "normal_envase": null,
      "precio": 7453,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 7453,
       "fecha": "2026-11-02"
@@ -158,7 +158,7 @@
      "normal_envase": null,
      "precio": 3195,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 3195,
       "fecha": "2026-11-02"
@@ -177,7 +177,7 @@
      "normal_envase": null,
      "precio": 5238,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 5238,
       "fecha": "2026-11-02"
@@ -196,7 +196,7 @@
      "normal_envase": null,
      "precio": 3790,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2890,
       "fecha": "2026-11-02"
@@ -220,11 +220,11 @@
      "url": "https://www.jumbo.cl/molida-fiesta-atm-2074730/p",
      "formato": null,
      "tamano": 0.5,
-     "precio_envase": 5590,
+     "precio_envase": 5890,
      "normal_envase": null,
-     "precio": 11180,
+     "precio": 11780,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 11180,
       "fecha": "2026-11-02"
@@ -243,7 +243,7 @@
      "normal_envase": null,
      "precio": 12360,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 12360,
       "fecha": "2026-11-02"
@@ -262,7 +262,7 @@
      "normal_envase": null,
      "precio": 6760,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 6760,
       "fecha": "2026-11-02"
@@ -281,7 +281,7 @@
      "normal_envase": null,
      "precio": 5680,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 5680,
       "fecha": "2026-11-02"
@@ -309,7 +309,7 @@
      "normal_envase": null,
      "precio": 13390,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 13390,
       "fecha": "2026-11-02"
@@ -328,7 +328,7 @@
      "normal_envase": null,
      "precio": 12390,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 12390,
       "fecha": "2026-11-02"
@@ -347,7 +347,7 @@
      "normal_envase": null,
      "precio": 15590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 15590,
       "fecha": "2026-11-02"
@@ -375,7 +375,7 @@
      "normal_envase": 8990,
      "precio": 7800,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 7800,
       "fecha": "2026-11-02"
@@ -394,7 +394,7 @@
      "normal_envase": null,
      "precio": 5890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 4990,
       "fecha": "2026-11-02"
@@ -422,7 +422,7 @@
      "normal_envase": null,
      "precio": 7980,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 7980,
       "fecha": "2026-11-02"
@@ -441,7 +441,7 @@
      "normal_envase": null,
      "precio": 9780,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 7980,
       "fecha": "2026-11-02"
@@ -460,7 +460,7 @@
      "normal_envase": null,
      "precio": 10580,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 10580,
       "fecha": "2026-11-02"
@@ -479,7 +479,7 @@
      "normal_envase": null,
      "precio": 8920,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 8920,
       "fecha": "2026-11-02"
@@ -507,7 +507,7 @@
      "normal_envase": null,
      "precio": 2890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2890,
       "fecha": "2026-11-02"
@@ -526,7 +526,7 @@
      "normal_envase": null,
      "precio": 2780,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2780,
       "fecha": "2026-11-02"
@@ -554,7 +554,7 @@
      "normal_envase": 1510,
      "precio": 1290,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1290,
       "fecha": "2026-11-02"
@@ -573,7 +573,7 @@
      "normal_envase": 1373,
      "precio": 1429,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1429,
       "fecha": "2026-11-02"
@@ -592,7 +592,7 @@
      "normal_envase": null,
      "precio": 1086,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1086,
       "fecha": "2026-11-02"
@@ -611,7 +611,7 @@
      "normal_envase": null,
      "precio": 1017,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1017,
       "fecha": "2026-11-02"
@@ -631,15 +631,15 @@
    "unidad": "un",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Huevos Cintazul Grandes Color 12 un.",
-     "url": "https://www.jumbo.cl/huevos-grandes-color-cintazul-bandeja-12-unid/p",
+     "nombre_producto": "Huevos Cintazul Grandes Blancos 12 un.",
+     "url": "https://www.jumbo.cl/huevos-grandes-blancos-cintazul-bandeja-12-unid/p",
      "formato": null,
      "tamano": 12.0,
      "precio_envase": 3390,
-     "normal_envase": 4170,
+     "normal_envase": 3950,
      "precio": 8475,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 8475,
       "fecha": "2026-11-02"
@@ -658,7 +658,7 @@
      "normal_envase": 4010,
      "precio": 7500,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 7500,
       "fecha": "2026-11-02"
@@ -677,7 +677,7 @@
      "normal_envase": null,
      "precio": 7850,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 7315,
       "fecha": "2026-11-02"
@@ -696,7 +696,7 @@
      "normal_envase": null,
      "precio": 8990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 9090,
       "fecha": "2026-11-02"
@@ -724,7 +724,7 @@
      "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 990,
       "fecha": "2026-11-02"
@@ -743,7 +743,7 @@
      "normal_envase": 1350,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 950,
       "fecha": "2026-11-02"
@@ -762,7 +762,7 @@
      "normal_envase": null,
      "precio": 890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 890,
       "fecha": "2026-11-02"
@@ -781,7 +781,7 @@
      "normal_envase": null,
      "precio": 890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 890,
       "fecha": "2026-11-02"
@@ -809,7 +809,7 @@
      "normal_envase": null,
      "precio": 450,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 450,
       "fecha": "2026-11-02"
@@ -828,7 +828,7 @@
      "normal_envase": null,
      "precio": 430,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 430,
       "fecha": "2026-11-02"
@@ -847,7 +847,7 @@
      "normal_envase": null,
      "precio": 520,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 520,
       "fecha": "2026-11-02"
@@ -866,7 +866,7 @@
      "normal_envase": null,
      "precio": 560,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 560,
       "fecha": "2026-11-02"
@@ -894,7 +894,7 @@
      "normal_envase": 2450,
      "precio": 2211,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2211,
       "fecha": "2026-11-02"
@@ -913,7 +913,7 @@
      "normal_envase": null,
      "precio": 2656,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2656,
       "fecha": "2026-11-02"
@@ -932,7 +932,7 @@
      "normal_envase": 2290,
      "precio": 2222,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2222,
       "fecha": "2026-11-02"
@@ -951,7 +951,7 @@
      "normal_envase": null,
      "precio": 2456,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2456,
       "fecha": "2026-11-02"
@@ -979,7 +979,7 @@
      "normal_envase": 1890,
      "precio": 1190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1190,
       "fecha": "2026-11-02"
@@ -998,7 +998,7 @@
      "normal_envase": 1150,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1000,
       "fecha": "2026-11-02"
@@ -1017,7 +1017,7 @@
      "normal_envase": null,
      "precio": 910,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 910,
       "fecha": "2026-11-02"
@@ -1036,7 +1036,7 @@
      "normal_envase": null,
      "precio": 910,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 910,
       "fecha": "2026-11-02"
@@ -1064,7 +1064,7 @@
      "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 990,
       "fecha": "2026-11-02"
@@ -1075,22 +1075,22 @@
      }
     },
     "santaisabel": {
-     "nombre_producto": "Harina Cuisine & Co Sin Polvos de Hornear 1 kg",
-     "url": "https://www.santaisabel.cl/harina-sin-polvo-de-hornear-1-kg-1899550/p",
+     "nombre_producto": "Harina Máxima Sin Polvos de Hornear 1 kg",
+     "url": "https://www.santaisabel.cl/harina-maxima-sin-polvo-1-kg-1624899/p",
      "formato": null,
      "tamano": 1.0,
-     "precio_envase": 1000,
-     "normal_envase": 1370,
-     "precio": 1000,
+     "precio_envase": 960,
+     "normal_envase": null,
+     "precio": 960,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1000,
       "fecha": "2026-11-02"
      },
      "min_30d": {
-      "precio": 1000,
-      "fecha": "2026-11-02"
+      "precio": 960,
+      "fecha": "2026-11-04"
      }
     },
     "unimarc": {
@@ -1102,7 +1102,7 @@
      "normal_envase": null,
      "precio": 870,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 870,
       "fecha": "2026-11-02"
@@ -1121,7 +1121,7 @@
      "normal_envase": null,
      "precio": 820,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 820,
       "fecha": "2026-11-02"
@@ -1149,7 +1149,7 @@
      "normal_envase": null,
      "precio": 2490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2490,
       "fecha": "2026-11-02"
@@ -1168,7 +1168,7 @@
      "normal_envase": 3650,
      "precio": 2690,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2690,
       "fecha": "2026-11-02"
@@ -1187,7 +1187,7 @@
      "normal_envase": 2590,
      "precio": 2300,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2300,
       "fecha": "2026-11-02"
@@ -1206,7 +1206,7 @@
      "normal_envase": null,
      "precio": 2990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2990,
       "fecha": "2026-11-02"
@@ -1234,7 +1234,7 @@
      "normal_envase": 2720,
      "precio": 2176,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2176,
       "fecha": "2026-11-02"
@@ -1253,7 +1253,7 @@
      "normal_envase": 2610,
      "precio": 2200,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2200,
       "fecha": "2026-11-02"
@@ -1272,7 +1272,7 @@
      "normal_envase": null,
      "precio": 2290,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2290,
       "fecha": "2026-11-02"
@@ -1291,7 +1291,7 @@
      "normal_envase": null,
      "precio": 2590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2590,
       "fecha": "2026-11-02"
@@ -1319,7 +1319,7 @@
      "normal_envase": 2490,
      "precio": 2843,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2843,
       "fecha": "2026-11-02"
@@ -1338,7 +1338,7 @@
      "normal_envase": null,
      "precio": 1980,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1980,
       "fecha": "2026-11-02"
@@ -1357,7 +1357,7 @@
      "normal_envase": 1150,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2000,
       "fecha": "2026-11-02"
@@ -1376,7 +1376,7 @@
      "normal_envase": null,
      "precio": 2929,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2929,
       "fecha": "2026-11-02"
@@ -1404,7 +1404,7 @@
      "normal_envase": 1060,
      "precio": 690,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 690,
       "fecha": "2026-11-02"
@@ -1423,7 +1423,7 @@
      "normal_envase": null,
      "precio": 370,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 370,
       "fecha": "2026-11-02"
@@ -1434,15 +1434,15 @@
      }
     },
     "unimarc": {
-     "nombre_producto": "Salsa de tomate Merkat italiana 200 g",
-     "url": "https://www.unimarc.cl/product/salsa-de-tomate-merkat-italiana-200-g",
+     "nombre_producto": "Salsa de tomate Nuestra Cocina con carne 200 g",
+     "url": "https://www.unimarc.cl/product/salsa-d-tom-nuestra-cocina-200g-c-carne",
      "formato": "200 g",
      "tamano": 0.2,
-     "precio_envase": 380,
+     "precio_envase": 710,
      "normal_envase": null,
-     "precio": 380,
+     "precio": 710,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 380,
       "fecha": "2026-11-02"
@@ -1461,7 +1461,7 @@
      "normal_envase": null,
      "precio": 380,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 380,
       "fecha": "2026-11-02"
@@ -1489,7 +1489,7 @@
      "normal_envase": null,
      "precio": 490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 490,
       "fecha": "2026-11-02"
@@ -1508,7 +1508,7 @@
      "normal_envase": null,
      "precio": 480,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 480,
       "fecha": "2026-11-02"
@@ -1527,7 +1527,7 @@
      "normal_envase": 510,
      "precio": 470,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 470,
       "fecha": "2026-11-02"
@@ -1546,7 +1546,7 @@
      "normal_envase": null,
      "precio": 540,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 540,
       "fecha": "2026-11-02"
@@ -1574,7 +1574,7 @@
      "normal_envase": 4610,
      "precio": 3190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 3190,
       "fecha": "2026-11-02"
@@ -1593,7 +1593,7 @@
      "normal_envase": 2970,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1990,
       "fecha": "2026-11-02"
@@ -1612,7 +1612,7 @@
      "normal_envase": 2490,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2000,
       "fecha": "2026-11-02"
@@ -1631,7 +1631,7 @@
      "normal_envase": null,
      "precio": 2620,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2620,
       "fecha": "2026-11-02"
@@ -1659,7 +1659,7 @@
      "normal_envase": 12790,
      "precio": 9900,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 9900,
       "fecha": "2026-11-02"
@@ -1670,15 +1670,15 @@
      }
     },
     "santaisabel": {
-     "nombre_producto": "Detergente Líquido Máxima 5 L",
-     "url": "https://www.santaisabel.cl/detergente-liquido-maxima-5-l/p",
+     "nombre_producto": "Detergente Líquido Máxima 2 L",
+     "url": "https://www.santaisabel.cl/detergente-liquido-2-litros-maxima/p",
      "formato": null,
-     "tamano": 5.0,
-     "precio_envase": 4520,
+     "tamano": 2.0,
+     "precio_envase": 1890,
      "normal_envase": null,
-     "precio": 2712,
+     "precio": 2835,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2712,
       "fecha": "2026-11-02"
@@ -1697,7 +1697,7 @@
      "normal_envase": null,
      "precio": 2214,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2214,
       "fecha": "2026-11-02"
@@ -1716,7 +1716,7 @@
      "normal_envase": null,
      "precio": 2304,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2304,
       "fecha": "2026-11-02"
@@ -1744,7 +1744,7 @@
      "normal_envase": null,
      "precio": 1244,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1244,
       "fecha": "2026-11-02"
@@ -1763,7 +1763,7 @@
      "normal_envase": 4070,
      "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1095,
       "fecha": "2026-11-02"
@@ -1782,7 +1782,7 @@
      "normal_envase": null,
      "precio": 1244,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1244,
       "fecha": "2026-11-02"
@@ -1801,7 +1801,7 @@
      "normal_envase": null,
      "precio": 1221,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1221,
       "fecha": "2026-11-02"
@@ -1829,7 +1829,7 @@
      "normal_envase": null,
      "precio": 3580,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 3580,
       "fecha": "2026-11-02"
@@ -1848,7 +1848,7 @@
      "normal_envase": 2190,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2000,
       "fecha": "2026-11-02"
@@ -1872,18 +1872,18 @@
      "url": "https://www.jumbo.cl/limpiador-liquido-poett-lavanda-1-8-l/p",
      "formato": null,
      "tamano": 1.8,
-     "precio_envase": 3250,
+     "precio_envase": 2850,
      "normal_envase": null,
-     "precio": 1625,
+     "precio": 1425,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1625,
       "fecha": "2026-11-02"
      },
      "min_30d": {
-      "precio": 1625,
-      "fecha": "2026-11-02"
+      "precio": 1425,
+      "fecha": "2026-11-04"
      }
     },
     "santaisabel": {
@@ -1895,7 +1895,7 @@
      "normal_envase": 3050,
      "precio": 1195,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1195,
       "fecha": "2026-11-02"
@@ -1914,7 +1914,7 @@
      "normal_envase": null,
      "precio": 3550,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 3550,
       "fecha": "2026-11-02"
@@ -1933,7 +1933,7 @@
      "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 990,
       "fecha": "2026-11-02"
@@ -1961,7 +1961,7 @@
      "normal_envase": null,
      "precio": 2992,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2992,
       "fecha": "2026-11-02"
@@ -1980,7 +1980,7 @@
      "normal_envase": 1960,
      "precio": 2970,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2970,
       "fecha": "2026-11-02"
@@ -1999,7 +1999,7 @@
      "normal_envase": 12590,
      "precio": 2997,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2997,
       "fecha": "2026-11-02"
@@ -2010,15 +2010,15 @@
      }
     },
     "alvi": {
-     "nombre_producto": "Papel higiénico doble hoja 4 un 23 mt",
-     "url": "https://www.alvi.cl/product/ph-doble-hoja-noble-23mx4-mt",
+     "nombre_producto": "Papel higiénico Ovella doble hoja 4 un (30 m)",
+     "url": "https://www.alvi.cl/product/papel-hig-dh-ovella-30mtx4-2",
      "formato": null,
      "tamano": 4.0,
-     "precio_envase": 1560,
+     "precio_envase": 1750,
      "normal_envase": null,
-     "precio": 4680,
+     "precio": 5250,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 4680,
       "fecha": "2026-11-02"
@@ -2046,7 +2046,7 @@
      "normal_envase": null,
      "precio": 1880,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1880,
       "fecha": "2026-11-02"
@@ -2065,7 +2065,7 @@
      "normal_envase": null,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1000,
       "fecha": "2026-11-02"
@@ -2084,7 +2084,7 @@
      "normal_envase": null,
      "precio": 2150,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2150,
       "fecha": "2026-11-02"
@@ -2103,7 +2103,7 @@
      "normal_envase": null,
      "precio": 1890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1890,
       "fecha": "2026-11-02"
@@ -2131,7 +2131,7 @@
      "normal_envase": 1200,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1000,
       "fecha": "2026-11-02"
@@ -2150,7 +2150,7 @@
      "normal_envase": 1190,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 990,
       "fecha": "2026-11-02"
@@ -2169,7 +2169,7 @@
      "normal_envase": 1190,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 990,
       "fecha": "2026-11-02"
@@ -2188,7 +2188,7 @@
      "normal_envase": null,
      "precio": 1190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1190,
       "fecha": "2026-11-02"
@@ -2216,7 +2216,7 @@
      "normal_envase": 3140,
      "precio": 2790,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2790,
       "fecha": "2026-11-02"
@@ -2235,7 +2235,7 @@
      "normal_envase": null,
      "precio": 2488,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2488,
       "fecha": "2026-11-02"
@@ -2254,7 +2254,7 @@
      "normal_envase": 2790,
      "precio": 2500,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2500,
       "fecha": "2026-11-02"
@@ -2273,7 +2273,7 @@
      "normal_envase": null,
      "precio": 2620,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2620,
       "fecha": "2026-11-02"
@@ -2301,7 +2301,7 @@
      "normal_envase": null,
      "precio": 1125,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1095,
       "fecha": "2026-11-02"
@@ -2320,7 +2320,7 @@
      "normal_envase": null,
      "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1045,
       "fecha": "2026-11-02"
@@ -2339,7 +2339,7 @@
      "normal_envase": null,
      "precio": 2150,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2150,
       "fecha": "2026-11-02"
@@ -2367,7 +2367,7 @@
      "normal_envase": null,
      "precio": 995,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 975,
       "fecha": "2026-11-02"
@@ -2386,7 +2386,7 @@
      "normal_envase": null,
      "precio": 975,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 945,
       "fecha": "2026-11-02"
@@ -2405,7 +2405,7 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1990,
       "fecha": "2026-11-02"
@@ -2433,7 +2433,7 @@
      "normal_envase": null,
      "precio": 1045,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1045,
       "fecha": "2026-11-02"
@@ -2442,6 +2442,17 @@
       "precio": 1045,
       "fecha": "2026-11-02"
      }
+    },
+    "santaisabel": {
+     "nombre_producto": "Tomate Cóctel Variedades Granel",
+     "url": "https://www.santaisabel.cl/tomate-cocktail-variedades-granel-261255-kg/p",
+     "formato": null,
+     "tamano": 1.0,
+     "precio_envase": 1338,
+     "normal_envase": null,
+     "precio": 1338,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-04"
     },
     "unimarc": {
      "nombre_producto": "Tomate larga vida granel 500 g",
@@ -2452,7 +2463,7 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1990,
       "fecha": "2026-11-02"
@@ -2480,7 +2491,7 @@
      "normal_envase": null,
      "precio": 725,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 725,
       "fecha": "2026-11-02"
@@ -2499,7 +2510,7 @@
      "normal_envase": null,
      "precio": 745,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 745,
       "fecha": "2026-11-02"
@@ -2518,7 +2529,7 @@
      "normal_envase": null,
      "precio": 1490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1490,
       "fecha": "2026-11-02"
@@ -2546,7 +2557,7 @@
      "normal_envase": null,
      "precio": 1045,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1045,
       "fecha": "2026-11-02"
@@ -2565,7 +2576,7 @@
      "normal_envase": null,
      "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1095,
       "fecha": "2026-11-02"
@@ -2584,7 +2595,7 @@
      "normal_envase": null,
      "precio": 2190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2190,
       "fecha": "2026-11-02"
@@ -2603,7 +2614,7 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1990,
       "fecha": "2026-11-02"
@@ -2631,7 +2642,7 @@
      "normal_envase": 2290,
      "precio": 2025,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2025,
       "fecha": "2026-11-02"
@@ -2650,7 +2661,7 @@
      "normal_envase": 2250,
      "precio": 1918,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 1918,
       "fecha": "2026-11-02"
@@ -2669,7 +2680,7 @@
      "normal_envase": 2290,
      "precio": 2143,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2143,
       "fecha": "2026-11-02"
@@ -2688,7 +2699,7 @@
      "normal_envase": null,
      "precio": 2241,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03",
+     "fecha": "2026-11-04",
      "antes": {
       "precio": 2241,
       "fecha": "2026-11-02"
@@ -2716,7 +2727,11 @@
      "normal_envase": 9130,
      "precio": 3490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 3490,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -2728,26 +2743,34 @@
    "unidad": "kg",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Trutro Corto Pollo 700 g",
-     "url": "https://www.jumbo.cl/trutro-corto-pollo-700-g/p",
-     "formato": null,
-     "tamano": 0.7,
-     "precio_envase": 4790,
-     "normal_envase": null,
-     "precio": 6843,
-     "precio_tarjeta": null,
-     "fecha": "2026-11-03"
-    },
-    "santaisabel": {
      "nombre_producto": "Tuto Corto Super Pollo 800 g Aprox",
-     "url": "https://www.santaisabel.cl/trutro-corto-super-pollo-1-kg-aprox-260395-kg/p",
+     "url": "https://www.jumbo.cl/trutro-corto-super-pollo-bandeja-1-l-aprox-2/p",
      "formato": null,
      "tamano": 0.8,
-     "precio_envase": 3488,
+     "precio_envase": 3192,
      "normal_envase": null,
-     "precio": 4360,
+     "precio": 3990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 3990,
+      "fecha": "2026-11-04"
+     }
+    },
+    "santaisabel": {
+     "nombre_producto": "Tuto Corto Super Pollo Iqf 800 g",
+     "url": "https://www.santaisabel.cl/tuto-corto-super-pollo-iqf-800-g-1755847/p",
+     "formato": null,
+     "tamano": 0.8,
+     "precio_envase": 4190,
+     "normal_envase": null,
+     "precio": 5238,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 4360,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -2767,7 +2790,11 @@
      "normal_envase": null,
      "precio": 9190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 9190,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Tapapecho al Vacío 1.5 kg aprox.",
@@ -2778,7 +2805,11 @@
      "normal_envase": null,
      "precio": 9990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 9990,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Tapapecho vacuno al vacío 2.2 Kg",
@@ -2789,7 +2820,11 @@
      "normal_envase": null,
      "precio": 11190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 11190,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -2809,7 +2844,11 @@
      "normal_envase": null,
      "precio": 5990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 5990,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Pulpa de Cerdo Sin Hueso Granel kg",
@@ -2820,7 +2859,11 @@
      "normal_envase": null,
      "precio": 5990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 5990,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pulpa pierna Super Cerdo sin hueso 1 Kg",
@@ -2831,7 +2874,11 @@
      "normal_envase": null,
      "precio": 5990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 5990,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Pulpa pierna Super Cerdo chilena 450 g",
@@ -2842,7 +2889,11 @@
      "normal_envase": null,
      "precio": 9956,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 9956,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -2862,7 +2913,11 @@
      "normal_envase": 4250,
      "precio": 8543,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 8543,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Vienesas La Preferida Sin Piel 380 g 7 un.",
@@ -2873,7 +2928,11 @@
      "normal_envase": null,
      "precio": 12143,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 12143,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Vienesas sureña La Preferida 10 un 500 g",
@@ -2884,7 +2943,11 @@
      "normal_envase": null,
      "precio": 9300,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 9300,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Vienesa La Española 20 un 900 g",
@@ -2895,7 +2958,11 @@
      "normal_envase": null,
      "precio": 3600,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 3600,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -2915,7 +2982,11 @@
      "normal_envase": 2211,
      "precio": 2764,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2764,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Sardinas en Aceite 90 g drenado",
@@ -2926,7 +2997,11 @@
      "normal_envase": 1611,
      "precio": 2014,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2014,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Sardina en aceite Deyco lata 125 g neto - 75 g drenado",
@@ -2937,7 +3012,11 @@
      "normal_envase": null,
      "precio": 1350,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1350,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -2957,7 +3036,11 @@
      "normal_envase": 3850,
      "precio": 2990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2990,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Garbanzos Pelados 1 kg",
@@ -2968,7 +3051,11 @@
      "normal_envase": 3710,
      "precio": 2890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2890,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Garbanzos Merkat sin piel 1 Kg",
@@ -2979,7 +3066,11 @@
      "normal_envase": null,
      "precio": 2490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2490,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Garbanzos Nuestra Cocina sin piel bolsa 1 Kg",
@@ -2990,7 +3081,11 @@
      "normal_envase": null,
      "precio": 2930,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2930,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3010,7 +3105,11 @@
      "normal_envase": null,
      "precio": 450,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 450,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Tallarín N°77 Lucchetti 400 g",
@@ -3021,7 +3120,11 @@
      "normal_envase": 1480,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 990,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pasta Tallarines 77 Nuestra Cocina 400 g",
@@ -3032,7 +3135,11 @@
      "normal_envase": null,
      "precio": 810,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 810,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Pasta tallarines N°77 Merkat 400 g",
@@ -3043,7 +3150,11 @@
      "normal_envase": null,
      "precio": 560,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 560,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3063,7 +3174,11 @@
      "normal_envase": 6890,
      "precio": 6305,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 6305,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Leche en Polvo Calo Entera 850 g",
@@ -3074,7 +3189,11 @@
      "normal_envase": null,
      "precio": 7012,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 7012,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Leche en polvo Soprole entera instantánea 800 g",
@@ -3085,7 +3204,11 @@
      "normal_envase": 6990,
      "precio": 6170,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 6170,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Leche en polvo entera instantánea",
@@ -3096,7 +3219,11 @@
      "normal_envase": null,
      "precio": 5980,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 5980,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3108,26 +3235,34 @@
    "unidad": "g",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Café Instantáneo Nescafé Doble Choca Moka Mixes 184 g (8 un. x 23g)",
-     "url": "https://www.jumbo.cl/cafe-choca-mocha-nescafe-23-g-cu-caja-8-sobres-mixes/p",
+     "nombre_producto": "Café Instantáneo Cuisine & Co 150 g",
+     "url": "https://www.jumbo.cl/cafe-instantaneo-150-g-cuisine-and-co-1870006/p",
      "formato": null,
-     "tamano": 0.184,
-     "precio_envase": 4390,
+     "tamano": 0.15,
+     "precio_envase": 4490,
      "normal_envase": null,
-     "precio": 4056,
+     "precio": 5089,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 4056,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
-     "nombre_producto": "Café Instantáneo Nescafé Doble Choca Moka Mixes 184 g (8 un. x 23g)",
-     "url": "https://www.santaisabel.cl/cafe-choca-mocha-nescafe-23-g-cu-caja-8-sobres-mixes/p",
+     "nombre_producto": "Café Instantáneo Cuisine & Co 150 g",
+     "url": "https://www.santaisabel.cl/cafe-instantaneo-150-g-cuisine-and-co-1870006/p",
      "formato": null,
-     "tamano": 0.184,
-     "precio_envase": 4250,
-     "normal_envase": 6790,
-     "precio": 3927,
+     "tamano": 0.15,
+     "precio_envase": 4440,
+     "normal_envase": null,
+     "precio": 5032,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 3927,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Café instantáneo Monterrey clásico lata 170 g",
@@ -3138,7 +3273,11 @@
      "normal_envase": 5490,
      "precio": 4150,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 4150,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Café instantáneo Monterrey clásico lata 170 g",
@@ -3149,7 +3288,11 @@
      "normal_envase": null,
      "precio": 5950,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 5950,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3169,7 +3312,11 @@
      "normal_envase": 1440,
      "precio": 1145,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1145,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Choclo Dulce Cuisine & Co 150 g drenado, 241 G neto",
@@ -3180,7 +3327,11 @@
      "normal_envase": null,
      "precio": 1083,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1083,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Choclos Wasil tetra 340 g neto - 190 g drenado",
@@ -3191,7 +3342,11 @@
      "normal_envase": null,
      "precio": 1456,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1456,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Choclo en conserva",
@@ -3202,7 +3357,11 @@
      "normal_envase": null,
      "precio": 1740,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1740,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3222,7 +3381,11 @@
      "normal_envase": null,
      "precio": 1517,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1517,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Detergente en Polvo Máxima 3 kg",
@@ -3233,7 +3396,11 @@
      "normal_envase": null,
      "precio": 1403,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1403,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Detergente en polvo Merkat matic floral 2.7 Kg",
@@ -3244,7 +3411,11 @@
      "normal_envase": null,
      "precio": 1404,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1404,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Detergente en polvo Igenix bolsa 500 gr",
@@ -3255,7 +3426,11 @@
      "normal_envase": null,
      "precio": 2260,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2260,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3275,7 +3450,11 @@
      "normal_envase": null,
      "precio": 1090,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1090,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Toalla de Papel Abolengo Doble Hoja 10 m 3 un.",
@@ -3286,7 +3465,11 @@
      "normal_envase": 1560,
      "precio": 660,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 660,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Toalla de papel Nubelín doble hoja 3 un de 12 m",
@@ -3297,7 +3480,11 @@
      "normal_envase": 2150,
      "precio": 993,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 993,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Toalla de papel ultra doble hoja 2 un de 14 m",
@@ -3308,7 +3495,11 @@
      "normal_envase": null,
      "precio": 1800,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1800,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3328,7 +3519,11 @@
      "normal_envase": 590,
      "precio": 490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 490,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Bolsa de Basura con Asas Virutex 50 x 65 cm 10 un.",
@@ -3339,7 +3534,11 @@
      "normal_envase": 520,
      "precio": 400,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 400,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Bolsa de basura Smart Clean con asas 50 x 65 cm 10 un",
@@ -3350,7 +3549,11 @@
      "normal_envase": null,
      "precio": 470,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 470,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Bolsa de basura 50 cm x 70 cm rollo",
@@ -3361,7 +3564,11 @@
      "normal_envase": null,
      "precio": 620,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 620,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3381,7 +3588,11 @@
      "normal_envase": null,
      "precio": 750,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 750,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Pasta Dental Pepsodent Xtra Whitening 130 g",
@@ -3392,7 +3603,11 @@
      "normal_envase": 1560,
      "precio": 685,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 685,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pasta dental Aquafresh intense white 2 u de 96 g",
@@ -3403,18 +3618,26 @@
      "normal_envase": 2590,
      "precio": 937,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 937,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
-     "nombre_producto": "Pasta dental white & shine",
-     "url": "https://www.alvi.cl/product/pasta-dental-white-shine-aquafres-96-75g",
-     "formato": "97 g",
-     "tamano": 0.097,
-     "precio_envase": 1040,
+     "nombre_producto": "Pasta dental Xtra White Colgate 120gr",
+     "url": "https://www.alvi.cl/product/pasta-dental-xtra-white-colgate-120-gr",
+     "formato": "120 g",
+     "tamano": 0.12,
+     "precio_envase": 990,
      "normal_envase": null,
-     "precio": 965,
+     "precio": 742,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 742,
+      "fecha": "2026-11-04"
+     }
     }
    }
   },
@@ -3434,7 +3657,11 @@
      "normal_envase": 1200,
      "precio": 1584,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1584,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Toallas Higiénicas Family Care Normal Suave 10 un.",
@@ -3445,7 +3672,11 @@
      "normal_envase": 880,
      "precio": 1126,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1126,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Toalla higiénica Ladysoft ultradelgada suave con alas 16 un",
@@ -3456,7 +3687,11 @@
      "normal_envase": 3450,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2000,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Toalla higiénica normal con alas tela suave",
@@ -3467,7 +3702,11 @@
      "normal_envase": null,
      "precio": 1640,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1640,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3487,7 +3726,11 @@
      "normal_envase": 18990,
      "precio": 6465,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 6465,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Pañales Zeukid Premium Talla G 94 un.",
@@ -3498,7 +3741,11 @@
      "normal_envase": 18790,
      "precio": 5528,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 5528,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Pañal Kids for Kids ultra soft talla G 38 un",
@@ -3509,7 +3756,11 @@
      "normal_envase": 8550,
      "precio": 7358,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 7358,
+      "fecha": "2026-11-03"
+     }
     },
     "alvi": {
      "nombre_producto": "Pañal Kids for Kids ultra soft talla G 92 un",
@@ -3520,7 +3771,11 @@
      "normal_envase": null,
      "precio": 6935,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 6935,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3540,7 +3795,11 @@
      "normal_envase": 5890,
      "precio": 625,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 625,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Zanahoria Bolsa 1 kg",
@@ -3551,7 +3810,11 @@
      "normal_envase": null,
      "precio": 1450,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1450,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Zanahoria bolsa 1 Kg",
@@ -3562,7 +3825,11 @@
      "normal_envase": null,
      "precio": 1590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1590,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3582,7 +3849,11 @@
      "normal_envase": null,
      "precio": 1156,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1156,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Manzana Fuji Granel",
@@ -3593,7 +3864,11 @@
      "normal_envase": null,
      "precio": 1145,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1145,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Manzana verde granel 500 g",
@@ -3604,7 +3879,11 @@
      "normal_envase": null,
      "precio": 2590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 2590,
+      "fecha": "2026-11-03"
+     }
     }
    }
   },
@@ -3624,7 +3903,11 @@
      "normal_envase": null,
      "precio": 1025,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1025,
+      "fecha": "2026-11-03"
+     }
     },
     "santaisabel": {
      "nombre_producto": "Limón Granel (1 a 2 un. Aprox)",
@@ -3635,7 +3918,11 @@
      "normal_envase": null,
      "precio": 995,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 995,
+      "fecha": "2026-11-03"
+     }
     },
     "unimarc": {
      "nombre_producto": "Limón granel 500 g",
@@ -3646,7 +3933,11 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-03"
+     "fecha": "2026-11-04",
+     "min_30d": {
+      "precio": 1990,
+      "fecha": "2026-11-03"
+     }
     }
    }
   }
