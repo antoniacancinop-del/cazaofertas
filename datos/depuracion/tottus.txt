@@ -5,6 +5,6 @@ Verificación de seguridad en curso
 
 Este sitio web utiliza un servicio de seguridad para protegerse contra bots maliciosos. Esta página se muestra mientras el sitio web verifica que tú no eres un bot.
 
-Ray ID: a56359f38864152b
+Ray ID: a56b7bce89581183
 Rendimiento y seguridad de Cloudflare
 Privacidad
