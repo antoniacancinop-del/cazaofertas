@@ -19,6 +19,8 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import quote, urlparse
 from urllib.robotparser import RobotFileParser
+import urllib.request
+import urllib.parse
 
 from playwright.async_api import async_playwright
 
@@ -477,6 +479,70 @@ h2{{font-family:'Bricolage Grotesque',sans-serif;font-size:36px}} .its{{display:
         await nav.close()
 
 
+# ---------------------------------------------------------------- locales (OpenStreetMap)
+
+LOCALES = RAIZ / "datos" / "locales.json"
+MARCAS = {  # nombre en OpenStreetMap -> id de la tienda en Cazaprecios
+    "jumbo": "jumbo", "santa isabel": "santaisabel", "unimarc": "unimarc", "alvi": "alvi",
+    "super 10": "super10", "super10": "super10", "mayorista 10": "super10",
+}
+CONSULTA_OSM = """[out:json][timeout:180];
+area["ISO3166-1"="CL"][admin_level=2]->.cl;
+(
+  nwr["shop"~"supermarket|wholesale|convenience"]["brand"~"^(Jumbo|Santa Isabel|Unimarc|Alvi|Super ?10|Mayorista 10)$",i](area.cl);
+  nwr["shop"~"supermarket|wholesale"]["name"~"^(Jumbo|Santa Isabel|Unimarc|Alvi|Super ?10|Mayorista 10)( |$)",i](area.cl);
+);
+out center tags;"""
+
+
+def actualizar_locales(log: list):
+    """Una vez por semana descarga de OpenStreetMap la ubicación de los locales de cada cadena."""
+    if LOCALES.exists():
+        try:
+            previo = json.loads(LOCALES.read_text(encoding="utf-8"))
+            edad = datetime.now(CHILE) - datetime.fromisoformat(previo["actualizado"])
+            if edad < timedelta(days=7) and previo.get("locales"):
+                return
+        except Exception:
+            pass
+    try:
+        datos = urllib.parse.urlencode({"data": CONSULTA_OSM}).encode()
+        req = urllib.request.Request("https://overpass-api.de/api/interpreter", data=datos,
+                                     headers={"User-Agent": "Cazaprecios/1.0 (https://cazaprecios.cl)"})
+        with urllib.request.urlopen(req, timeout=240) as r:
+            elementos = json.loads(r.read().decode("utf-8"))["elements"]
+    except Exception as e:
+        log.append(f"Locales: no se pudo consultar OpenStreetMap ({e}); se mantienen los anteriores")
+        return
+    locales, vistos = [], set()
+    for el in elementos:
+        t = el.get("tags", {})
+        marca = normalizar(t.get("brand") or t.get("name") or "")
+        tienda = next((v for k, v in MARCAS.items() if marca == k or marca.startswith(k + " ")), None)
+        lat = el.get("lat") or (el.get("center") or {}).get("lat")
+        lon = el.get("lon") or (el.get("center") or {}).get("lon")
+        if not tienda or lat is None or lon is None:
+            continue
+        clave = (tienda, round(lat, 3), round(lon, 3))
+        if clave in vistos:
+            continue
+        vistos.add(clave)
+        direccion = " ".join(x for x in [t.get("addr:street"), t.get("addr:housenumber")] if x)
+        comuna = t.get("addr:city") or t.get("addr:municipality") or ""
+        locales.append({"t": tienda, "n": t.get("name") or t.get("brand"), "d": direccion, "c": comuna,
+                        "lat": round(lat, 5), "lon": round(lon, 5)})
+    if len(locales) < 50:  # algo salió mal: se conservan los datos anteriores
+        log.append(f"Locales: OpenStreetMap devolvió solo {len(locales)} locales; se mantienen los anteriores")
+        return
+    LOCALES.write_text(json.dumps({"actualizado": datetime.now(CHILE).isoformat(timespec="minutes"),
+                                   "fuente": "© OpenStreetMap contributors (ODbL)", "locales": locales},
+                                  ensure_ascii=False), encoding="utf-8")
+    por = {}
+    for l in locales:
+        por[l["t"]] = por.get(l["t"], 0) + 1
+    log.append(f"Locales actualizados desde OpenStreetMap: {por}")
+
+
 async def principal():
     ahora = datetime.now(CHILE)
     anterior = json.loads(SALIDA.read_text(encoding="utf-8")) if SALIDA.exists() else None
@@ -513,6 +579,7 @@ async def principal():
         else:
             tiendas.append({"id": tid, "nombre": nombre, "estado": (r or {}).get("estado", "no revisada"), "fecha": None, "productos": 0})
 
+    actualizar_locales(log)
     dias_historial = agregar_historial(productos, ahora.date())
     datos = {
         "actualizado": ahora.isoformat(timespec="minutes"),
