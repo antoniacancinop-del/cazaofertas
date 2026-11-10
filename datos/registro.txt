@@ -1,231 +1,227 @@
-Santa Isabel · pechuga-pollo: 4 resultados → Pechuga de Pollo Deshuesada 750 g $7587
 Jumbo · pechuga-pollo: 18 resultados → Pechuga Deshuesada de Pollo Sadia 1 kg $6990
-Super10: 8 ofertas leídas
-Super10 · oferta: Rendiplus Doble Hoja 18 Mt X 4 Un $1000
-Super10 · oferta: Agua 165 Gr $690
-Super10 · oferta: Doble Hoja 24 Mt X 4 $1000
-Super10 · oferta: Vainilla 500 Gr $1490
-Super10 · oferta: Laminado 1/4 Kg $2190
-Super10 · oferta: Manzana Display 6 Un 200 Cc $1850
-Super10 · oferta: Doble Hoja 22 Mt X 24 $8690
-Super10 · oferta: Maravilla 100% 900 Ml $2000
+Santa Isabel · pechuga-pollo: 3 resultados → Pechuga de Pollo Deshuesada 750 g $7587
+Jumbo · trutro-pollo: 9 resultados → Trutro Entero de Pollo Super Pollo 2 kg $3195
 Alvi · pechuga-pollo: 6 resultados → Bistec de pechuga de pollo deshuesada Super Pollo 530 gr $7453
 Santa Isabel · trutro-pollo: 6 resultados → Trutro Largo con Piel Super Pollo 800 g $5238
-Jumbo · trutro-pollo: 10 resultados → Trutro Entero de Pollo Super Pollo 2 kg $3195
-Santa Isabel · carne-molida: 6 resultados → Carne Molida Vacuno 10% Grasa 250 gr $12360
-Unimarc · pechuga-pollo: 16 resultados → Pechuga de pollo deshuesada Super Pollo granel 600 g $5990
+Unimarc · pechuga-pollo: 16 resultados → Pechuga de pollo deshuesada Super Pollo granel 600 g $6990
 Jumbo · carne-molida: 21 resultados → Molida Fiesta ATM 500 g $11780
-Alvi · trutro-pollo: 8 resultados → sin coincidencia
+Santa Isabel · carne-molida: 7 resultados → Carne Molida Vacuno 10% Grasa 250 gr $12360
 Tottus · pechuga-pollo: 0 resultados → sin coincidencia
+Alvi · trutro-pollo: 8 resultados → sin coincidencia
 Lider · pechuga-pollo: 0 resultados → sin coincidencia
-Santa Isabel · posta-negra: 2 resultados → Posta Negra al Vacío 1.6 kg aprox. $12390
+Unimarc · trutro-pollo: 8 resultados → Trutro entero de pollo Super Pollo al vacío 1 Kg $3290
 Jumbo · posta-negra: 5 resultados → Posta Negra al Vacío 1.6 kg aprox. $13390
-Santa Isabel · chuleta-cerdo: 6 resultados → sin coincidencia
-Unimarc · trutro-pollo: 8 resultados → Trutro entero de pollo Super Pollo granel 800 g $2690
-Alvi · carne-molida: 6 resultados → Carne molida vacuno 250Gr $5680
+Santa Isabel · posta-negra: 2 resultados → Posta Negra al Vacío 1.6 kg aprox. $12390
 Jumbo · chuleta-cerdo: 10 resultados → Chuleta Centro Super Cerdo 550 g $7800
-Santa Isabel · merluza: 7 resultados → Merluza Filete Congelado 500 g $9780
-Alvi · posta-negra: 3 resultados → sin coincidencia
-Jumbo · merluza: 5 resultados → Merluza Filete Congelada 500 g $7980
+Alvi · carne-molida: 6 resultados → Carne molida vacuno 250Gr $5680
+Santa Isabel · chuleta-cerdo: 6 resultados → sin coincidencia
 Unimarc · carne-molida: 30 resultados → Carne molida vacuno Fundo Sur 250 gr $6760
-Santa Isabel · jurel: 1 resultados → sin coincidencia
+Jumbo · merluza: 5 resultados → Merluza Filete Congelada 500 g $7980
+Alvi · posta-negra: 3 resultados → sin coincidencia
+Santa Isabel · merluza: 7 resultados → Merluza Filete Congelado 500 g $9780
 Jumbo · jurel: 7 resultados → sin coincidencia
-Tottus · trutro-pollo: 0 resultados → sin coincidencia
-Alvi · chuleta-cerdo: 1 resultados → sin coincidencia
-Lider · trutro-pollo: 0 resultados → sin coincidencia
-Santa Isabel · atun: 12 resultados → Atún Lomitos en Agua 91 g drenado, 140 g neto $1429
+Santa Isabel · jurel: 1 resultados → sin coincidencia
 Unimarc · posta-negra: 5 resultados → Posta negra vacuno Argentina al vacío 2.5 Kg $15590
+Tottus · trutro-pollo: 0 resultados → sin coincidencia
+Lider · trutro-pollo: 0 resultados → sin coincidencia
+Alvi · chuleta-cerdo: 1 resultados → sin coincidencia
 Jumbo · atun: 16 resultados → Atún Lomitos en Agua 104 g drenado, 160 g neto $1290
-Alvi · merluza: 2 resultados → Filete de merluza con piel congelado $8920
-Santa Isabel · huevos: 28 resultados → Huevos Medianos Santa Marta 30 un. $6900
+Santa Isabel · atun: 12 resultados → Atún Lomitos en Agua 91 g drenado, 140 g neto $1429
 Jumbo · huevos: 40 resultados → Huevos Cintazul Grandes Blancos 12 un. $8475
+Alvi · merluza: 2 resultados → Filete de merluza con piel congelado $8920
 Unimarc · chuleta-cerdo: 8 resultados → Chuleta vetada Super Cerdo porcionado al vacío 1.4 Kg $4890
+Santa Isabel · huevos: 28 resultados → Huevos Medianos Santa Marta 30 un. $6900
+Jumbo · arroz: 10 resultados → Arroz Grado 2 Máxima Grano Largo Angosto 1 kg $990
+Super10: error Page.goto: Timeout 60000ms exceeded.
+Call log:
+navigating to "https://www.super10.cl/ofertas", waiting until "networkidle"
+
 Alvi · jurel: 1 resultados → Jurel San José al natural lata 425 g neto - 300 g drenado $2780
 Santa Isabel · arroz: 10 resultados → Arroz Grado 2 Cuisine & Co Largo y Delgado 1 kg $990
-Jumbo · arroz: 10 resultados → Arroz Grado 2 Máxima Grano Largo Angosto 1 kg $990
-Santa Isabel · fideos: 18 resultados → Pasta Coliseo Spaghetti Speciale 400 g $740
-Tottus: 3 búsquedas seguidas sin resultados, se detiene (posible bloqueo)
-Alvi · atun: 6 resultados → Atún lomito en agua contenido neto 140G Contenido drenado 100G $1017
-Lider: 3 búsquedas seguidas sin resultados, se detiene (posible bloqueo)
 Jumbo · fideos: 29 resultados → Spaghetti N° 5 Máxima 400 g $450
+Santa Isabel · fideos: 18 resultados → Pasta Coliseo Spaghetti Speciale 400 g $740
+Alvi · atun: 6 resultados → Atún lomito en agua contenido neto 140G Contenido drenado 100G $1017
+Tottus: 3 búsquedas seguidas sin resultados, se detiene (posible bloqueo)
+Lider: 3 búsquedas seguidas sin resultados, se detiene (posible bloqueo)
+Jumbo · aceite: 9 resultados → Aceite de Maravilla 900 ml $2211
 Unimarc · merluza: 5 resultados → Filete merluza con piel azul profundo 500g $10580
 Santa Isabel · aceite: 7 resultados → Aceite de Maravilla Coliseo 900 cc $2656
 Alvi · huevos: 8 resultados → Huevos Fundo Rio Alegre grande color 30 un $8990
-Jumbo · aceite: 9 resultados → Aceite de Maravilla 900 ml $2211
+Jumbo · azucar: 6 resultados → Azúcar Cuisine & Co Blanca Granulada 1 kg $1190
 Santa Isabel · azucar: 3 resultados → Azúcar Cuisine & Co Blanca Granulada 1 kg $1000
 Unimarc · jurel: 1 resultados → Jurel San José al natural lata 425 g neto - 300 g drenado $2590
-Jumbo · azucar: 6 resultados → Azúcar Cuisine & Co Blanca Granulada 1 kg $1190
-Alvi · arroz: 4 resultados → Arroz Merkat largo delgado grado 2 1 Kg $890
-Santa Isabel · harina: 24 resultados → Harina Máxima Sin Polvos de Hornear 1 kg $960
-Unimarc · atun: 6 resultados → Atún lomitos en agua merkat 140 G  neto - 100 g drenado $1086
 Jumbo · harina: 31 resultados → Harina Máxima Sin Polvos de Hornear 1 kg $990
-Alvi · fideos: 8 resultados → Pasta spaghetti N°5 Merkat 400 g $560
-Santa Isabel · lentejas: 18 resultados → Lentejas 6 mm Cuisine & Co 1 kg $2690
+Alvi · arroz: 4 resultados → Arroz Merkat largo delgado grado 2 1 Kg $890
+Santa Isabel · harina: 23 resultados → Harina Cuisine & Co Sin Polvos de Hornear 1 kg $1000
 Jumbo · lentejas: 31 resultados → Lentejas 6 mm Máxima 1 kg $2490
-Santa Isabel · porotos: 36 resultados → Porotos Negros Cuisine & Co 1 kg $2200
-Unimarc · huevos: 50 resultados → Huevos Fundo Río Alegre mediano blanco 30 un $7890
+Alvi · fideos: 8 resultados → Pasta spaghetti N°5 Merkat 400 g $560
+Unimarc · atun: 6 resultados → Atún lomitos en agua merkat 140 G  neto - 100 g drenado $1086
+Santa Isabel · lentejas: 18 resultados → Lentejas 6 mm Cuisine & Co 1 kg $2690
 Jumbo · porotos: 40 resultados → Porotos Negros Cuisine & Co 1 kg $2176
+Santa Isabel · porotos: 35 resultados → Porotos Negros Cuisine & Co 1 kg $2200
 Alvi · aceite: 8 resultados → Aceite Nuestra Cocina 100% maravilla 900 ml $2456
-Santa Isabel · avena: 40 resultados → Avena Vivo Instantánea Bolsa 500 g $1980
 Jumbo · avena: 40 resultados → Avena Vivo Instantánea 700 g $2843
-Alvi · azucar: 8 resultados → Azúcar granulada $910
-Unimarc · arroz: 8 resultados → Arroz Merkat largo delgado grado 2 1 Kg $890
-Santa Isabel · salsa-tomate: 40 resultados → Salsa de Tomate Coliseo Italiana 200 g $370
+Unimarc · huevos: 50 resultados → Huevos Fundo Río Alegre mediano blanco 30 un $7890
+Santa Isabel · avena: 40 resultados → Avena Vivo Instantánea Bolsa 500 g $1980
 Jumbo · salsa-tomate: 40 resultados → Salsa de Tomates Talliani con Trozos 200 g $690
-Santa Isabel · sal: 16 resultados → Sal Fina Cuisine & Co 1 kg $480
-Alvi · harina: 8 resultados → Harina Merkat sin polvos 1 Kg $820
-Unimarc · fideos: 14 resultados → Pasta spaghetti N°5 Merkat 400 g $520
+Alvi · azucar: 8 resultados → Azúcar granulada $910
+Santa Isabel · salsa-tomate: 40 resultados → Salsa de Tomate Coliseo Italiana 200 g $370
 Jumbo · sal: 30 resultados → Sal Fina Cuisine & Co 1 kg $490
+Unimarc · arroz: 8 resultados → Arroz Merkat largo delgado grado 2 1 Kg $890
+Alvi · harina: 8 resultados → Harina Merkat sin polvos 1 Kg $820
+Santa Isabel · sal: 16 resultados → Sal Fina Cuisine & Co 1 kg $480
+Jumbo · te: 40 resultados → Té Club Premium Sobre Envoltura 100 un. $3190
 Santa Isabel · te: 40 resultados → Té Negro Emblem Tea Ceylon Blend Original 100 un. $1990
 Alvi · lentejas: 8 resultados → Lentejas 5mm Bonanza 1 Kg $2990
-Jumbo · te: 40 resultados → Té Club Premium Sobre Envoltura 100 un. $3190
-Unimarc · aceite: 9 resultados → Aceite Nuestra Cocina 100% maravilla 900 ml $2222
-Santa Isabel · detergente: 40 resultados → Detergente Líquido Máxima 2 L $2835
 Jumbo · detergente: 40 resultados → Detergente Líquido Virutex Sensitive Hipoalergénico Doypack 3 L $9900
+Santa Isabel · detergente: 40 resultados → Detergente Líquido Máxima 2 L $2835
+Jumbo · lavalozas: 40 resultados → Lavaloza Virginia Citrus Doypack 1200 ml $1244
+Unimarc · fideos: 14 resultados → Pasta spaghetti N°5 Merkat 400 g $520
 Alvi · porotos: 8 resultados → Porotos negros $2590
 Santa Isabel · lavalozas: 32 resultados → Lavaloza Virginia Citrus Botella Recarga 1.5 L $1095
-Unimarc · azucar: 7 resultados → Azúcar granulada Merkat 1 Kg $910
-Jumbo · lavalozas: 40 resultados → Lavaloza Virginia Citrus Doypack 1200 ml $1244
+Jumbo · cloro: 40 resultados → Cloro Adclean Destructor de Hongos, Virus y Bacterias No Tóxico 1 L $3580
 Alvi · avena: 8 resultados → Avena instantánea $2929
 Santa Isabel · cloro: 40 resultados → sin coincidencia
-Jumbo · cloro: 40 resultados → Cloro Adclean Destructor de Hongos, Virus y Bacterias No Tóxico 1 L $3580
-Alvi · salsa-tomate: 8 resultados → Salsa de tomate San Remo italiana sachet 200 g $380
-Santa Isabel · limpiapisos: 40 resultados → Limpiador de Pisos Poett Alegra Tu Dia 1.8 L $1195
-Unimarc · harina: 50 resultados → Harina Merkat sin polvos 1 Kg $870
+Unimarc · aceite: 9 resultados → Aceite Nuestra Cocina 100% maravilla 900 ml $2544
 Jumbo · limpiapisos: 40 resultados → Limpiador de Pisos Poett Frescura de Lavanda 1.8 L $1425
-Alvi · sal: 8 resultados → Sal fina Lobos yodada bolsa 1 Kg $540
-Santa Isabel · papel-higienico: 40 resultados → Papel Higiénico Noble Doble Hoja 20 m 6 un. $2328
+Santa Isabel · limpiapisos: 40 resultados → Limpiador de Pisos Poett Alegra Tu Dia 1.8 L $1195
 Jumbo · papel-higienico: 40 resultados → Papel Higiénico Máxima Hoja Simple 28 m 16 un. $2992
-Unimarc · lentejas: 20 resultados → Lentejas 6mm Los Granos 1kg $2300
-Santa Isabel · jabon: 27 resultados → Jabón Barra Ucare Rosa 90 g 3 un. $1000
+Alvi · salsa-tomate: 8 resultados → Salsa de tomate San Remo italiana sachet 200 g $380
+Santa Isabel · papel-higienico: 40 resultados → Papel Higiénico Noble Doble Hoja 20 m 6 un. $2328
+Unimarc · azucar: 7 resultados → Azúcar granulada Merkat 1 Kg $910
 Jumbo · jabon: 40 resultados → Pack 3 un. Jabón Giselle Tocador 90 g $1880
-Alvi · te: 8 resultados → Te pure ceylan enveloped 100 Un $2620
-Santa Isabel · leche: 14 resultados → Leche Cuisine & Co Entera 1 L $990
+Alvi · sal: 8 resultados → Sal fina Lobos yodada bolsa 1 Kg $540
+Santa Isabel · jabon: 27 resultados → Jabón Barra Ucare Rosa 90 g 3 un. $1000
 Jumbo · leche: 25 resultados → Leche Cuisine & Co Entera 1 L $1000
-Unimarc · porotos: 30 resultados → Porotos negro Los Granos 1kg $2290
-Alvi · detergente: 8 resultados → Detergente líquido Tatii bidón 5 L $2304
-Santa Isabel · mantequilla: 40 resultados → Mantequilla con Sal Máxima 200 g $2488
+Unimarc · harina: 50 resultados → Harina Merkat sin polvos 1 Kg $870
+Santa Isabel · leche: 14 resultados → Leche Cuisine & Co Entera 1 L $990
 Jumbo · mantequilla: 40 resultados → Mantequilla Soprole Quilque Tradicional con Sal 190 g $2500
-Santa Isabel · papas: 5 resultados → Papa Granel $1095
-Alvi · lavalozas: 8 resultados → Lavalozas Fuzol limón doypack 700 ml $1221
-Jumbo · papas: 11 resultados → Papa Granel $1125
-Unimarc · avena: 50 resultados → Avena Instantánea Oso 500 g $2000
-Santa Isabel · cebolla: 11 resultados → Cebolla Granel (1 a 2 un. Aprox) $975
+Alvi · te: 8 resultados → Te pure ceylan enveloped 100 Un $2620
+Santa Isabel · mantequilla: 40 resultados → Mantequilla con Sal Máxima 200 g $2488
+Jumbo · papas: 10 resultados → Papa Granel $1125
+Alvi · detergente: 8 resultados → Detergente líquido Tatii bidón 5 L $2304
 Jumbo · cebolla: 27 resultados → Cebolla Granel (1 a 2 un. Aprox) $995
-Alvi · cloro: 8 resultados → sin coincidencia
-Santa Isabel · tomate: 7 resultados → Tomate Cóctel Variedades Granel $1338
-Unimarc · salsa-tomate: 35 resultados → Salsa de tomate italiana merkat doypack 200g $390
+Santa Isabel · papas: 5 resultados → Papa Granel $1095
+Unimarc · lentejas: 20 resultados → Lentejas 6mm Los Granos 1kg $2590
 Jumbo · tomate: 6 resultados → Tomate Larga Vida Granel (1 a 2 un. Aprox) $1045
-Santa Isabel · platano: 13 resultados → Plátano Extra Granel (1 a 2 un. Aprox) $745
-Alvi · limpiapisos: 6 resultados → Limpiapisos higienizante bergamota Excell 900ml $990
+Santa Isabel · cebolla: 11 resultados → Cebolla Granel (1 a 2 un. Aprox) $975
+Alvi · lavalozas: 8 resultados → Lavalozas Fuzol limón doypack 700 ml $1221
 Jumbo · platano: 19 resultados → Plátano Extra Granel (1 a 2 un. Aprox) $725
-Santa Isabel · marraqueta: 4 resultados → Pan Marraqueta Granel $1095
-Unimarc · sal: 13 resultados → Sal fina Nuestra Cocina bolsa 1 Kg $470
-Alvi · papel-higienico: 8 resultados → Papel higiénico Ovella doble hoja 4 un (30 m) $5250
+Unimarc · porotos: 30 resultados → Porotos negro Los Granos 1kg $2290
+Santa Isabel · tomate: 7 resultados → Tomate Cóctel Variedades Granel $1338
+Alvi · cloro: 8 resultados → sin coincidencia
 Jumbo · marraqueta: 10 resultados → Pan Marraqueta Grande Granel $1045
-Santa Isabel · pan-molde: 22 resultados → Pan Molde Pierre Blanco XL 700 g $1918
+Santa Isabel · platano: 12 resultados → Plátano Extra Granel (1 a 2 un. Aprox) $745
+Unimarc · avena: 50 resultados → Avena Instantánea Oso 500 g $2300
 Jumbo · pan-molde: 32 resultados → Pan Molde Ideal Blanco XL 750 g $1990
-Alvi · jabon: 7 resultados → Jabón barra oliva y aloe 85Gr $1890
-Unimarc · te: 43 resultados → Té Impra pure ceylán 100 un $2000
+Alvi · limpiapisos: 6 resultados → Limpiapisos higienizante bergamota Excell 900ml $990
+Santa Isabel · marraqueta: 4 resultados → Pan Marraqueta Granel $1095
+Jumbo · pollo-entero: 22 resultados → sin coincidencia
+Santa Isabel · pan-molde: 22 resultados → Pan Molde Pierre Blanco XL 700 g $1918
+Unimarc · salsa-tomate: 35 resultados → Salsa de tomate italiana merkat doypack 200g $390
+Alvi · papel-higienico: 8 resultados → Papel higiénico Ovella doble hoja 4 un (30 m) $5250
+Jumbo · pierna-pollo: 14 resultados → Tuto Corto Super Pollo 800 g Aprox $3990
 Santa Isabel · pollo-entero: 8 resultados → sin coincidencia
-Jumbo · pollo-entero: 24 resultados → sin coincidencia
-Santa Isabel · pierna-pollo: 3 resultados → sin coincidencia
-Alvi · leche: 8 resultados → Leche Soprole entera natural 1 L $1190
-Jumbo · pierna-pollo: 17 resultados → Tuto Corto Super Pollo 800 g Aprox $3990
-Unimarc · detergente: 47 resultados → Detergente líquido Merkat matic floral 5 L $2214
-Santa Isabel · tapapecho: 9 resultados → Tapapecho al Vacío 1.5 kg aprox. $8790
-Alvi · mantequilla: 8 resultados → Mantequilla Soprole con sal 250 gr $2620
 Jumbo · tapapecho: 1 resultados → Tapapecho al Vacío 1.2 kg aprox. $9190
-Santa Isabel · pulpa-cerdo: 10 resultados → Pulpa de Cerdo Sin Hueso Granel kg $5990
-Unimarc · lavalozas: 44 resultados → Lavaloza limón Citrus doypack Virginia 1.2lt $1244
+Unimarc · sal: 13 resultados → Sal fina Nuestra Cocina bolsa 1 Kg $510
+Santa Isabel · pierna-pollo: 3 resultados → sin coincidencia
+Alvi · jabon: 7 resultados → Jabón barra oliva y aloe 85Gr $1890
 Jumbo · pulpa-cerdo: 20 resultados → Pulpa de Cerdo Sin Hueso Don Cerdo Granel kg $5990
-Alvi · papas: 1 resultados → sin coincidencia
-Santa Isabel · vienesas: 36 resultados → Vienesas La Preferida Sin Piel 380 g 7 un. $12143
+Santa Isabel · tapapecho: 9 resultados → Tapapecho al Vacío 1.5 kg aprox. $8790
 Jumbo · vienesas: 40 resultados → Vienesas La Preferida Sin Piel 380 g 7 un. $8543
-Santa Isabel · sardinas: 7 resultados → sin coincidencia
-Alvi · cebolla: 7 resultados → sin coincidencia
-Unimarc · cloro: 50 resultados → Cloro Clorinda tradicional 2 L $2000
+Santa Isabel · pulpa-cerdo: 10 resultados → Pulpa de Cerdo Sin Hueso Granel kg $5990
+Unimarc · te: 43 resultados → Té Impra pure ceylán 100 un $2490
+Alvi · leche: 8 resultados → Leche Soprole entera natural 1 L $1190
 Jumbo · sardinas: 13 resultados → Sardinas en Aceite 90 g drenado $2569
-Santa Isabel · garbanzos: 13 resultados → Garbanzos Pelados 1 kg $2890
+Santa Isabel · vienesas: 35 resultados → Vienesas La Preferida Sin Piel 380 g 7 un. $12143
+Alvi · mantequilla: 8 resultados → Mantequilla Soprole con sal 250 gr $2620
 Jumbo · garbanzos: 22 resultados → Garbanzos Pelados 1 kg $2990
-Alvi · tomate: 8 resultados → sin coincidencia
-Santa Isabel · tallarines: 40 resultados → Tallarín N°77 Máxima 400 g $430
-Unimarc · limpiapisos: 11 resultados → Limpiapisos Virginia piso flotante lavanda botella 900 ml $3590
+Santa Isabel · sardinas: 7 resultados → sin coincidencia
 Jumbo · tallarines: 37 resultados → Tallarín N°77 Máxima 400 g $450
-Santa Isabel · leche-polvo: 9 resultados → Leche en Polvo Calo Entera 850 g $7012
-Alvi · platano: 8 resultados → sin coincidencia
-Unimarc · papel-higienico: 26 resultados → Papel higiénico Nubelin doble hoja 40 un de 22 m $2997
-Santa Isabel · cafe: 40 resultados → Café Instantáneo Cuisine & Co 150 g $5032
+Alvi · papas: 1 resultados → sin coincidencia
+Santa Isabel · garbanzos: 13 resultados → Garbanzos Pelados 1 kg $2890
+Unimarc · detergente: 47 resultados → Detergente líquido Merkat matic floral 5 L $2214
 Jumbo · leche-polvo: 10 resultados → Leche en Polvo Loncoleche Entera Instantánea 760 g $6305
-Alvi · marraqueta: 2 resultados → Pan marraqueta granel Amada Masa 500 g $1990
-Santa Isabel · choclo: 8 resultados → Choclo Dulce Cuisine & Co 150 g drenado, 241 G neto $1083
+Santa Isabel · tallarines: 40 resultados → Tallarín N°77 Máxima 400 g $430
+Alvi · cebolla: 7 resultados → sin coincidencia
 Jumbo · cafe: 40 resultados → Café Instantáneo Cuisine & Co 150 g $5089
-Unimarc · jabon: 27 resultados → Pack Jabón en barra Giselle toilette 3 un 90 g $2150
-Santa Isabel · detergente-polvo: 24 resultados → Detergente en Polvo Máxima 3 kg $1403
-Alvi · pan-molde: 8 resultados → Pan molde sandwich blanco $2241
+Santa Isabel · leche-polvo: 9 resultados → Leche en Polvo Calo Entera 850 g $7012
+Unimarc · lavalozas: 44 resultados → Lavaloza limón Citrus doypack Virginia 1.2lt $1244
 Jumbo · choclo: 7 resultados → Choclo Dulce Cuisine & Co 150 g drenado, 241 G neto $1145
-Santa Isabel · toalla-papel: 15 resultados → Toalla de Papel Abolengo Doble Hoja 10 m 3 un. $660
-Unimarc · leche: 12 resultados → Leche entera Fundo Río Alegre 1 L $1000
+Alvi · tomate: 8 resultados → sin coincidencia
+Santa Isabel · cafe: 40 resultados → Café Instantáneo Cuisine & Co 150 g $5032
 Jumbo · detergente-polvo: 22 resultados → Detergente en Polvo Máxima 3 kg $1517
-Alvi · pollo-entero: 8 resultados → sin coincidencia
-Santa Isabel · bolsas-basura: 33 resultados → Bolsa de Basura con Asas Virutex 50 x 65 cm 10 un. $400
+Santa Isabel · choclo: 8 resultados → Choclo Dulce Cuisine & Co 150 g drenado, 241 G neto $1083
+Unimarc · cloro: 50 resultados → Cloro Clorinda tradicional 2 L $2290
+Alvi · platano: 8 resultados → sin coincidencia
 Jumbo · toalla-papel: 31 resultados → Toalla de Papel Máxima Doble Hoja 10 m 3 un. $727
-Alvi · pierna-pollo: 8 resultados → sin coincidencia
-Santa Isabel · pasta-dental: 40 resultados → Pasta Dental Aquafresh Triple Protección 95 g $853
-Unimarc · mantequilla: 50 resultados → Mantequilla Surlat con sal 200 g $2500
+Santa Isabel · detergente-polvo: 24 resultados → Detergente en Polvo Máxima 3 kg $1403
+Unimarc · limpiapisos: 11 resultados → Limpiapisos Virginia piso flotante lavanda botella 900 ml $3590
+Alvi · marraqueta: 2 resultados → Pan marraqueta granel Amada Masa 500 g $1990
 Jumbo · bolsas-basura: 40 resultados → Bolsa de Basura Home Care 50 x 70 cm 10 un. $480
-Santa Isabel · toallas-higienicas: 40 resultados → Toallas Higiénicas Family Care Normal Suave 10 un. $1126
+Santa Isabel · toalla-papel: 13 resultados → Toalla de Papel Abolengo Doble Hoja 10 m 3 un. $660
 Jumbo · pasta-dental: 40 resultados → Pasta Dental Colgate Triple Acción Extra Blancura 120 g $750
-Unimarc · papas: 1 resultados → Papas granel 500 g $2150
-Santa Isabel · panales: 27 resultados → Pañales Zeukid Premium Talla G 94 un. $5528
-Santa Isabel · zanahoria: 3 resultados → sin coincidencia
+Alvi · pan-molde: 8 resultados → Pan molde sandwich blanco $2241
+Unimarc · papel-higienico: 26 resultados → Papel higiénico Nubelin doble hoja 40 un de 22 m $3777
+Santa Isabel · bolsas-basura: 32 resultados → Bolsa de Basura con Asas Virutex 50 x 65 cm 10 un. $400
 Jumbo · toallas-higienicas: 40 resultados → Toallas Higiénicas Nosotras Normal Suave 10 un. $1584
-Unimarc · cebolla: 41 resultados → Cebolla malla 3 un aprox $1990
-Santa Isabel · manzana: 6 resultados → Manzana Fuji Granel $1245
-Alvi · tapapecho: 0 resultados → sin coincidencia
+Alvi · pollo-entero: 8 resultados → sin coincidencia
+Santa Isabel · pasta-dental: 40 resultados → Pasta Dental Aquafresh Triple Protección 95 g $853
 Jumbo · panales: 36 resultados → Pañales Zeukid Premium Talla G 94 un. $6465
-Santa Isabel · limon: 7 resultados → Limón Granel (1 a 2 un. Aprox) $995
-Unimarc · tomate: 4 resultados → Tomate larga vida granel 500 g $2090
+Alvi · pierna-pollo: 8 resultados → sin coincidencia
+Unimarc · jabon: 27 resultados → Pack Jabón en barra Giselle toilette 3 un 90 g $2150
+Santa Isabel · toallas-higienicas: 40 resultados → Toallas Higiénicas Family Care Normal Suave 10 un. $1126
 Jumbo · zanahoria: 10 resultados → Zanahoria Granel (3 a 4 un. Aprox) $625
-Alvi · pulpa-cerdo: 3 resultados → Pulpa pierna Super Cerdo chilena 450 g $9956
+Santa Isabel · panales: 27 resultados → Pañales Zeukid Premium Talla G 94 un. $5528
 Jumbo · manzana: 8 resultados → Manzana Sugarbee Granel $995
-Unimarc · platano: 17 resultados → Plátano granel 500 g $1490
-Alvi · vienesas: 8 resultados → Vienesa La Española 20 un 900 g $3600
+Unimarc · leche: 12 resultados → Leche entera Loncoleche sin tapa 1 L $1190
+Santa Isabel · zanahoria: 2 resultados → sin coincidencia
 Jumbo · limon: 13 resultados → Limón Granel (1 a 2 un. Aprox) $1025
-Unimarc · marraqueta: 9 resultados → Pan marraqueta Prosepan granel 500 g $2190
+Santa Isabel · manzana: 6 resultados → Manzana Fuji Granel $1245
+Unimarc · mantequilla: 50 resultados → Mantequilla con sal Fundo Rio Alegre 250 gr $2850
+Santa Isabel · limon: 7 resultados → Limón Granel (1 a 2 un. Aprox) $995
+Alvi · tapapecho: 0 resultados → sin coincidencia
+Unimarc · papas: 1 resultados → Papas granel 500 g $2150
+Alvi · pulpa-cerdo: 3 resultados → Pulpa pierna Super Cerdo chilena 450 g $9956
+Unimarc · cebolla: 41 resultados → Cebolla malla 3 un aprox $1990
+Alvi · vienesas: 8 resultados → Vienesa La Española 20 un 900 g $3600
+Unimarc · tomate: 4 resultados → Tomate larga vida granel 500 g $2090
 Alvi · sardinas: 2 resultados → sin coincidencia
 Alvi · garbanzos: 5 resultados → Garbanzos Nuestra Cocina sin piel bolsa 1 Kg $2930
-Unimarc · pan-molde: 30 resultados → Pan de molde Pierre blanco XL 700 g $2143
+Unimarc · platano: 17 resultados → Plátano granel 500 g $1490
 Alvi · tallarines: 8 resultados → Pasta tallarines N°77 Merkat 400 g $560
-Unimarc · pollo-entero: 10 resultados → Pollo entero Super Pollo con menudencias 2.2 Kg $3590
+Unimarc · marraqueta: 9 resultados → Pan marraqueta Prosepan granel 500 g $2190
 Alvi · leche-polvo: 8 resultados → Leche en polvo entera instantánea $5980
-Unimarc · pierna-pollo: 15 resultados → sin coincidencia
 Alvi · cafe: 8 resultados → Café instantáneo Monterrey clásico lata 170 g $5950
-Unimarc · tapapecho: 3 resultados → Tapapecho vacuno al vacío 2.2 Kg $11190
+Unimarc · pan-molde: 30 resultados → Pan de molde Pierre blanco XL 700 g $2454
 Alvi · choclo: 1 resultados → Choclo en conserva $1740
-Unimarc · pulpa-cerdo: 9 resultados → Pulpa pierna Super Cerdo sin hueso 1 Kg $5990
-Alvi · detergente-polvo: 8 resultados → Detergente en polvo Igenix bolsa 500 gr $2260
-Unimarc · vienesas: 38 resultados → Vienesas sureña La Preferida 10 un 500 g $9100
+Unimarc · pollo-entero: 10 resultados → Pollo entero Super Pollo con menudencias 2.2 Kg $3590
+Alvi · detergente-polvo: 8 resultados → Detergente en polvo Virginia bolsa 400 gr $2725
+Unimarc · pierna-pollo: 15 resultados → sin coincidencia
 Alvi · toalla-papel: 8 resultados → Toalla de papel ultra doble hoja 2 un de 14 m $1800
+Unimarc · tapapecho: 3 resultados → Tapapecho vacuno al vacío 2.2 Kg $11190
 Alvi · bolsas-basura: 8 resultados → Bolsa de basura 50 cm x 70 cm rollo $620
-Unimarc · sardinas: 1 resultados → Sardina en aceite Deyco lata 125 g neto - 75 g drenado $1350
+Unimarc · pulpa-cerdo: 9 resultados → Pulpa pierna Super Cerdo sin hueso 1 Kg $5990
 Alvi · pasta-dental: 8 resultados → Pasta dental Aquafresh intense white 160 g $1766
-Unimarc · garbanzos: 22 resultados → Garbanzos Merkat sin piel 1 Kg $2490
+Unimarc · vienesas: 39 resultados → Vienesas sureña La Preferida 10 un 500 g $9100
 Alvi · toallas-higienicas: 8 resultados → Toalla higiénica normal con alas tela suave $1640
-Unimarc · tallarines: 50 resultados → Pasta Tallarines 77 Nuestra Cocina 400 g $810
+Unimarc · sardinas: 1 resultados → Sardina en aceite Deyco lata 125 g neto - 75 g drenado $1350
 Alvi · panales: 8 resultados → Pañal Kids for Kids ultra soft talla G 92 un $6935
-Unimarc · leche-polvo: 12 resultados → Leche en polvo Soprole entera instantánea 800 g $6170
+Unimarc · garbanzos: 22 resultados → Garbanzos Merkat sin piel 1 Kg $2490
 Alvi · zanahoria: 3 resultados → sin coincidencia
+Unimarc · tallarines: 50 resultados → Pasta Tallarines 77 Nuestra Cocina 400 g $810
 Alvi · manzana: 8 resultados → sin coincidencia
-Unimarc · cafe: 50 resultados → Café instantáneo Monterrey clásico lata 170 g $4150
+Unimarc · leche-polvo: 12 resultados → Leche en polvo Soprole entera instantánea 800 g $6990
 Alvi · limon: 1 resultados → sin coincidencia
+Unimarc · cafe: 50 resultados → Café instantáneo Monterrey clásico lata 170 g $5490
 Unimarc · choclo: 50 resultados → Choclos Wasil tetra 340 g neto - 190 g drenado $1456
 Unimarc · detergente-polvo: 29 resultados → Detergente en polvo Merkat matic floral 2.7 Kg $1404
-Unimarc · toalla-papel: 24 resultados → Toalla de papel Nubelín doble hoja 3 un de 12 m $993
+Unimarc · toalla-papel: 24 resultados → Toalla de papel Abolengo 3 un de 10 m $1127
 Unimarc · bolsas-basura: 30 resultados → Bolsa de basura Smart Clean con asas 50 x 65 cm 10 un $470
-Unimarc · pasta-dental: 50 resultados → Pasta dental Aquafresh intense white 2 u de 96 g $937
-Unimarc · toallas-higienicas: 30 resultados → Toalla higiénica Ladysoft ultradelgada suave con alas 16 un $2000
-Unimarc · panales: 24 resultados → Pañal Kids for Kids ultra soft talla G 92 un $6952
+Unimarc · pasta-dental: 50 resultados → Pasta dental Aquafresh intense white 2 u de 96 g $1214
+Unimarc · toallas-higienicas: 30 resultados → Toalla higiénica Nosotras normal suave con alas 10 un $2000
+Unimarc · panales: 24 resultados → Pañal Kids for Kids ultra soft talla G 92 un $8257
 Unimarc · zanahoria: 50 resultados → Zanahoria bolsa 1 Kg $1590
 Unimarc · manzana: 8 resultados → Manzana royal gala granel 500 g $2590
 Unimarc · limon: 1 resultados → Limón granel 500 g $1990
+Locales actualizados desde OpenStreetMap: {'unimarc': 296, 'jumbo': 59, 'santaisabel': 199, 'super10': 47, 'alvi': 31}
