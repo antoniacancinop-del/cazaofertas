@@ -482,15 +482,19 @@ h2{{font-family:'Bricolage Grotesque',sans-serif;font-size:36px}} .its{{display:
 # ---------------------------------------------------------------- locales (OpenStreetMap)
 
 LOCALES = RAIZ / "datos" / "locales.json"
-MARCAS = {  # nombre en OpenStreetMap -> id de la tienda en Cazaprecios
+VERSION_LOCALES = 2  # subir este número obliga a descargar los locales de nuevo
+MARCAS = {  # nombre en OpenStreetMap -> id de la cadena en Cazaprecios
     "jumbo": "jumbo", "santa isabel": "santaisabel", "unimarc": "unimarc", "alvi": "alvi",
     "super 10": "super10", "super10": "super10", "mayorista 10": "super10",
+    "lider": "lider", "express de lider": "lider", "super lider": "lider", "hiper lider": "lider", "lider express": "lider",
+    "tottus": "tottus", "hiper tottus": "tottus",
+    "acuenta": "acuenta", "superbodega acuenta": "acuenta", "super bodega acuenta": "acuenta",
 }
 CONSULTA_OSM = """[out:json][timeout:180];
 area["ISO3166-1"="CL"][admin_level=2]->.cl;
 (
-  nwr["shop"~"supermarket|wholesale|convenience"]["brand"~"^(Jumbo|Santa Isabel|Unimarc|Alvi|Super ?10|Mayorista 10)$",i](area.cl);
-  nwr["shop"~"supermarket|wholesale"]["name"~"^(Jumbo|Santa Isabel|Unimarc|Alvi|Super ?10|Mayorista 10)( |$)",i](area.cl);
+  nwr["shop"~"supermarket|wholesale|convenience"]["brand"~"^(Jumbo|Santa Isabel|Unimarc|Alvi|Super ?10|Mayorista 10|L[ií]der|Express de L[ií]der|Tottus|a?Cuenta|Super ?Bodega a?Cuenta)$",i](area.cl);
+  nwr["shop"~"supermarket|wholesale|convenience"]["name"~"^(Jumbo|Santa Isabel|Unimarc|Alvi|Super ?10|Mayorista 10|(Super |Hiper |Express de )?L[ií]der|(Hiper )?Tottus|(Super ?Bodega )?a?Cuenta)( |$)",i](area.cl);
 );
 out center tags;"""
 
@@ -501,7 +505,7 @@ def actualizar_locales(log: list):
         try:
             previo = json.loads(LOCALES.read_text(encoding="utf-8"))
             edad = datetime.now(CHILE) - datetime.fromisoformat(previo["actualizado"])
-            if edad < timedelta(days=7) and previo.get("locales"):
+            if edad < timedelta(days=7) and previo.get("locales") and previo.get("v") == VERSION_LOCALES:
                 return
         except Exception:
             pass
@@ -534,7 +538,7 @@ def actualizar_locales(log: list):
     if len(locales) < 50:  # algo salió mal: se conservan los datos anteriores
         log.append(f"Locales: OpenStreetMap devolvió solo {len(locales)} locales; se mantienen los anteriores")
         return
-    LOCALES.write_text(json.dumps({"actualizado": datetime.now(CHILE).isoformat(timespec="minutes"),
+    LOCALES.write_text(json.dumps({"v": VERSION_LOCALES, "actualizado": datetime.now(CHILE).isoformat(timespec="minutes"),
                                    "fuente": "© OpenStreetMap contributors (ODbL)", "locales": locales},
                                   ensure_ascii=False), encoding="utf-8")
     por = {}
