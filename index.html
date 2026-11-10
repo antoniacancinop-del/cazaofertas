@@ -204,15 +204,15 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
 @media (max-width: 640px) { .controls { position: static; } }  /* en el celular los filtros no tapan la pantalla */
 .loc-row select { max-width: 100%; }
 #comuna { flex: 1 1 220px; min-width: 0; }
-.chip[aria-disabled="true"] { opacity: .45; text-decoration: line-through; }
-.chip .km { font-family: var(--font-price); font-size: 13px; color: var(--muted); }
-.cercanos { border-top: 1px dashed var(--line); padding-top: 12px; display: grid; gap: 8px; }
-.cercanos h3 { margin: 0; font-family: var(--font-display); font-size: 16px; }
-.local { display: grid; grid-template-columns: auto 1fr auto; gap: 4px 10px; align-items: center; font-size: 14px; }
-.local .ld { grid-column: 2; font-size: 12px; color: var(--muted); }
-.local .lk { font-family: var(--font-price); font-size: 16px; text-align: right; }
-.local a { grid-column: 3; font-size: 12px; text-align: right; }
-.local.lejos { opacity: .6; }
+.cerca { display: grid; gap: 16px; }
+.loc-msg { margin: 0; font-size: 15px; font-weight: 600; }
+.cerca-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.local { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: start; min-width: 0; }
+.local .lc { display: flex; align-items: center; gap: 8px; font-weight: 700; }
+.local .lk { font-family: var(--font-price); font-size: 22px; text-align: right; }
+.local .ld { grid-column: 1 / -1; font-size: 13px; color: var(--muted); }
+.local .la { grid-column: 1 / -1; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 6px; }
+.badge-precio { font-size: 11px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 1px 6px; }
 .share { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--muted); }
 </style>
 
@@ -235,27 +235,15 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
       <button id="tab-canasta" role="tab" aria-selected="true">Mi canasta<span class="n" id="n-basket">0</span></button>
       <button id="tab-comparar" role="tab" aria-selected="false">Comparar precios</button>
       <button id="tab-ofertas" role="tab" aria-selected="false">Ofertas</button>
+      <button id="tab-cerca" role="tab" aria-selected="false">Supermercados cerca</button>
     </div>
-    <label class="search">
+    <label class="search" id="search-wrap">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
       <input id="q" type="search" placeholder="Busca: pollo, arroz, detergente, jurel…" aria-label="Buscar producto">
     </label>
   </div>
   <div class="chips" id="chips" aria-label="Supermercados"></div>
-  <div class="row loc-row" id="loc-row" hidden>
-    <svg class="pin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
-    <select id="comuna" aria-label="Tu comuna"><option value="">¿Dónde compras? Elige tu comuna</option></select>
-    <button class="btn" id="gps" type="button">Usar mi ubicación</button>
-    <select id="radio" aria-label="Distancia máxima a los locales">
-      <option value="3">Locales a menos de 3 km</option>
-      <option value="5">Locales a menos de 5 km</option>
-      <option value="10" selected>Locales a menos de 10 km</option>
-      <option value="20">Locales a menos de 20 km</option>
-    </select>
-    <button class="btn" id="loc-clear" type="button" hidden>Quitar ubicación</button>
-    <span class="note" id="loc-msg" role="status"></span>
-  </div>
-  <div class="row">
+  <div class="row" id="filtros-row">
     <select id="cat" aria-label="Categoría"><option value="">Todas las categorías</option></select>
     <select id="sort" aria-label="Ordenar">
       <option value="unit">Menor precio</option>
@@ -289,7 +277,6 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
       <div class="rank" id="rank"></div>
       <div class="mix" id="mix"></div>
       <p class="note" id="card-note"></p>
-      <div id="cercanos" class="cercanos" hidden></div>
       <div class="share">Comparte la canasta de hoy: <a class="btn" id="img-hoy" href="datos/canasta-hoy.png" target="_blank" rel="noopener" hidden>Ver imagen</a> <a class="btn" id="wa-site" target="_blank" rel="noopener">Enviar por WhatsApp</a></div>
     </section>
   </div>
@@ -318,6 +305,29 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
   <section id="bajas" class="bajas" hidden aria-labelledby="h-bajas"></section>
   <div id="view-ofertas" class="grid" hidden></div>
   <div id="empty" class="empty" hidden></div>
+
+  <section id="view-cerca" class="cerca" hidden aria-labelledby="h-cerca">
+    <div class="panel">
+      <h2 id="h-cerca">Encuentra tu supermercado más cercano</h2>
+      <p class="note">Elige tu comuna o usa tu ubicación para ver los locales de supermercados más cercanos y cómo llegar. Tu ubicación se usa solo en este dispositivo: no se guarda ni se envía.</p>
+      <div class="row loc-row">
+        <svg class="pin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"></path><circle cx="12" cy="9.5" r="2.5"></circle></svg>
+        <select id="comuna" aria-label="Tu comuna"><option value="">Elige tu comuna</option></select>
+        <button class="btn primary" id="gps" type="button">Usar mi ubicación</button>
+        <select id="radio" aria-label="Distancia máxima">
+          <option value="1">A menos de 1 km</option>
+          <option value="3">A menos de 3 km</option>
+          <option value="5" selected>A menos de 5 km</option>
+          <option value="10">A menos de 10 km</option>
+          <option value="20">A menos de 20 km</option>
+        </select>
+      </div>
+      <div class="chips" id="chips-cerca" aria-label="Cadenas de supermercados"></div>
+      <p class="loc-msg" id="loc-msg" role="status"></p>
+    </div>
+    <div id="cerca-lista" class="cerca-lista"></div>
+    <p class="note">Los locales vienen de OpenStreetMap, el mapa colaborativo; si falta uno o está mal ubicado, se puede corregir allí. Las distancias son en línea recta. Los precios de Cazaprecios son de las tiendas online y no de un local en particular.</p>
+  </section>
 </div></main>
 
 <footer><div class="wrap">
@@ -354,29 +364,19 @@ const save = () => { try { localStorage.setItem("cz-real", JSON.stringify({ stor
 const ref = p => `${String(p.cantidad).replace(".", ",")} ${UNIT[p.unidad] || p.unidad}`;
 const priceOf = x => (state.card && x.precio_tarjeta) ? x.precio_tarjeta : x.precio;
 const cell = (p, s) => p.precios[s.id];
-// ---------- Ubicación: todo se calcula en este dispositivo; la ubicación no se envía a ningún lado
+const activeStores = () => STORES.filter(s => state.stores.has(s.id));
+// ---------- Supermercados cerca: todo se calcula en este dispositivo; la ubicación no se envía a ningún lado
 let COMUNAS = [], LOCALES = [];
-const loc = { punto: null, etiqueta: "", radio: 10, cercanos: {} };
+const CADENAS = { jumbo: "Jumbo", santaisabel: "Santa Isabel", unimarc: "Unimarc", alvi: "Alvi", super10: "Super10", lider: "Lider", tottus: "Tottus", acuenta: "Acuenta" };
+const loc = { punto: null, etiqueta: "", radio: 5, cadenas: null };
 function km(a, b) {
   const R = 6371, rad = x => x * Math.PI / 180;
   const dLat = rad(b.lat - a.lat), dLon = rad(b.lon - a.lon);
   const h = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(dLon / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(h));
 }
-function calcularCercanos() {
-  loc.cercanos = {};
-  if (!loc.punto) return;
-  LOCALES.forEach(l => {
-    const d = km(loc.punto, l);
-    const actual = loc.cercanos[l.t];
-    if (!actual || d < actual.km) loc.cercanos[l.t] = { ...l, km: d };
-  });
-}
-const tieneLocales = id => LOCALES.some(l => l.t === id);
-// una cadena queda fuera solo si sabemos dónde están sus locales y ninguno está dentro del radio
-const lejos = id => !!loc.punto && tieneLocales(id) && (!loc.cercanos[id] || loc.cercanos[id].km > loc.radio);
 const fmtKm = d => d < 1 ? `${Math.round(d * 1000)} m` : `${d.toFixed(1).replace(".", ",")} km`;
-const activeStores = () => STORES.filter(s => state.stores.has(s.id) && !lejos(s.id));
+const guardarLoc = () => { try { localStorage.setItem("cz-cerca", JSON.stringify({ punto: loc.punto, etiqueta: loc.etiqueta, radio: loc.radio, comuna: $("comuna").value, cadenas: [...loc.cadenas] })); } catch (e) {} };
 const inBasket = id => (state.basket[id] || 0) > 0;
 function bestFor(p) {
   let best = null, bs = null;
@@ -424,25 +424,9 @@ async function iniciar() {
     ]);
     COMUNAS = cs || []; LOCALES = (ls && ls.locales) || [];
   } catch (e) {}
-  if (COMUNAS.length && LOCALES.length) {
-    $("loc-row").hidden = false;
-    let grupo = null, html = "";
-    COMUNAS.forEach((c, i) => {
-      if (c.r !== grupo) { html += `${grupo ? "</optgroup>" : ""}<optgroup label="${esc(c.r)}">`; grupo = c.r; }
-      html += `<option value="${i}">${esc(c.n)}</option>`;
-    });
-    $("comuna").insertAdjacentHTML("beforeend", html + "</optgroup>");
-    $("osm").hidden = false;
-    try {
-      const s = JSON.parse(localStorage.getItem("cz-real") || "null");
-      if (s && s.loc) {
-        if (s.loc.radio) { loc.radio = +s.loc.radio; $("radio").value = String(loc.radio); }
-        if (s.loc.punto) { loc.punto = s.loc.punto; loc.etiqueta = s.loc.etiqueta || ""; if (s.loc.comuna) $("comuna").value = s.loc.comuna; calcularCercanos(); }
-      }
-    } catch (e) {}
-  }
+  prepararCerca();
   CATS.forEach(c => $("cat").insertAdjacentHTML("beforeend", `<option>${c}</option>`));
-  $("chips").innerHTML = STORES.map(s => `<button class="chip" data-s="${s.id}" style="--c:${s.c}" aria-pressed="true"><i></i>${esc(s.nombre)}<span class="km" data-km="${s.id}"></span></button>`).join("");
+  $("chips").innerHTML = STORES.map(s => `<button class="chip" data-s="${s.id}" style="--c:${s.c}" aria-pressed="true"><i></i>${esc(s.nombre)}</button>`).join("");
   $("card").checked = state.card;
   $("loading").hidden = true;
   render();
@@ -450,46 +434,71 @@ async function iniciar() {
   fetch("datos/canasta-hoy.png", { method: "HEAD", cache: "no-cache" }).then(r => { $("img-hoy").hidden = !r.ok; }).catch(() => {});
 }
 
-function fijarUbicacion(punto, etiqueta) {
-  loc.punto = punto; loc.etiqueta = etiqueta; calcularCercanos(); save(); render();
+function prepararCerca() {
+  const presentes = Object.keys(CADENAS).filter(id => LOCALES.some(l => l.t === id));
+  loc.cadenas = new Set(presentes);
+  let grupo = null, html = "";
+  COMUNAS.forEach((c, i) => {
+    if (c.r !== grupo) { html += `${grupo ? "</optgroup>" : ""}<optgroup label="${esc(c.r)}">`; grupo = c.r; }
+    html += `<option value="${i}">${esc(c.n)}</option>`;
+  });
+  $("comuna").insertAdjacentHTML("beforeend", html + (grupo ? "</optgroup>" : ""));
+  $("osm").hidden = !LOCALES.length;
+  $("chips-cerca").innerHTML = presentes.map(id => `<button class="chip" data-cadena="${id}" style="--c:${COLORES[id] || "#888"}" aria-pressed="true"><i></i>${CADENAS[id]}</button>`).join("");
+  try {
+    const g = JSON.parse(localStorage.getItem("cz-cerca") || "null");
+    if (g) {
+      if (g.radio) { loc.radio = +g.radio; $("radio").value = String(loc.radio); }
+      if (Array.isArray(g.cadenas)) { const ok = g.cadenas.filter(id => presentes.includes(id)); if (ok.length) loc.cadenas = new Set(ok); }
+      if (g.punto) { loc.punto = g.punto; loc.etiqueta = g.etiqueta || ""; if (g.comuna) $("comuna").value = g.comuna; }
+    }
+  } catch (e) {}
 }
+function fijarUbicacion(punto, etiqueta) { loc.punto = punto; loc.etiqueta = etiqueta; guardarLoc(); render(); }
 $("comuna").addEventListener("change", e => {
   const c = COMUNAS[+e.target.value];
-  if (!c) { fijarUbicacion(null, ""); return; }
-  fijarUbicacion({ lat: c.lat, lon: c.lon }, c.n);
+  fijarUbicacion(c ? { lat: c.lat, lon: c.lon } : null, c ? c.n : "");
 });
-$("radio").addEventListener("change", e => { loc.radio = +e.target.value; save(); render(); });
-$("loc-clear").onclick = () => { $("comuna").value = ""; fijarUbicacion(null, ""); };
+$("radio").addEventListener("change", e => { loc.radio = +e.target.value; guardarLoc(); render(); });
+$("chips-cerca").addEventListener("click", e => {
+  const b = e.target.closest("[data-cadena]"); if (!b) return;
+  const id = b.dataset.cadena;
+  loc.cadenas.has(id) ? loc.cadenas.delete(id) : loc.cadenas.add(id);
+  if (!loc.cadenas.size) loc.cadenas.add(id);
+  guardarLoc(); render();
+});
 $("gps").onclick = () => {
   if (!navigator.geolocation) { $("loc-msg").textContent = "Tu navegador no permite usar la ubicación. Elige tu comuna."; return; }
   $("loc-msg").textContent = "Buscando tu ubicación…";
   navigator.geolocation.getCurrentPosition(
     p => { $("comuna").value = ""; fijarUbicacion({ lat: p.coords.latitude, lon: p.coords.longitude }, "tu ubicación"); },
     () => { $("loc-msg").textContent = "No pudimos obtener tu ubicación. Revisa el permiso del navegador o elige tu comuna."; },
-    { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 });
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 });
 };
 
-function renderUbicacion() {
-  if ($("loc-row").hidden) return;
-  $("loc-clear").hidden = !loc.punto;
-  document.querySelectorAll("[data-km]").forEach(el => {
-    const id = el.dataset.km, c = loc.cercanos[id];
-    el.textContent = loc.punto && c ? ` · ${fmtKm(c.km)}` : "";
-    el.closest(".chip").setAttribute("aria-disabled", lejos(id));
-    el.closest(".chip").title = lejos(id) ? `Sin locales a menos de ${loc.radio} km` : "";
-  });
-  const fuera = STORES.filter(s => lejos(s.id)).map(s => s.nombre);
-  $("loc-msg").textContent = !loc.punto ? "Tu ubicación se usa solo en este dispositivo; no se guarda ni se envía."
-    : fuera.length ? `Cerca de ${loc.etiqueta}. Sin locales a menos de ${loc.radio} km: ${fuera.join(", ")}.` : `Cerca de ${loc.etiqueta}: todas las cadenas tienen locales a menos de ${loc.radio} km.`;
-  const box = $("cercanos");
-  if (!loc.punto) { box.hidden = true; return; }
-  const filas = STORES.filter(s => tieneLocales(s.id) && loc.cercanos[s.id]).map(s => ({ s, l: loc.cercanos[s.id] })).sort((a, b) => a.l.km - b.l.km);
-  box.hidden = !filas.length;
-  box.innerHTML = `<h3>Tus locales más cercanos</h3>` + filas.map(({ s, l }) => `<div class="local ${l.km > loc.radio ? "lejos" : ""}">
-      <i class="dot" style="--c:${s.c}"></i><span>${esc(l.n || s.nombre)}</span><span class="lk">${fmtKm(l.km)}</span>
-      <span class="ld">${esc([l.d, l.c].filter(Boolean).join(", ") || "Dirección no disponible")}${l.km > loc.radio ? " · fuera de tu radio" : ""}</span>
-      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=${l.lat},${l.lon}" target="_blank" rel="noopener">Cómo llegar</a>
-    </div>`).join("") + `<p class="note">Distancia en línea recta desde ${esc(loc.etiqueta)}. Ubicación de locales: © colaboradores de OpenStreetMap.</p>`;
+function renderCerca() {
+  document.querySelectorAll("[data-cadena]").forEach(b => b.setAttribute("aria-pressed", loc.cadenas.has(b.dataset.cadena)));
+  const box = $("cerca-lista");
+  if (!LOCALES.length) { $("loc-msg").textContent = "Estamos cargando la ubicación de los locales. Vuelve a intentarlo más tarde."; box.innerHTML = ""; return; }
+  if (!loc.punto) { $("loc-msg").textContent = "Elige tu comuna o toca “Usar mi ubicación” para empezar."; box.innerHTML = ""; return; }
+  const todos = LOCALES.filter(l => loc.cadenas.has(l.t)).map(l => ({ ...l, km: km(loc.punto, l) })).sort((a, b) => a.km - b.km);
+  const dentro = todos.filter(l => l.km <= loc.radio);
+  const mostrar = (dentro.length ? dentro : todos.slice(0, 3)).slice(0, 40);
+  $("loc-msg").textContent = dentro.length
+    ? `${dentro.length} local${dentro.length === 1 ? "" : "es"} a menos de ${loc.radio} km de ${loc.etiqueta}${dentro.length > 40 ? " (se muestran los 40 más cercanos)" : ""}.`
+    : `No encontramos locales a menos de ${loc.radio} km de ${loc.etiqueta}. Estos son los más cercanos:`;
+  const conPrecios = new Set(STORES.filter(t => !t.solo_ofertas).map(t => t.id));
+  box.innerHTML = mostrar.map(l => {
+    const cadena = CADENAS[l.t] || l.n;
+    const nombre = l.n && norm(l.n) !== norm(cadena) ? l.n : "";
+    return `<article class="local">
+      <span class="lc"><i class="dot" style="--c:${COLORES[l.t] || "#888"}"></i>${esc(cadena)}</span>
+      <span class="lk">${fmtKm(l.km)}</span>
+      <span class="ld">${esc([nombre, l.d, l.c].filter(Boolean).join(" · ") || "Dirección no disponible")}</span>
+      <span class="la"><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=${l.lat},${l.lon}" target="_blank" rel="noopener">Cómo llegar</a>
+      ${conPrecios.has(l.t) ? `<span class="badge-precio">Con precios en Cazaprecios</span>` : ""}</span>
+    </article>`;
+  }).join("");
 }
 
 $("chips").addEventListener("click", e => {
@@ -507,6 +516,7 @@ const setView = v => { state.view = v; state.focus = null; render(); };
 $("tab-canasta").onclick = () => setView("canasta");
 $("tab-comparar").onclick = () => setView("comparar");
 $("tab-ofertas").onclick = () => setView("ofertas");
+$("tab-cerca").onclick = () => setView("cerca");
 $("go-compare").onclick = e => { e.preventDefault(); setView("comparar"); };
 $("preset").onclick = () => { state.basket = { ...PRESET }; save(); render(); };
 $("clear").onclick = () => { state.basket = {}; save(); render(); };
@@ -719,14 +729,16 @@ $("copy-lista").onclick = async () => {
 
 function render() {
   document.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", state.stores.has(b.dataset.s)));
-  ["canasta", "comparar", "ofertas"].forEach(v => { $("tab-" + v).setAttribute("aria-selected", state.view === v); $("view-" + v).hidden = state.view !== v; });
+  ["canasta", "comparar", "ofertas", "cerca"].forEach(v => { $("tab-" + v).setAttribute("aria-selected", state.view === v); $("view-" + v).hidden = state.view !== v; });
+  const cerca = state.view === "cerca";
+  $("search-wrap").hidden = $("chips").hidden = $("filtros-row").hidden = $("count").hidden = cerca;
   $("bajas").hidden = true;
   $("n-basket").textContent = Object.keys(state.basket).filter(inBasket).length;
   $("cat").hidden = $("sort").hidden = state.view === "canasta";
   renderBasket();
   renderLista();
-  renderUbicacion();
   $("wa-site").href = "https://wa.me/?text=" + encodeURIComponent(`Mira dónde sale más barata la canasta básica hoy: ${location.origin + location.pathname}`);
+  if (cerca) { $("empty").hidden = true; renderCerca(); return; }
   const n = state.view === "canasta" ? 1 : state.view === "ofertas" ? renderOffers() : renderCompare();
   $("empty").hidden = n > 0;
   if (!n) {
