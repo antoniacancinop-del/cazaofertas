@@ -6,7 +6,7 @@
 <title>Cazaprecios</title>
 <meta name="description" content="Compara cada día dónde sale más barata la canasta básica en los supermercados de Chile: proteínas, despensa y limpieza.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=Archivo+Narrow:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@600;800&family=Figtree:wght@400;500;600&family=Archivo+Narrow:wght@600;700&display=swap">
 <style>
 /* Layout: barra de filtros fija arriba; abajo, tres vistas: Mi canasta (ranking por supermercado), Comparar (tabla) y Ofertas (flejes) */
 :root {
@@ -22,7 +22,7 @@
   --good-bg: #e3f4ec;
   --danger: #c2261f;
   --bar: #d3cfe0;
-  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Public Sans", "Segoe UI", system-ui, sans-serif;
   --font-body: "Figtree", "Segoe UI", system-ui, sans-serif;
   --font-price: "Archivo Narrow", "Arial Narrow", "Roboto Condensed", sans-serif;
 }
@@ -213,6 +213,13 @@ a.btn { text-decoration: none; display: inline-flex; align-items: center; }
 .local .ld { grid-column: 1 / -1; font-size: 13px; color: var(--muted); }
 .local .la { grid-column: 1 / -1; display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-top: 6px; }
 .badge-precio { font-size: 11px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); border-radius: 4px; padding: 1px 6px; }
+#items { gap: 12px; }
+.grupo-canasta { display: grid; padding-top: 10px; border-top: 2px solid var(--line); }
+.grupo-canasta:first-child { border-top: 0; padding-top: 0; }
+.grupo-canasta h3 { margin: 0 0 4px; font-family: var(--font-display); font-size: 17px; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.grupo-canasta h3 .sub-t { font-family: var(--font-price); font-size: 19px; }
+.grupo-canasta h3 .pmeta { font-family: var(--font-body); font-weight: 500; font-size: 13px; }
+.grupo-canasta .item:first-of-type { border-top: 0; }
 .share { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 13px; color: var(--muted); }
 </style>
 
@@ -548,14 +555,31 @@ function renderBasket() {
   ids.forEach(id => { const b = bestFor(P(id)); if (b) { mix += priceOf(b.x) * state.basket[id]; used.add(b.s.nombre); } });
 
   $("count").textContent = "Precio de la tienda online que paga cualquier persona" + (state.card ? ", incluyendo los que exigen tarjeta o club de la tienda." : ", sin tarjetas ni clubes.") + " Cada producto se compara en el mismo formato.";
-  $("items").innerHTML = ids.length ? CATS.flatMap(cat => ids.filter(id => P(id).categoria === cat).map(id => {
-    const p = P(id), b = bestFor(p);
+  // la canasta se muestra agrupada por el supermercado donde cada producto está más barato
+  const fila = (id, b) => {
+    const p = P(id);
     return `<div class="item">
-      <div><div class="pname">${esc(p.nombre)}</div><div class="pmeta">${ref(p)}</div></div>
+      <div><div class="pname">${esc(p.nombre)}</div><div class="pmeta">${ref(p)}${b ? ` · ${esc(b.x.nombre_producto)}` : ""}</div></div>
       <div class="step" aria-label="Cantidad de ${esc(p.nombre)}"><button data-step="-1" data-id="${id}" aria-label="Quitar uno">−</button><span>${state.basket[id]}</span><button data-step="1" data-id="${id}" aria-label="Agregar uno">+</button></div>
-      <div class="best">${b ? `<b>${fmt(priceOf(b.x))}${trend(b.x)}</b>en ${esc(b.s.nombre)}<span class="pn">${esc(b.x.nombre_producto)}</span>` : "Sin precio hoy"}</div>
+      <div class="best">${b ? `<b>${fmt(priceOf(b.x) * state.basket[id])}${trend(b.x)}</b>${state.basket[id] > 1 ? `${fmt(priceOf(b.x))} c/u` : ""}` : "Sin precio hoy"}</div>
     </div>`;
-  })).join("") : `<p class="note">Tu canasta está vacía. Carga la canasta básica o agrega productos desde Comparar precios.</p>`;
+  };
+  const grupos = new Map(), sinPrecio = [];
+  ids.forEach(id => {
+    const b = bestFor(P(id));
+    if (!b) { sinPrecio.push(id); return; }
+    if (!grupos.has(b.s.id)) grupos.set(b.s.id, { s: b.s, filas: [], total: 0 });
+    const g = grupos.get(b.s.id);
+    g.filas.push({ id, b, cat: CATS.indexOf(P(id).categoria) });
+    g.total += priceOf(b.x) * state.basket[id];
+  });
+  $("items").innerHTML = ids.length ? [...grupos.values()].sort((a, b) => b.filas.length - a.filas.length || b.total - a.total).map(g => `
+      <div class="grupo-canasta">
+        <h3><span><i class="dot" style="--c:${g.s.c}"></i> ${esc(g.s.nombre)} <span class="pmeta">· ${g.filas.length} producto${g.filas.length === 1 ? "" : "s"}</span></span><span class="sub-t">${fmt(g.total)}</span></h3>
+        ${g.filas.sort((a, b) => a.cat - b.cat).map(f => fila(f.id, f.b)).join("")}
+      </div>`).join("") +
+    (sinPrecio.length ? `<div class="grupo-canasta"><h3><span>Sin precio hoy</span></h3>${sinPrecio.map(id => fila(id, null)).join("")}</div>` : "")
+    : `<p class="note">Tu canasta está vacía. Carga la canasta básica o agrega productos desde Comparar precios.</p>`;
 
   if (!ids.length || !stores.length) { $("winner").innerHTML = ""; $("rank").innerHTML = ""; $("mix").innerHTML = ""; $("card-note").textContent = ""; $("st-min").textContent = "—"; $("st-save").textContent = "—"; return; }
   const max = Math.max(...stores.map(x => x.total), 1);
