@@ -1,0 +1,1406 @@
+{
+ "_ayuda": "Cada producto de la canasta. 'buscar' es lo que se escribe en el buscador del supermercado; 'debe' son palabras que el nombre tiene que contener (todas); 'alguna' (opcional) son alternativas donde basta una; 'excluir' descarta productos que contengan esas palabras; 'cantidad' y 'unidad' indican el formato de referencia para comparar (se compara el precio llevado a esa cantidad). 'rango' acepta envases entre esos múltiplos del formato de referencia.",
+ "productos": [
+  {
+   "id": "pechuga-pollo",
+   "nombre": "Pechuga de pollo deshuesada",
+   "categoria": "Proteínas",
+   "buscar": "pechuga de pollo deshuesada",
+   "debe": [
+    "pechuga",
+    "pollo"
+   ],
+   "alguna": [
+    "deshuesad",
+    "filete",
+    "sin hueso"
+   ],
+   "excluir": [
+    "apanad",
+    "nugget",
+    "cocid",
+    "marinad",
+    "ahumad",
+    "jamon",
+    "laminad",
+    "pavo",
+    "congelad",
+    "hamburgues"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.3,
+    3
+   ]
+  },
+  {
+   "id": "trutro-pollo",
+   "nombre": "Trutro entero de pollo",
+   "categoria": "Proteínas",
+   "buscar": "trutro entero pollo",
+   "debe": [
+    "trutro",
+    "pollo"
+   ],
+   "excluir": [
+    "apanad",
+    "cocid",
+    "marinad",
+    "ahumad",
+    "congelad",
+    "nugget"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.3,
+    4
+   ]
+  },
+  {
+   "id": "carne-molida",
+   "nombre": "Carne molida de vacuno",
+   "categoria": "Proteínas",
+   "buscar": "carne molida vacuno",
+   "debe": [
+    "molida"
+   ],
+   "excluir": [
+    "cerdo",
+    "pollo",
+    "pavo",
+    "soya",
+    "vegetal",
+    "hamburgues",
+    "congelad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.25,
+    3
+   ]
+  },
+  {
+   "id": "posta-negra",
+   "nombre": "Posta negra",
+   "categoria": "Proteínas",
+   "buscar": "posta negra",
+   "debe": [
+    "posta",
+    "negra"
+   ],
+   "excluir": [
+    "molida",
+    "congelad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.3,
+    4
+   ]
+  },
+  {
+   "id": "chuleta-cerdo",
+   "nombre": "Chuleta de cerdo",
+   "categoria": "Proteínas",
+   "buscar": "chuleta cerdo",
+   "debe": [
+    "chuleta",
+    "cerdo"
+   ],
+   "excluir": [
+    "ahumad",
+    "apanad",
+    "marinad",
+    "congelad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.3,
+    4
+   ]
+  },
+  {
+   "id": "merluza",
+   "nombre": "Filete de merluza",
+   "categoria": "Proteínas",
+   "buscar": "filete merluza",
+   "debe": [
+    "merluza"
+   ],
+   "excluir": [
+    "apanad",
+    "rebozad",
+    "nugget",
+    "croqueta",
+    "hamburgues",
+    "varita",
+    "tempura",
+    "romana",
+    "empanad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.2,
+    3
+   ]
+  },
+  {
+   "id": "jurel",
+   "nombre": "Jurel en conserva",
+   "categoria": "Proteínas",
+   "buscar": "jurel lata",
+   "debe": [
+    "jurel"
+   ],
+   "excluir": [
+    "salsa",
+    "aceite de oliva",
+    "pack"
+   ],
+   "cantidad": 425,
+   "unidad": "g",
+   "rango": [
+    0.8,
+    1.2
+   ]
+  },
+  {
+   "id": "atun",
+   "nombre": "Atún lomitos en agua",
+   "categoria": "Proteínas",
+   "buscar": "atun lomitos agua",
+   "debe": [
+    "atun"
+   ],
+   "alguna": [
+    "agua"
+   ],
+   "excluir": [
+    "aceite",
+    "pack",
+    "x 3",
+    "x3",
+    "ensalada",
+    "3 un",
+    "4 un"
+   ],
+   "cantidad": 160,
+   "unidad": "g",
+   "rango": [
+    0.75,
+    1.3
+   ]
+  },
+  {
+   "id": "huevos",
+   "nombre": "Huevos (bandeja)",
+   "categoria": "Proteínas",
+   "buscar": "huevos",
+   "debe": [
+    "huevo"
+   ],
+   "excluir": [
+    "codorniz",
+    "chocolate",
+    "pascua",
+    "liquido",
+    "clara",
+    "polvo"
+   ],
+   "cantidad": 30,
+   "unidad": "un",
+   "rango": [
+    0.3,
+    1.2
+   ]
+  },
+  {
+   "id": "arroz",
+   "nombre": "Arroz grado 2",
+   "categoria": "Despensa",
+   "buscar": "arroz grado 2",
+   "debe": [
+    "arroz"
+   ],
+   "alguna": [
+    "g2",
+    "grado 2"
+   ],
+   "excluir": [
+    "preparado",
+    "integral",
+    "basmati",
+    "jazmin",
+    "arborio",
+    "sushi",
+    "graneado listo",
+    "microondas"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.9,
+    1.1
+   ]
+  },
+  {
+   "id": "fideos",
+   "nombre": "Fideos spaghetti",
+   "categoria": "Despensa",
+   "buscar": "spaghetti",
+   "debe": [
+    "spaghetti"
+   ],
+   "excluir": [
+    "integral",
+    "sin gluten",
+    "salsa",
+    "listo",
+    "arroz"
+   ],
+   "cantidad": 400,
+   "unidad": "g",
+   "rango": [
+    0.85,
+    1.3
+   ]
+  },
+  {
+   "id": "aceite",
+   "nombre": "Aceite vegetal o maravilla",
+   "categoria": "Despensa",
+   "buscar": "aceite maravilla",
+   "debe": [
+    "aceite"
+   ],
+   "alguna": [
+    "maravilla",
+    "vegetal"
+   ],
+   "excluir": [
+    "oliva",
+    "spray",
+    "coco",
+    "sesamo",
+    "palta",
+    "aerosol"
+   ],
+   "cantidad": 1,
+   "unidad": "l",
+   "rango": [
+    0.85,
+    1.1
+   ]
+  },
+  {
+   "id": "azucar",
+   "nombre": "Azúcar granulada",
+   "categoria": "Despensa",
+   "buscar": "azucar granulada",
+   "debe": [
+    "azucar"
+   ],
+   "excluir": [
+    "flor",
+    "rubia",
+    "morena",
+    "light",
+    "stevia",
+    "sucralosa",
+    "endulzante",
+    "glass",
+    "impalpable",
+    "sobres"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.9,
+    1.1
+   ]
+  },
+  {
+   "id": "harina",
+   "nombre": "Harina sin polvos",
+   "categoria": "Despensa",
+   "buscar": "harina sin polvos",
+   "debe": [
+    "harina"
+   ],
+   "alguna": [
+    "sin polvo",
+    "s/polvo"
+   ],
+   "excluir": [
+    "integral",
+    "maiz",
+    "almendra",
+    "avena",
+    "arroz",
+    "garbanzo"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.9,
+    1.1
+   ]
+  },
+  {
+   "id": "lentejas",
+   "nombre": "Lentejas",
+   "categoria": "Despensa",
+   "buscar": "lentejas",
+   "debe": [
+    "lenteja"
+   ],
+   "excluir": [
+    "preparad",
+    "lata",
+    "cocid",
+    "snack",
+    "pasta",
+    "harina"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.4,
+    1.1
+   ]
+  },
+  {
+   "id": "porotos",
+   "nombre": "Porotos",
+   "categoria": "Despensa",
+   "buscar": "porotos",
+   "debe": [
+    "poroto"
+   ],
+   "excluir": [
+    "preparad",
+    "lata",
+    "cocid",
+    "verde",
+    "granados",
+    "congelad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.4,
+    1.1
+   ]
+  },
+  {
+   "id": "avena",
+   "nombre": "Avena",
+   "categoria": "Despensa",
+   "buscar": "avena",
+   "debe": [
+    "avena"
+   ],
+   "excluir": [
+    "barra",
+    "galleta",
+    "bebida",
+    "leche",
+    "granola",
+    "harina",
+    "sobres",
+    "saborizada",
+    "frutilla",
+    "chocolate"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.4,
+    1.2
+   ]
+  },
+  {
+   "id": "salsa-tomate",
+   "nombre": "Salsa de tomate",
+   "categoria": "Despensa",
+   "buscar": "salsa de tomate",
+   "debe": [
+    "tomate"
+   ],
+   "alguna": [
+    "salsa",
+    "pomarola"
+   ],
+   "excluir": [
+    "ketchup",
+    "kétchup",
+    "deshidratad",
+    "pasta de tomate"
+   ],
+   "cantidad": 200,
+   "unidad": "g",
+   "rango": [
+    0.8,
+    1.3
+   ]
+  },
+  {
+   "id": "sal",
+   "nombre": "Sal de mesa",
+   "categoria": "Despensa",
+   "buscar": "sal fina",
+   "debe": [
+    "sal"
+   ],
+   "excluir": [
+    "salsa",
+    "salame",
+    "salchich",
+    "parrillera",
+    "gruesa",
+    "marina",
+    "rosada",
+    "light",
+    "sales",
+    "salmon",
+    "salvado"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.9,
+    1.1
+   ]
+  },
+  {
+   "id": "te",
+   "nombre": "Té en bolsitas",
+   "categoria": "Despensa",
+   "buscar": "te ceylan",
+   "debe": [
+    "te"
+   ],
+   "excluir": [
+    "verde",
+    "hierbas",
+    "infusion",
+    "manzanilla",
+    "frio",
+    "helado",
+    "chai",
+    "rojo",
+    "matcha"
+   ],
+   "cantidad": 100,
+   "unidad": "un",
+   "rango": [
+    0.5,
+    2
+   ]
+  },
+  {
+   "id": "detergente",
+   "nombre": "Detergente líquido ropa",
+   "categoria": "Limpieza y aseo",
+   "buscar": "detergente liquido",
+   "debe": [
+    "detergente"
+   ],
+   "alguna": [
+    "liquido"
+   ],
+   "excluir": [
+    "loza",
+    "lavaloza",
+    "polvo",
+    "capsula",
+    "suavizante",
+    "prendas delicadas"
+   ],
+   "cantidad": 3,
+   "unidad": "l",
+   "rango": [
+    0.5,
+    1.7
+   ]
+  },
+  {
+   "id": "lavalozas",
+   "nombre": "Lavalozas",
+   "categoria": "Limpieza y aseo",
+   "buscar": "lavalozas",
+   "debe": [
+    "lavaloza"
+   ],
+   "excluir": [
+    "maquina",
+    "lavavajilla",
+    "pastilla",
+    "capsula",
+    "esponja"
+   ],
+   "cantidad": 750,
+   "unidad": "ml",
+   "rango": [
+    0.6,
+    2
+   ]
+  },
+  {
+   "id": "cloro",
+   "nombre": "Cloro",
+   "categoria": "Limpieza y aseo",
+   "buscar": "cloro",
+   "debe": [
+    "cloro"
+   ],
+   "excluir": [
+    "gel",
+    "piscina",
+    "ropa color",
+    "pastilla",
+    "toallitas",
+    "spray",
+    "mascota"
+   ],
+   "cantidad": 2,
+   "unidad": "l",
+   "rango": [
+    0.4,
+    2.6
+   ]
+  },
+  {
+   "id": "limpiapisos",
+   "nombre": "Limpiapisos",
+   "categoria": "Limpieza y aseo",
+   "buscar": "limpiapisos",
+   "debe": [],
+   "excluir": [
+    "mopa",
+    "trapero",
+    "paño",
+    "pano",
+    "toallitas",
+    "repuesto",
+    "cera"
+   ],
+   "cantidad": 900,
+   "unidad": "ml",
+   "rango": [
+    0.5,
+    2.3
+   ],
+   "alguna": [
+    "piso",
+    "limpiapiso"
+   ]
+  },
+  {
+   "id": "papel-higienico",
+   "nombre": "Papel higiénico",
+   "categoria": "Limpieza y aseo",
+   "buscar": "papel higienico",
+   "debe": [
+    "higienico"
+   ],
+   "excluir": [
+    "humedo",
+    "húmedo",
+    "toallas",
+    "dispensador"
+   ],
+   "cantidad": 12,
+   "unidad": "rollos",
+   "rango": [
+    0.3,
+    4
+   ]
+  },
+  {
+   "id": "jabon",
+   "nombre": "Jabón de tocador",
+   "categoria": "Limpieza y aseo",
+   "buscar": "jabon barra",
+   "debe": [
+    "jabon"
+   ],
+   "excluir": [
+    "liquido",
+    "ropa",
+    "lavaloza",
+    "loza",
+    "intimo",
+    "glicerina liquida",
+    "repuesto",
+    "espuma",
+    "gel"
+   ],
+   "cantidad": 3,
+   "unidad": "un",
+   "rango": [
+    0.3,
+    2.5
+   ]
+  },
+  {
+   "id": "leche",
+   "nombre": "Leche entera 1 L",
+   "categoria": "Lácteos",
+   "buscar": "leche entera 1 litro",
+   "debe": [
+    "leche"
+   ],
+   "alguna": [
+    "entera"
+   ],
+   "excluir": [
+    "polvo",
+    "condensada",
+    "evaporada",
+    "sin lactosa",
+    "chocolate",
+    "frutilla",
+    "vainilla",
+    "almendra",
+    "soya",
+    "avena",
+    "coco",
+    "pack",
+    "x6",
+    "x 6",
+    "cultivada",
+    "fermentada"
+   ],
+   "cantidad": 1,
+   "unidad": "l",
+   "rango": [
+    0.9,
+    1.1
+   ]
+  },
+  {
+   "id": "mantequilla",
+   "nombre": "Mantequilla",
+   "categoria": "Lácteos",
+   "buscar": "mantequilla",
+   "debe": [
+    "mantequilla"
+   ],
+   "excluir": [
+    "mani",
+    "maní",
+    "galleta",
+    "sabor",
+    "untable vegetal",
+    "margarina",
+    "sucedaneo",
+    "light",
+    "buttery"
+   ],
+   "cantidad": 250,
+   "unidad": "g",
+   "rango": [
+    0.7,
+    1.1
+   ]
+  },
+  {
+   "id": "papas",
+   "nombre": "Papas",
+   "categoria": "Frutas y verduras",
+   "buscar": "papa granel",
+   "debe": [
+    "papa"
+   ],
+   "excluir": [
+    "frita",
+    "chips",
+    "pure",
+    "puré",
+    "congelad",
+    "camote",
+    "noisette",
+    "rustica",
+    "duquesa",
+    "papaya"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.5,
+    5
+   ]
+  },
+  {
+   "id": "cebolla",
+   "nombre": "Cebolla",
+   "categoria": "Frutas y verduras",
+   "buscar": "cebolla",
+   "debe": [
+    "cebolla"
+   ],
+   "excluir": [
+    "morada",
+    "perla",
+    "deshidratad",
+    "frita",
+    "polvo",
+    "salsa",
+    "cebollin",
+    "cebollín",
+    "aros",
+    "pickles",
+    "congelad",
+    "cubo"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.5,
+    5
+   ]
+  },
+  {
+   "id": "tomate",
+   "nombre": "Tomate",
+   "categoria": "Frutas y verduras",
+   "buscar": "tomate granel",
+   "debe": [
+    "tomate"
+   ],
+   "excluir": [
+    "cherry",
+    "salsa",
+    "pasta",
+    "triturado",
+    "pelado",
+    "deshidratad",
+    "ketchup",
+    "jugo",
+    "seco",
+    "concentrado",
+    "congelad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.5,
+    3
+   ]
+  },
+  {
+   "id": "platano",
+   "nombre": "Plátano",
+   "categoria": "Frutas y verduras",
+   "buscar": "platano",
+   "debe": [
+    "platano"
+   ],
+   "excluir": [
+    "deshidratad",
+    "chips",
+    "jugo",
+    "nectar",
+    "yogur",
+    "batido",
+    "harina",
+    "papilla",
+    "tigreton",
+    "chocolate",
+    "congelad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.5,
+    3
+   ]
+  },
+  {
+   "id": "marraqueta",
+   "nombre": "Marraqueta",
+   "categoria": "Panadería",
+   "buscar": "marraqueta",
+   "debe": [
+    "marraqueta"
+   ],
+   "excluir": [
+    "congelad",
+    "integral"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.3,
+    2
+   ]
+  },
+  {
+   "id": "pan-molde",
+   "nombre": "Pan de molde blanco",
+   "categoria": "Panadería",
+   "buscar": "pan de molde blanco",
+   "debe": [
+    "pan"
+   ],
+   "alguna": [
+    "molde"
+   ],
+   "excluir": [
+    "integral",
+    "multigrano",
+    "sin gluten",
+    "hamburguesa",
+    "hot dog",
+    "pita",
+    "rallado",
+    "masa madre",
+    "centeno",
+    "linaza",
+    "avena"
+   ],
+   "cantidad": 750,
+   "unidad": "g",
+   "rango": [
+    0.5,
+    1.4
+   ]
+  },
+  {
+   "id": "pollo-entero",
+   "nombre": "Pollo entero",
+   "categoria": "Proteínas",
+   "buscar": "pollo entero",
+   "debe": [
+    "pollo",
+    "entero"
+   ],
+   "excluir": [
+    "trutro",
+    "pechuga",
+    "ala",
+    "asado",
+    "rostizado",
+    "cocid",
+    "apanad",
+    "nugget",
+    "marinad",
+    "condimentad",
+    "caldo",
+    "sopa"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.5,
+    4
+   ]
+  },
+  {
+   "id": "pierna-pollo",
+   "nombre": "Pierna o tuto de pollo",
+   "categoria": "Proteínas",
+   "buscar": "pierna pollo",
+   "debe": [
+    "pollo"
+   ],
+   "alguna": [
+    "pierna",
+    "tuto",
+    "trutro corto"
+   ],
+   "excluir": [
+    "apanad",
+    "cocid",
+    "marinad",
+    "ahumad",
+    "nugget",
+    "deshuesad",
+    "congelad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.4,
+    4
+   ]
+  },
+  {
+   "id": "tapapecho",
+   "nombre": "Tapapecho o asiento (cazuela)",
+   "categoria": "Proteínas",
+   "buscar": "tapapecho",
+   "alguna": [
+    "tapapecho",
+    "asiento",
+    "osobuco",
+    "huachalomo",
+    "cazuela"
+   ],
+   "debe": [],
+   "excluir": [
+    "molida",
+    "cerdo",
+    "pollo",
+    "pavo",
+    "congelad",
+    "hamburgues"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.3,
+    4
+   ]
+  },
+  {
+   "id": "pulpa-cerdo",
+   "nombre": "Pulpa de cerdo",
+   "categoria": "Proteínas",
+   "buscar": "pulpa cerdo",
+   "debe": [
+    "pulpa",
+    "cerdo"
+   ],
+   "excluir": [
+    "ahumad",
+    "marinad",
+    "congelad",
+    "molida"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.3,
+    4
+   ]
+  },
+  {
+   "id": "vienesas",
+   "nombre": "Vienesas",
+   "categoria": "Proteínas",
+   "buscar": "vienesas",
+   "debe": [
+    "vienesa"
+   ],
+   "excluir": [
+    "pavo",
+    "vegetal",
+    "veggie",
+    "pollo",
+    "coctel",
+    "cóctel"
+   ],
+   "cantidad": 20,
+   "unidad": "un",
+   "rango": [
+    0.25,
+    1.6
+   ]
+  },
+  {
+   "id": "sardinas",
+   "nombre": "Sardinas en conserva",
+   "categoria": "Proteínas",
+   "buscar": "sardinas lata",
+   "debe": [
+    "sardina"
+   ],
+   "excluir": [
+    "pack"
+   ],
+   "cantidad": 125,
+   "unidad": "g",
+   "rango": [
+    0.7,
+    1.4
+   ]
+  },
+  {
+   "id": "garbanzos",
+   "nombre": "Garbanzos",
+   "categoria": "Despensa",
+   "buscar": "garbanzos",
+   "debe": [
+    "garbanzo"
+   ],
+   "excluir": [
+    "preparad",
+    "lata",
+    "cocid",
+    "harina",
+    "hummus",
+    "snack",
+    "tostad"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.4,
+    1.1
+   ]
+  },
+  {
+   "id": "tallarines",
+   "nombre": "Tallarines",
+   "categoria": "Despensa",
+   "buscar": "tallarines",
+   "debe": [
+    "tallarin"
+   ],
+   "excluir": [
+    "integral",
+    "sin gluten",
+    "huevo",
+    "listo",
+    "arroz",
+    "instantane"
+   ],
+   "cantidad": 400,
+   "unidad": "g",
+   "rango": [
+    0.85,
+    1.3
+   ]
+  },
+  {
+   "id": "leche-polvo",
+   "nombre": "Leche en polvo entera",
+   "categoria": "Lácteos",
+   "buscar": "leche en polvo entera",
+   "debe": [
+    "leche",
+    "polvo"
+   ],
+   "excluir": [
+    "descremad",
+    "semidescremad",
+    "sin lactosa",
+    "infantil",
+    "formula",
+    "nido",
+    "crecimiento",
+    "proteina",
+    "cafe"
+   ],
+   "cantidad": 800,
+   "unidad": "g",
+   "rango": [
+    0.4,
+    1.4
+   ]
+  },
+  {
+   "id": "cafe",
+   "nombre": "Café instantáneo",
+   "categoria": "Despensa",
+   "buscar": "cafe instantaneo",
+   "debe": [
+    "cafe"
+   ],
+   "alguna": [
+    "instantane",
+    "soluble"
+   ],
+   "excluir": [
+    "capsula",
+    "grano",
+    "molido",
+    "cappuccino",
+    "capuchino",
+    "mokaccino",
+    "latte",
+    "sobres",
+    "3 en 1",
+    "descafeinado",
+    "vainilla",
+    "mixes",
+    "moka",
+    "choca",
+    "mocha",
+    "caramel"
+   ],
+   "cantidad": 170,
+   "unidad": "g",
+   "rango": [
+    0.5,
+    1.5
+   ]
+  },
+  {
+   "id": "choclo",
+   "nombre": "Choclo en conserva",
+   "categoria": "Despensa",
+   "buscar": "choclo conserva",
+   "debe": [
+    "choclo"
+   ],
+   "excluir": [
+    "congelad",
+    "crema",
+    "sopa",
+    "pastel",
+    "humita",
+    "pack"
+   ],
+   "cantidad": 300,
+   "unidad": "g",
+   "rango": [
+    0.6,
+    1.5
+   ]
+  },
+  {
+   "id": "detergente-polvo",
+   "nombre": "Detergente en polvo",
+   "categoria": "Limpieza y aseo",
+   "buscar": "detergente en polvo",
+   "debe": [
+    "detergente",
+    "polvo"
+   ],
+   "excluir": [
+    "loza",
+    "lavaloza",
+    "capsula",
+    "liquido"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.4,
+    3.2
+   ]
+  },
+  {
+   "id": "toalla-papel",
+   "nombre": "Toalla de papel",
+   "categoria": "Limpieza y aseo",
+   "buscar": "toalla de papel",
+   "debe": [
+    "toalla",
+    "papel"
+   ],
+   "excluir": [
+    "humed",
+    "higienic",
+    "servilleta",
+    "dispensador",
+    "facial",
+    "pañuelo",
+    "panuelo"
+   ],
+   "cantidad": 2,
+   "unidad": "rollos",
+   "rango": [
+    0.5,
+    6
+   ]
+  },
+  {
+   "id": "bolsas-basura",
+   "nombre": "Bolsas de basura",
+   "categoria": "Limpieza y aseo",
+   "buscar": "bolsas de basura",
+   "debe": [
+    "bolsa",
+    "basura"
+   ],
+   "excluir": [
+    "contenedor",
+    "basurero",
+    "dispensador"
+   ],
+   "cantidad": 10,
+   "unidad": "un",
+   "rango": [
+    0.5,
+    5
+   ]
+  },
+  {
+   "id": "pasta-dental",
+   "nombre": "Pasta dental",
+   "categoria": "Limpieza y aseo",
+   "buscar": "pasta dental",
+   "debe": [
+    "pasta",
+    "dental"
+   ],
+   "excluir": [
+    "niño",
+    "nino",
+    "kids",
+    "infantil",
+    "cepillo",
+    "blanqueador",
+    "sensitive",
+    "pack",
+    "enjuague"
+   ],
+   "cantidad": 90,
+   "unidad": "g",
+   "rango": [
+    0.5,
+    2.2
+   ]
+  },
+  {
+   "id": "toallas-higienicas",
+   "nombre": "Toallas higiénicas",
+   "categoria": "Limpieza y aseo",
+   "buscar": "toallas higienicas",
+   "debe": [
+    "toalla",
+    "higienic"
+   ],
+   "excluir": [
+    "protector",
+    "diario",
+    "humed",
+    "nocturna",
+    "papel"
+   ],
+   "cantidad": 16,
+   "unidad": "un",
+   "rango": [
+    0.4,
+    3
+   ]
+  },
+  {
+   "id": "panales",
+   "nombre": "Pañales talla G",
+   "categoria": "Limpieza y aseo",
+   "buscar": "pañales talla g",
+   "debe": [
+    "panal"
+   ],
+   "alguna": [
+    "g",
+    "grande"
+   ],
+   "excluir": [
+    "toallita",
+    "adulto",
+    "xg",
+    "xxg",
+    "pants",
+    "traje de baño",
+    "agua"
+   ],
+   "cantidad": 40,
+   "unidad": "un",
+   "rango": [
+    0.4,
+    3
+   ]
+  },
+  {
+   "id": "zanahoria",
+   "nombre": "Zanahoria",
+   "categoria": "Frutas y verduras",
+   "buscar": "zanahoria",
+   "debe": [
+    "zanahoria"
+   ],
+   "excluir": [
+    "baby",
+    "rallad",
+    "congelad",
+    "jugo",
+    "snack",
+    "bastones"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.4,
+    3
+   ]
+  },
+  {
+   "id": "manzana",
+   "nombre": "Manzana",
+   "categoria": "Frutas y verduras",
+   "buscar": "manzana granel",
+   "debe": [
+    "manzana"
+   ],
+   "excluir": [
+    "jugo",
+    "nectar",
+    "compota",
+    "deshidratad",
+    "chips",
+    "vinagre",
+    "sidra",
+    "postre",
+    "yogur",
+    "galleta",
+    "snack",
+    "pure"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.4,
+    3
+   ]
+  },
+  {
+   "id": "limon",
+   "nombre": "Limón",
+   "categoria": "Frutas y verduras",
+   "buscar": "limon granel",
+   "debe": [
+    "limon"
+   ],
+   "excluir": [
+    "jugo",
+    "sucedaneo",
+    "bebida",
+    "lavaloza",
+    "detergente",
+    "esencia",
+    "te",
+    "galleta",
+    "limonada",
+    "pica"
+   ],
+   "cantidad": 1,
+   "unidad": "kg",
+   "rango": [
+    0.25,
+    3
+   ]
+  }
+ ],
+ "canasta_basica": {
+  "trutro-pollo": 2,
+  "carne-molida": 1,
+  "jurel": 2,
+  "huevos": 1,
+  "arroz": 2,
+  "fideos": 3,
+  "aceite": 1,
+  "azucar": 1,
+  "lentejas": 1,
+  "porotos": 1,
+  "leche": 6,
+  "papas": 3,
+  "cebolla": 1,
+  "marraqueta": 2,
+  "detergente": 1,
+  "lavalozas": 1,
+  "cloro": 1,
+  "papel-higienico": 1
+ }
+}
