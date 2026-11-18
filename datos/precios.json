@@ -1,12 +1,12 @@
 {
- "actualizado": "2026-11-17T07:20-03:00",
- "dias_historial": 16,
+ "actualizado": "2026-11-18T07:20-03:00",
+ "dias_historial": 17,
  "tiendas": [
   {
    "id": "jumbo",
    "nombre": "Jumbo",
    "estado": "ok",
-   "fecha": "2026-11-17",
+   "fecha": "2026-11-18",
    "productos": 51,
    "solo_ofertas": false
   },
@@ -14,7 +14,7 @@
    "id": "santaisabel",
    "nombre": "Santa Isabel",
    "estado": "ok",
-   "fecha": "2026-11-17",
+   "fecha": "2026-11-18",
    "productos": 47,
    "solo_ofertas": false
   },
@@ -36,16 +36,16 @@
    "id": "unimarc",
    "nombre": "Unimarc",
    "estado": "ok",
-   "fecha": "2026-11-17",
-   "productos": 53,
+   "fecha": "2026-11-18",
+   "productos": 52,
    "solo_ofertas": false
   },
   {
    "id": "alvi",
    "nombre": "Alvi",
    "estado": "ok",
-   "fecha": "2026-11-17",
-   "productos": 38,
+   "fecha": "2026-11-18",
+   "productos": 44,
    "solo_ofertas": false
   },
   {
@@ -73,10 +73,10 @@
      "normal_envase": null,
      "precio": 6990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6990,
@@ -92,10 +92,10 @@
      "normal_envase": null,
      "precio": 7587,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 7587,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 7587,
@@ -111,10 +111,10 @@
      "normal_envase": null,
      "precio": 6990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5990,
@@ -130,10 +130,10 @@
      "normal_envase": null,
      "precio": 7453,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 7453,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 7453,
@@ -158,10 +158,10 @@
      "normal_envase": null,
      "precio": 4990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 3195,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3195,
@@ -177,10 +177,10 @@
      "normal_envase": null,
      "precio": 5238,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5238,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5238,
@@ -196,10 +196,10 @@
      "normal_envase": null,
      "precio": 3790,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 3290,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2690,
@@ -224,10 +224,10 @@
      "normal_envase": null,
      "precio": 11780,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 11780,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 11180,
@@ -243,10 +243,10 @@
      "normal_envase": null,
      "precio": 12360,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 12360,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 12360,
@@ -262,10 +262,10 @@
      "normal_envase": null,
      "precio": 6760,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6760,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6760,
@@ -281,10 +281,10 @@
      "normal_envase": null,
      "precio": 5680,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5680,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5680,
@@ -309,10 +309,10 @@
      "normal_envase": null,
      "precio": 13390,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 13390,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 13390,
@@ -328,10 +328,10 @@
      "normal_envase": null,
      "precio": 12390,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 12390,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 12390,
@@ -347,10 +347,10 @@
      "normal_envase": null,
      "precio": 15890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 15590,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 15590,
@@ -375,10 +375,10 @@
      "normal_envase": 5190,
      "precio": 7800,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 7800,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 7800,
@@ -386,18 +386,18 @@
      }
     },
     "unimarc": {
-     "nombre_producto": "Chuleta centro de cerdo Super Cerdo granel 1.4 Kg",
-     "url": "https://www.unimarc.cl/product/chuleta-cent-porc-super-cerdo-kg",
+     "nombre_producto": "Chuleta vetada Super Cerdo porcionado al vacío 1.4 Kg",
+     "url": "https://www.unimarc.cl/product/chuleta-vetada-porcionada-kg",
      "formato": "1.4 kg",
      "tamano": 1.4,
-     "precio_envase": 8246,
+     "precio_envase": 8106,
      "normal_envase": null,
-     "precio": 5890,
+     "precio": 5790,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 4890,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 4890,
@@ -422,10 +422,10 @@
      "normal_envase": null,
      "precio": 7995,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
-      "precio": 7980,
-      "fecha": "2026-11-10"
+      "precio": 7995,
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5995,
@@ -441,10 +441,10 @@
      "normal_envase": null,
      "precio": 9780,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 9780,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 7980,
@@ -460,10 +460,10 @@
      "normal_envase": null,
      "precio": 10580,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 10580,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 10580,
@@ -479,10 +479,10 @@
      "normal_envase": null,
      "precio": 8920,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 8920,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 8920,
@@ -507,10 +507,10 @@
      "normal_envase": null,
      "precio": 2590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2590,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2590,
@@ -526,10 +526,10 @@
      "normal_envase": null,
      "precio": 2780,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2780,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2780,
@@ -554,10 +554,10 @@
      "normal_envase": 1197,
      "precio": 1246,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1290,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1246,
@@ -573,10 +573,10 @@
      "normal_envase": 1250,
      "precio": 1143,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1429,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1143,
@@ -592,10 +592,10 @@
      "normal_envase": null,
      "precio": 1086,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1086,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1086,
@@ -611,10 +611,10 @@
      "normal_envase": null,
      "precio": 1017,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1017,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1017,
@@ -639,10 +639,10 @@
      "normal_envase": 3950,
      "precio": 8475,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 8475,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 8475,
@@ -658,10 +658,10 @@
      "normal_envase": null,
      "precio": 6900,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6900,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6900,
@@ -677,10 +677,10 @@
      "normal_envase": null,
      "precio": 6990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 7890,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6920,
@@ -696,10 +696,10 @@
      "normal_envase": null,
      "precio": 8990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 8990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 8990,
@@ -721,13 +721,13 @@
      "formato": null,
      "tamano": 1.0,
      "precio_envase": 990,
-     "normal_envase": null,
+     "normal_envase": 6450,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 990,
@@ -743,10 +743,10 @@
      "normal_envase": 1350,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 950,
@@ -762,10 +762,10 @@
      "normal_envase": null,
      "precio": 890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 890,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 890,
@@ -781,10 +781,10 @@
      "normal_envase": null,
      "precio": 890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 890,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 890,
@@ -809,10 +809,10 @@
      "normal_envase": null,
      "precio": 450,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 450,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 450,
@@ -828,10 +828,10 @@
      "normal_envase": null,
      "precio": 430,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
-      "precio": 740,
-      "fecha": "2026-11-10"
+      "precio": 430,
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 430,
@@ -847,10 +847,10 @@
      "normal_envase": null,
      "precio": 520,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 520,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 520,
@@ -866,10 +866,10 @@
      "normal_envase": null,
      "precio": 560,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 560,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 560,
@@ -894,10 +894,10 @@
      "normal_envase": 2450,
      "precio": 2211,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2211,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2211,
@@ -913,10 +913,10 @@
      "normal_envase": null,
      "precio": 2656,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2656,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2656,
@@ -932,10 +932,10 @@
      "normal_envase": 2290,
      "precio": 2222,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2222,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2222,
@@ -951,10 +951,10 @@
      "normal_envase": null,
      "precio": 2456,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2456,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2456,
@@ -979,10 +979,10 @@
      "normal_envase": 1890,
      "precio": 1190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1190,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1190,
@@ -998,10 +998,10 @@
      "normal_envase": 1150,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1000,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1000,
@@ -1017,10 +1017,10 @@
      "normal_envase": null,
      "precio": 910,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 910,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 910,
@@ -1036,10 +1036,10 @@
      "normal_envase": null,
      "precio": 910,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 910,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 910,
@@ -1064,10 +1064,10 @@
      "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 990,
@@ -1083,10 +1083,10 @@
      "normal_envase": null,
      "precio": 960,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
-      "precio": 1000,
-      "fecha": "2026-11-10"
+      "precio": 960,
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 960,
@@ -1102,10 +1102,10 @@
      "normal_envase": null,
      "precio": 870,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 870,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 870,
@@ -1121,10 +1121,10 @@
      "normal_envase": null,
      "precio": 820,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 820,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 820,
@@ -1149,10 +1149,10 @@
      "normal_envase": null,
      "precio": 2490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2490,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2490,
@@ -1168,10 +1168,10 @@
      "normal_envase": 3650,
      "precio": 2690,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2690,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2690,
@@ -1187,10 +1187,10 @@
      "normal_envase": 2590,
      "precio": 2300,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2300,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2300,
@@ -1206,10 +1206,10 @@
      "normal_envase": null,
      "precio": 2990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2990,
@@ -1234,10 +1234,10 @@
      "normal_envase": 2720,
      "precio": 2176,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2176,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2176,
@@ -1253,10 +1253,10 @@
      "normal_envase": 2610,
      "precio": 2200,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2200,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2200,
@@ -1272,10 +1272,10 @@
      "normal_envase": null,
      "precio": 2290,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2290,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2290,
@@ -1291,10 +1291,10 @@
      "normal_envase": null,
      "precio": 2590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2590,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2590,
@@ -1319,10 +1319,10 @@
      "normal_envase": 2490,
      "precio": 2843,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2843,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2843,
@@ -1338,10 +1338,10 @@
      "normal_envase": null,
      "precio": 1980,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1980,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1980,
@@ -1357,10 +1357,10 @@
      "normal_envase": 1150,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2000,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2000,
@@ -1376,10 +1376,10 @@
      "normal_envase": null,
      "precio": 2929,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2929,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2929,
@@ -1404,10 +1404,10 @@
      "normal_envase": 1060,
      "precio": 690,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 690,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 690,
@@ -1423,10 +1423,10 @@
      "normal_envase": null,
      "precio": 370,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 370,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 370,
@@ -1442,10 +1442,10 @@
      "normal_envase": null,
      "precio": 390,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 390,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 380,
@@ -1461,10 +1461,10 @@
      "normal_envase": null,
      "precio": 380,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 380,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 380,
@@ -1489,10 +1489,10 @@
      "normal_envase": null,
      "precio": 490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 490,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 490,
@@ -1508,10 +1508,10 @@
      "normal_envase": null,
      "precio": 480,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 480,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 480,
@@ -1527,10 +1527,10 @@
      "normal_envase": 510,
      "precio": 470,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 470,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 470,
@@ -1546,10 +1546,10 @@
      "normal_envase": null,
      "precio": 540,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 540,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 540,
@@ -1574,10 +1574,10 @@
      "normal_envase": 4610,
      "precio": 3190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 3190,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3190,
@@ -1593,10 +1593,10 @@
      "normal_envase": 2970,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1990,
@@ -1612,10 +1612,10 @@
      "normal_envase": 2490,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2000,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2000,
@@ -1631,10 +1631,10 @@
      "normal_envase": null,
      "precio": 2620,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2620,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2620,
@@ -1659,10 +1659,10 @@
      "normal_envase": 12790,
      "precio": 9900,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 9900,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 9900,
@@ -1670,18 +1670,18 @@
      }
     },
     "santaisabel": {
-     "nombre_producto": "Detergente Líquido Máxima 5 L",
-     "url": "https://www.santaisabel.cl/detergente-liquido-maxima-5-l/p",
+     "nombre_producto": "Detergente Líquido Máxima 2 L",
+     "url": "https://www.santaisabel.cl/detergente-liquido-2-litros-maxima/p",
      "formato": null,
-     "tamano": 5.0,
-     "precio_envase": 4520,
+     "tamano": 2.0,
+     "precio_envase": 1890,
      "normal_envase": null,
-     "precio": 2712,
+     "precio": 2835,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
-      "precio": 2835,
-      "fecha": "2026-11-10"
+      "precio": 2712,
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2712,
@@ -1697,10 +1697,10 @@
      "normal_envase": null,
      "precio": 2214,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2214,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2214,
@@ -1716,10 +1716,10 @@
      "normal_envase": null,
      "precio": 2304,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2304,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2304,
@@ -1744,10 +1744,10 @@
      "normal_envase": null,
      "precio": 1244,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1244,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1244,
@@ -1763,10 +1763,10 @@
      "normal_envase": 4070,
      "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1095,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1095,
@@ -1782,10 +1782,10 @@
      "normal_envase": null,
      "precio": 1244,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1244,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1244,
@@ -1801,10 +1801,10 @@
      "normal_envase": null,
      "precio": 1221,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1221,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1221,
@@ -1829,10 +1829,10 @@
      "normal_envase": null,
      "precio": 3580,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 3580,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3580,
@@ -1848,10 +1848,10 @@
      "normal_envase": 2290,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2000,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2000,
@@ -1876,10 +1876,10 @@
      "normal_envase": null,
      "precio": 1425,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1425,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1425,
@@ -1895,10 +1895,10 @@
      "normal_envase": 3050,
      "precio": 1195,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1195,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1195,
@@ -1914,13 +1914,32 @@
      "normal_envase": null,
      "precio": 3590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 3590,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3550,
+      "fecha": "2026-11-02"
+     }
+    },
+    "alvi": {
+     "nombre_producto": "Limpiapisos higienizante bergamota Excell 900ml",
+     "url": "https://www.alvi.cl/product/limpiapisos-hig-excell-900-ml-bergamota",
+     "formato": "900 ml",
+     "tamano": 0.9,
+     "precio_envase": 990,
+     "normal_envase": null,
+     "precio": 990,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-18",
+     "antes": {
+      "precio": 990,
+      "fecha": "2026-11-11"
+     },
+     "min_30d": {
+      "precio": 990,
       "fecha": "2026-11-02"
      }
     }
@@ -1942,10 +1961,10 @@
      "normal_envase": null,
      "precio": 2992,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2992,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2992,
@@ -1961,10 +1980,10 @@
      "normal_envase": 1960,
      "precio": 2970,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2328,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2328,
@@ -1980,10 +1999,10 @@
      "normal_envase": 12590,
      "precio": 2997,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2997,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2997,
@@ -1999,10 +2018,10 @@
      "normal_envase": null,
      "precio": 3390,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
-      "precio": 5250,
-      "fecha": "2026-11-10"
+      "precio": 3390,
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3390,
@@ -2027,10 +2046,10 @@
      "normal_envase": null,
      "precio": 1880,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1880,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1880,
@@ -2046,10 +2065,10 @@
      "normal_envase": null,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1000,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1000,
@@ -2065,10 +2084,10 @@
      "normal_envase": null,
      "precio": 2150,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2150,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2150,
@@ -2084,10 +2103,10 @@
      "normal_envase": null,
      "precio": 1890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1890,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1890,
@@ -2112,10 +2131,10 @@
      "normal_envase": 1200,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1000,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1000,
@@ -2131,10 +2150,10 @@
      "normal_envase": null,
      "precio": 990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 990,
@@ -2150,10 +2169,10 @@
      "normal_envase": 1190,
      "precio": 1000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1000,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 980,
@@ -2169,10 +2188,10 @@
      "normal_envase": null,
      "precio": 1190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1190,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1190,
@@ -2197,10 +2216,10 @@
      "normal_envase": 2000,
      "precio": 2500,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2500,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2500,
@@ -2216,10 +2235,10 @@
      "normal_envase": null,
      "precio": 2488,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2488,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2488,
@@ -2235,10 +2254,10 @@
      "normal_envase": 2690,
      "precio": 2500,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2500,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2500,
@@ -2254,10 +2273,10 @@
      "normal_envase": null,
      "precio": 2620,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2620,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2620,
@@ -2282,10 +2301,10 @@
      "normal_envase": null,
      "precio": 1125,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1125,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1095,
@@ -2301,10 +2320,10 @@
      "normal_envase": null,
      "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1095,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1045,
@@ -2320,10 +2339,10 @@
      "normal_envase": null,
      "precio": 2150,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2150,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2150,
@@ -2348,10 +2367,10 @@
      "normal_envase": null,
      "precio": 995,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 995,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 975,
@@ -2367,10 +2386,10 @@
      "normal_envase": null,
      "precio": 975,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 975,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 945,
@@ -2386,15 +2405,26 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1990,
       "fecha": "2026-11-02"
      }
+    },
+    "alvi": {
+     "nombre_producto": "Cebollas granel 500 g",
+     "url": "https://www.alvi.cl/product/cebolla-kg",
+     "formato": "0.5 kg",
+     "tamano": 0.5,
+     "precio_envase": 925,
+     "normal_envase": null,
+     "precio": 1850,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-18"
     }
    }
   },
@@ -2414,10 +2444,10 @@
      "normal_envase": null,
      "precio": 1045,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1045,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1045,
@@ -2433,10 +2463,10 @@
      "normal_envase": null,
      "precio": 995,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1338,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 995,
@@ -2452,10 +2482,10 @@
      "normal_envase": null,
      "precio": 2090,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2090,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1990,
@@ -2480,10 +2510,10 @@
      "normal_envase": null,
      "precio": 725,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 725,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 725,
@@ -2499,10 +2529,10 @@
      "normal_envase": null,
      "precio": 745,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 745,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 745,
@@ -2518,15 +2548,26 @@
      "normal_envase": null,
      "precio": 1490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1490,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1490,
       "fecha": "2026-11-02"
      }
+    },
+    "alvi": {
+     "nombre_producto": "Plátano granel 500 g",
+     "url": "https://www.alvi.cl/product/platano-kg",
+     "formato": "0.5 kg",
+     "tamano": 0.5,
+     "precio_envase": 675,
+     "normal_envase": null,
+     "precio": 1350,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-18"
     }
    }
   },
@@ -2546,10 +2587,10 @@
      "normal_envase": null,
      "precio": 1045,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1045,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1045,
@@ -2565,10 +2606,10 @@
      "normal_envase": null,
      "precio": 1095,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1095,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1095,
@@ -2584,10 +2625,10 @@
      "normal_envase": null,
      "precio": 2190,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2190,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2190,
@@ -2603,10 +2644,10 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1990,
@@ -2631,10 +2672,10 @@
      "normal_envase": 2890,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1990,
@@ -2650,10 +2691,10 @@
      "normal_envase": 2250,
      "precio": 1918,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1918,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1918,
@@ -2669,10 +2710,10 @@
      "normal_envase": 2290,
      "precio": 2143,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2143,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2143,
@@ -2688,10 +2729,10 @@
      "normal_envase": null,
      "precio": 2241,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2241,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2241,
@@ -2716,10 +2757,10 @@
      "normal_envase": 9130,
      "precio": 3590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 3590,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3490,
@@ -2736,18 +2777,18 @@
    "unidad": "kg",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Tuto Combinado Super Pollo 1 kg Aprox",
-     "url": "https://www.jumbo.cl/trutro-combinado-super-pollo-1-kg-aprox-2/p",
+     "nombre_producto": "Tuto Corto Super Pollo 800 g Aprox",
+     "url": "https://www.jumbo.cl/trutro-corto-super-pollo-bandeja-1-l-aprox-2/p",
      "formato": null,
-     "tamano": 1.0,
-     "precio_envase": 4290,
+     "tamano": 0.8,
+     "precio_envase": 3192,
      "normal_envase": null,
-     "precio": 4290,
+     "precio": 3990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 3990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3990,
@@ -2772,10 +2813,10 @@
      "normal_envase": null,
      "precio": 11490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 9190,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 9190,
@@ -2787,14 +2828,14 @@
      "url": "https://www.santaisabel.cl/tapapecho-cat-v-15/p",
      "formato": null,
      "tamano": 1.5,
-     "precio_envase": 14985,
+     "precio_envase": 13185,
      "normal_envase": null,
-     "precio": 9990,
+     "precio": 8790,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 8790,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 8490,
@@ -2810,10 +2851,10 @@
      "normal_envase": 18828,
      "precio": 8990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 11190,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 8990,
@@ -2838,10 +2879,10 @@
      "normal_envase": null,
      "precio": 5990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5990,
@@ -2857,33 +2898,14 @@
      "normal_envase": null,
      "precio": 5990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5990,
       "fecha": "2026-11-03"
-     }
-    },
-    "unimarc": {
-     "nombre_producto": "Pulpa pierna Super Cerdo sin hueso 1 Kg",
-     "url": "https://www.unimarc.cl/product/pulpa-pierna-sin-hueso-super-cerdo-kg",
-     "formato": "1 kg",
-     "tamano": 1.0,
-     "precio_envase": 5990,
-     "normal_envase": null,
-     "precio": 5990,
-     "precio_tarjeta": null,
-     "fecha": "2026-11-17",
-     "antes": {
-      "precio": 5990,
-      "fecha": "2026-11-10"
-     },
-     "min_30d": {
-      "precio": 3990,
-      "fecha": "2026-11-12"
      }
     },
     "alvi": {
@@ -2895,10 +2917,10 @@
      "normal_envase": null,
      "precio": 9956,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 9956,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 9956,
@@ -2923,10 +2945,10 @@
      "normal_envase": 4250,
      "precio": 8543,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 8543,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 8543,
@@ -2942,10 +2964,10 @@
      "normal_envase": null,
      "precio": 12143,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 12143,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 12143,
@@ -2961,10 +2983,10 @@
      "normal_envase": null,
      "precio": 9100,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 9100,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 9100,
@@ -2980,10 +3002,10 @@
      "normal_envase": null,
      "precio": 3610,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 3600,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3600,
@@ -3008,10 +3030,10 @@
      "normal_envase": 2055,
      "precio": 2569,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2569,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2569,
@@ -3027,10 +3049,10 @@
      "normal_envase": null,
      "precio": 1350,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1350,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1350,
@@ -3055,10 +3077,10 @@
      "normal_envase": 3850,
      "precio": 2990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2990,
@@ -3074,10 +3096,10 @@
      "normal_envase": 3710,
      "precio": 2890,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2890,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2890,
@@ -3093,10 +3115,10 @@
      "normal_envase": null,
      "precio": 2490,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2490,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2490,
@@ -3112,10 +3134,10 @@
      "normal_envase": null,
      "precio": 2930,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2930,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2930,
@@ -3140,10 +3162,10 @@
      "normal_envase": null,
      "precio": 450,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 450,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 450,
@@ -3159,10 +3181,10 @@
      "normal_envase": null,
      "precio": 430,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 430,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 430,
@@ -3178,10 +3200,10 @@
      "normal_envase": null,
      "precio": 810,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 810,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 810,
@@ -3197,10 +3219,10 @@
      "normal_envase": null,
      "precio": 560,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 560,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 560,
@@ -3225,10 +3247,10 @@
      "normal_envase": 6890,
      "precio": 6305,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6305,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6305,
@@ -3244,10 +3266,10 @@
      "normal_envase": null,
      "precio": 7012,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 7012,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 7012,
@@ -3263,10 +3285,10 @@
      "normal_envase": 6990,
      "precio": 6170,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6170,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6170,
@@ -3282,10 +3304,10 @@
      "normal_envase": null,
      "precio": 5980,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5980,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5980,
@@ -3310,10 +3332,10 @@
      "normal_envase": null,
      "precio": 5769,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5089,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 4056,
@@ -3329,10 +3351,10 @@
      "normal_envase": null,
      "precio": 5655,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5032,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 3927,
@@ -3348,10 +3370,10 @@
      "normal_envase": 5490,
      "precio": 4150,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 4150,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 4150,
@@ -3367,10 +3389,10 @@
      "normal_envase": null,
      "precio": 5950,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5950,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5950,
@@ -3395,10 +3417,10 @@
      "normal_envase": 1440,
      "precio": 1145,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1145,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1145,
@@ -3414,10 +3436,10 @@
      "normal_envase": null,
      "precio": 1083,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1083,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1083,
@@ -3433,10 +3455,10 @@
      "normal_envase": null,
      "precio": 1456,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1456,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1456,
@@ -3452,10 +3474,10 @@
      "normal_envase": null,
      "precio": 1740,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1740,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1740,
@@ -3480,10 +3502,10 @@
      "normal_envase": null,
      "precio": 1517,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1517,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1517,
@@ -3499,10 +3521,10 @@
      "normal_envase": null,
      "precio": 1403,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1403,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1403,
@@ -3518,10 +3540,10 @@
      "normal_envase": null,
      "precio": 1404,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1404,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1404,
@@ -3537,10 +3559,10 @@
      "normal_envase": null,
      "precio": 2260,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2725,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2260,
@@ -3565,10 +3587,10 @@
      "normal_envase": null,
      "precio": 727,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 727,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 727,
@@ -3584,10 +3606,10 @@
      "normal_envase": 1560,
      "precio": 660,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 660,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 660,
@@ -3603,10 +3625,10 @@
      "normal_envase": 2150,
      "precio": 993,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 993,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 993,
@@ -3622,10 +3644,10 @@
      "normal_envase": null,
      "precio": 1800,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1800,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1800,
@@ -3642,22 +3664,22 @@
    "unidad": "un",
    "precios": {
     "jumbo": {
-     "nombre_producto": "Bolsa de Basura Home Care 50 x 70 cm 10 un.",
-     "url": "https://www.jumbo.cl/bolsa-de-basura-home-care-50x70-cm-10-un-2019837/p",
+     "nombre_producto": "Bolsa de Basura Home Care con Asas 50 x 65 cm 10 un.",
+     "url": "https://www.jumbo.cl/bolsa-basura-con-asas-50x65-homecare-10u-1925837/p",
      "formato": null,
      "tamano": 10.0,
-     "precio_envase": 480,
-     "normal_envase": 590,
-     "precio": 480,
+     "precio_envase": 400,
+     "normal_envase": null,
+     "precio": 400,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 480,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
-      "precio": 480,
-      "fecha": "2026-11-05"
+      "precio": 400,
+      "fecha": "2026-11-18"
      }
     },
     "santaisabel": {
@@ -3669,10 +3691,10 @@
      "normal_envase": 540,
      "precio": 360,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 400,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 360,
@@ -3688,10 +3710,10 @@
      "normal_envase": null,
      "precio": 470,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 470,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 470,
@@ -3707,10 +3729,10 @@
      "normal_envase": null,
      "precio": 620,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 620,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 620,
@@ -3735,10 +3757,10 @@
      "normal_envase": 1560,
      "precio": 685,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 853,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 685,
@@ -3754,10 +3776,10 @@
      "normal_envase": 2590,
      "precio": 937,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 937,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 937,
@@ -3773,10 +3795,10 @@
      "normal_envase": null,
      "precio": 1040,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1766,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 742,
@@ -3801,10 +3823,10 @@
      "normal_envase": 1200,
      "precio": 1584,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1584,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1584,
@@ -3820,10 +3842,10 @@
      "normal_envase": 880,
      "precio": 1126,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1126,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1126,
@@ -3839,10 +3861,10 @@
      "normal_envase": 3450,
      "precio": 2000,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2000,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2000,
@@ -3858,10 +3880,10 @@
      "normal_envase": null,
      "precio": 1640,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1640,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1640,
@@ -3886,10 +3908,10 @@
      "normal_envase": 18990,
      "precio": 6465,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6465,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6465,
@@ -3905,10 +3927,10 @@
      "normal_envase": 18790,
      "precio": 5528,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 5528,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 5528,
@@ -3924,10 +3946,10 @@
      "normal_envase": 18990,
      "precio": 6952,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6952,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6952,
@@ -3943,10 +3965,10 @@
      "normal_envase": null,
      "precio": 6935,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 6935,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 6935,
@@ -3971,10 +3993,10 @@
      "normal_envase": null,
      "precio": 795,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 625,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 625,
@@ -3990,15 +4012,26 @@
      "normal_envase": null,
      "precio": 1590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1590,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1590,
       "fecha": "2026-11-03"
      }
+    },
+    "alvi": {
+     "nombre_producto": "Zanahoria bolsa 1 Kg",
+     "url": "https://www.alvi.cl/product/zanahoria-bolsa-1-kg",
+     "formato": "1 Kg",
+     "tamano": 1.0,
+     "precio_envase": 1450,
+     "normal_envase": null,
+     "precio": 1450,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-18"
     }
    }
   },
@@ -4018,10 +4051,10 @@
      "normal_envase": null,
      "precio": 1245,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 995,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 995,
@@ -4037,10 +4070,10 @@
      "normal_envase": null,
      "precio": 1245,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1245,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1145,
@@ -4048,23 +4081,34 @@
      }
     },
     "unimarc": {
-     "nombre_producto": "Manzana royal gala granel 500 g",
-     "url": "https://www.unimarc.cl/product/manzana-royal-gala-kg-2",
+     "nombre_producto": "Manzana pink lady granel 500 g",
+     "url": "https://www.unimarc.cl/product/manzana-pink-lady-kg",
      "formato": "500 g",
      "tamano": 0.5,
      "precio_envase": 1295,
      "normal_envase": null,
      "precio": 2590,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 2590,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 2590,
       "fecha": "2026-11-03"
      }
+    },
+    "alvi": {
+     "nombre_producto": "Manzana verde granel 500 g",
+     "url": "https://www.alvi.cl/product/manzana-verde-kg",
+     "formato": "0.5 kg",
+     "tamano": 0.5,
+     "precio_envase": 1225,
+     "normal_envase": null,
+     "precio": 2450,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-18"
     }
    }
   },
@@ -4084,10 +4128,10 @@
      "normal_envase": null,
      "precio": 1025,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1025,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1025,
@@ -4103,10 +4147,10 @@
      "normal_envase": null,
      "precio": 995,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 995,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 995,
@@ -4122,15 +4166,26 @@
      "normal_envase": null,
      "precio": 1990,
      "precio_tarjeta": null,
-     "fecha": "2026-11-17",
+     "fecha": "2026-11-18",
      "antes": {
       "precio": 1990,
-      "fecha": "2026-11-10"
+      "fecha": "2026-11-11"
      },
      "min_30d": {
       "precio": 1990,
       "fecha": "2026-11-03"
      }
+    },
+    "alvi": {
+     "nombre_producto": "Limón granel 500 g",
+     "url": "https://www.alvi.cl/product/limon-kg",
+     "formato": "0.5 kg",
+     "tamano": 0.5,
+     "precio_envase": 945,
+     "normal_envase": null,
+     "precio": 1890,
+     "precio_tarjeta": null,
+     "fecha": "2026-11-18"
     }
    }
   }
